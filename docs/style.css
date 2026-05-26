@@ -7,8 +7,9 @@
   /* Heritage palette */
   --carolina-blue:   #4B9CD3;
   --carolina-navy:   #13294B;
-  --old-gold:        #B3A369;
-  --bse-teal:        #2C7873;
+  --old-gold:        #D4A017;       /* punched-up bright Tech Gold (was #B3A369) */
+  --old-gold-deep:   #8E6E10;       /* readable text-on-parchment variant */
+  --bse-teal:        #1A8A87;       /* brighter Mediterranean teal (was #2C7873) */
   --indiana-crimson: #990000;
 
   /* Neutrals */
@@ -18,8 +19,8 @@
 
   /* Derived tints for sidebars */
   --carolina-tint:   #ECF3FA;   /* 5% Carolina Blue on parchment */
-  --gold-tint:       #F4EFDC;
-  --teal-tint:       #DCEAE8;
+  --gold-tint:       #FCF4D5;       /* tinted from new vibrant gold */
+  --teal-tint:       #D0EBE9;       /* tinted from new vibrant teal */
   --crimson-tint:    #F5E1E1;
 
   /* Type stack */

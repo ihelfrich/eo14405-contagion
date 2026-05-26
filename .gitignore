@@ -5,3 +5,4 @@ __pycache__/
 .julia_depot/
 Manifest.toml
 *.dylib
+site/
