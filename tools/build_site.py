@@ -33,9 +33,15 @@ PAGES = [
     ("linkedin-post.md", "short.html",
      "Notes on EO 14405 — Short version",
      "700-word LinkedIn-format summary of the EO 14405 contagion analysis."),
+    ("verify.md", "verify.html",
+     "Claim-by-claim verification — EO 14405",
+     "Every numeric and factual claim mapped to its primary-source URL."),
+    ("outreach.md", "outreach.html",
+     "Outreach kit — EO 14405",
+     "Pull quotes, share copy, tag list, and email templates for FRB, Senate Banking, and press."),
     ("dossiers/SYNTHESIS.md", "dossiers/synthesis.html",
      "Political-economy synthesis — EO 14405",
-     "The synthesis of six OSINT dossiers on the principals behind EO 14405."),
+     "The synthesis of twelve OSINT dossiers on the principals behind EO 14405."),
 ]
 
 # Individual dossier files
@@ -101,7 +107,12 @@ def pandoc_html(src: Path, out: Path, title: str, description: str,
         f'<meta property="og:title" content="{title}">\n'
         f'<meta property="og:description" content="{description}">\n'
         f'<meta property="og:type" content="article">\n'
-        f'<meta property="og:image" content="figures/analysis_helfrich.png">\n'
+        f'<meta property="og:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/li_mechanism.png">\n'
+        f'<meta property="og:image:width" content="1200">\n'
+        f'<meta property="og:image:height" content="627">\n'
+        f'<meta property="og:url" content="https://ihelfrich.github.io/eo14405-contagion/{out.name}">\n'
+        f'<meta name="twitter:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/li_mechanism.png">\n'
+        f'<meta name="twitter:site" content="@ianhelfrich">\n'
         f'<meta name="twitter:card" content="summary_large_image">\n'
         f'<link rel="preconnect" href="https://rsms.me/">\n'
         f'<link rel="stylesheet" href="https://rsms.me/inter/inter.css">\n'
@@ -214,8 +225,25 @@ def render_index() -> None:
   <a class="card" href="dossiers/SNA-FINDINGS.html" style="border-left-color:var(--indiana-crimson);">
     <div class="tag" style="color:var(--indiana-crimson);">Social Network Analysis</div>
     <h2>The 153-node conflict-of-interest graph</h2>
-    <p class="desc">Eigenvector centrality, Louvain communities, and the minimum-cut analysis identifying the five-person spine linking the Trump administration, the Federal Reserve, and the stablecoin issuers. Includes two publication figures and a reviewer-auditable edge CSV.</p>
+    <p class="desc">Eigenvector centrality, Louvain communities, and the structural-redundancy finding that no small set of named officials disconnects the spine linking the Trump administration, the Federal Reserve, and the stablecoin issuers. Includes two publication figures and a reviewer-auditable edge CSV.</p>
   </a>
+
+  <a class="card" href="verify.html" style="border-left-color:var(--old-gold);">
+    <div class="tag" style="color:var(--old-gold);">Verification table</div>
+    <h2>Every claim, mapped to its primary source</h2>
+    <p class="desc">For journalists, Fed staff, and committee aides who want to audit in thirty seconds. PRIMARY / SECONDARY / PRESS / MODEL source classes, OGE-278 + SEC EDGAR + FEC + Federal Register URLs, explicit notes on what is press-sourced and what is not.</p>
+  </a>
+
+  <a class="card" href="outreach.html" style="border-left-color:var(--bse-teal);">
+    <div class="tag" style="color:var(--bse-teal);">Outreach kit</div>
+    <h2>Pull quotes, share copy, email templates</h2>
+    <p class="desc">For readers who want to amplify or contact policymakers. Pull quotes, tag list, hashtag strategy, share-copy variants for X/Bluesky/Mastodon, and three email-draft templates (FRB staff, Senate Banking, press). Reuse without attribution.</p>
+  </a>
+
+  <figure class="figure-tile" style="border-left-color:var(--indiana-crimson);">
+    <img src="figures/sensitivity_lolr.png" alt="Net welfare under EO 14405 as a function of the Fed lender-of-last-resort rate, showing break-even at 133 basis points">
+    <figcaption>Net welfare sensitivity to the one variable the order does not specify. The Federal Reserve Board sets it.</figcaption>
+  </figure>
 
   <h2 style="margin-top:36px;font-size:20px;color:var(--carolina-navy);border-bottom:1.5px solid var(--old-gold);padding-bottom:8px;">Individual OSINT dossiers (44,000+ words, source-cited)</h2>
   <ul style="list-style:none;padding:0;">
