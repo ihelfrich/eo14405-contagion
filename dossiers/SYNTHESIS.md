@@ -48,7 +48,7 @@ Financial (WLFI) and the Trump family. Per SEC Form D/A filings (CIK
 - WLFI is a Delaware corporation; principal office 4400 Biscayne Blvd
   Ste 900, Miami FL.
 - Officers and directors of record: Zachary Folkman, Chase Herro.
-- Cumulative Reg-D sales: $52,133,139 across 1,966 investors as of the
+- Cumulative Reg-D sales: \$52,133,139 across 1,966 investors as of the
   filing date.
 
 The Trump family channel is documented in WLFI's separate disclosures
@@ -73,15 +73,15 @@ contractual revenue claim flows through that channel.
 A parallel exposure: **DJT (Trump Media and Technology Group, NASDAQ:DJT,
 CIK 0001849635)** disclosed in its Q1 2026 10-Q filed 8 May 2026 a
 treasury position of **11,542 BTC plus 756 million CRO tokens** built
-mid-2025 from $2.3 billion in stock and note proceeds. The 10-Q reports
-a $405.9 million Q1 2026 net loss almost entirely from crypto markdowns.
+mid-2025 from \$2.3 billion in stock and note proceeds. The 10-Q reports
+a \$405.9 million Q1 2026 net loss almost entirely from crypto markdowns.
 This is a second conflict surface that EO 14405 does not directly affect
 but that situates the Trump-family financial position relative to the
 broader crypto-asset class.
 
 No SEC, CFTC, or NY DFS enforcement action against WLFI or USD1 as of
 this compilation. The Senate Banking Committee has sent a letter to the
-SEC on file; the House has opened an investigation into an alleged $500
+SEC on file; the House has opened an investigation into an alleged \$500
 million UAE 49 percent stake purchase; Duke FinReg has published an
 analysis arguing WLFI's token issuance satisfies the *Howey* securities
 test.
@@ -96,8 +96,8 @@ Per the Wall Street Journal (4 November 2024) and subsequent disclosures:
 
 - **Cantor Fitzgerald** (Lutnick's investment bank prior to his Cabinet
   confirmation) acquired an approximately 5 percent equity stake in
-  Tether via a roughly $600 million convertible bond.
-- Cantor custodies the majority of Tether's reported $141 billion in
+  Tether via a roughly \$600 million convertible bond.
+- Cantor custodies the majority of Tether's reported \$141 billion in
   U.S. Treasury reserves.
 - The Lutnick family Cantor acquisition (through Dynasty Trust A) was
   reportedly financed in part by a Tether loan, though specific terms
@@ -111,9 +111,9 @@ which the offshore-USDT economic engine can acquire US Fed payment rails
 without iFinex itself submitting to US consolidated supervision.
 
 Tether's regulatory history complicates the picture. The CFTC settled a
-$41 million case against Tether and Bitfinex on 15 October 2021 for
+\$41 million case against Tether and Bitfinex on 15 October 2021 for
 misleading reserve attestations; the New York Attorney General
-separately settled an $18.5 million case on 23 February 2021. Tether
+separately settled an \$18.5 million case on 23 February 2021. Tether
 was barred from operating in NY State. A Wall Street Journal report (25
 October 2024) described a Manhattan U.S. Attorney's office investigation
 into Tether for sanctions and AML violations; Tether denied the
@@ -131,7 +131,7 @@ David Sacks served as the White House AI and Crypto Czar from January
 Per Office of Government Ethics disclosures (see `dossiers/
 sacks-a16z-quintenz.md`):
 
-- Sacks divested an estimated $200 million in crypto holdings including
+- Sacks divested an estimated \$200 million in crypto holdings including
   positions in Bitcoin, Ether, Solana, Bitwise 10, Coinbase, Robinhood,
   Multicoin LP, and Blockchain Capital LP.
 - He received a **broad ethics waiver on 5 March 2025**, the scope of
@@ -145,7 +145,7 @@ administration:
 
 - **Brian Quintenz**, formerly CFTC Commissioner 2017-2021, then a16z
   Global Head of Policy 2022-2025, was nominated CFTC Chair. He
-  disclosed $3.4 million in crypto-linked assets at his confirmation
+  disclosed \$3.4 million in crypto-linked assets at his confirmation
   hearing, including stakes in three a16z funds (CNK Fund III, Seed 1,
   IV) plus Kalshi equity and options. His nomination was withdrawn in
   September 2025 after the Winklevoss twins pressured the nomination
@@ -156,12 +156,12 @@ administration:
   Science and Technology (PCAST). Press reporting (Politico, January
   2025) suggested Andreessen spent approximately half his time at
   Mar-a-Lago in late 2024.
-- a16z committed approximately **$47 million** to the Fairshake PAC across
+- a16z committed approximately **\$47 million** to the Fairshake PAC across
   the 2024 and 2026 election cycles.
 
-a16z's Crypto Fund IV closed at $4.5 billion in 2022; Crypto Fund V
-closed at $2.2 billion in May 2026. Marc Andreessen and Ben Horowitz
-each personally gave $2.5 million to Trump's Make America Great Again
+a16z's Crypto Fund IV closed at \$4.5 billion in 2022; Crypto Fund V
+closed at \$2.2 billion in May 2026. Marc Andreessen and Ben Horowitz
+each personally gave \$2.5 million to Trump's Make America Great Again
 super PAC in the 2024 cycle.
 
 ## Layer 4: the regulator-to-regulated revolving door
@@ -195,32 +195,32 @@ Per Federal Election Commission filings for Fairshake PAC (FEC ID
 C00835959) and its affiliates Defend American Jobs (C00836221) and
 Protect Progress (C00848440):
 
-- Total funds raised by Fairshake in the 2023-2024 cycle: **$260.07
+- Total funds raised by Fairshake in the 2023-2024 cycle: **\$260.07
   million**.
-- Total spent: **$195.83 million**.
+- Total spent: **\$195.83 million**.
 - Top three donors accounted for approximately **84 percent of funding**:
-  Coinbase (approximately $75 million), Ripple (approximately $50
-  million), and Andreessen Horowitz partners (approximately $44 million).
+  Coinbase (approximately \$75 million), Ripple (approximately \$50
+  million), and Andreessen Horowitz partners (approximately \$44 million).
 - Individual donors included Brian Armstrong (Coinbase), Brad
   Garlinghouse (Ripple), Tyler and Cameron Winklevoss (Gemini), Jesse
   Powell (Kraken), and Jeremy Allaire (Circle).
 
 Race-by-race outcomes (53 wins of 58 targeted races):
 
-- **OH-Senate**: Approximately $40 million spent against Sherrod Brown
+- **OH-Senate**: Approximately \$40 million spent against Sherrod Brown
   (the sitting chair of the Senate Banking Committee, the relevant
   committee for stablecoin legislation). Bernie Moreno, a crypto-
   friendly Republican car dealer and founder of Champ Titles, defeated
   Brown by about 4 percentage points.
-- **CA-Senate primary**: Approximately $10 million spent against Katie
+- **CA-Senate primary**: Approximately \$10 million spent against Katie
   Porter. Adam Schiff advanced; Porter lost the primary.
 - **MT-Senate**: Substantial spend against Jon Tester. Tim Sheehy
   defeated him.
-- **NY-16 House**: Approximately $2.08 million against Jamaal Bowman,
-  as junior partner to AIPAC's approximately $14.5 million.
+- **NY-16 House**: Approximately \$2.08 million against Jamaal Bowman,
+  as junior partner to AIPAC's approximately \$14.5 million.
 
 Coinbase's separate corporate lobbying spend disclosed under the Lobbying
-Disclosure Act was approximately $3.88 million federally through Q1-Q3
+Disclosure Act was approximately \$3.88 million federally through Q1-Q3
 2024 (OpenSecrets). The Stand With Crypto Alliance, a 501(c)(4) founded
 14 August 2023 by Coinbase's Faryar Shirzad, claims 443,000 verified
 advocates and 2 million self-reported members.
@@ -312,7 +312,7 @@ context in which the policy will be implemented.
 
 3. **Fairshake spending verification.** Pull Fairshake PAC's FEC Form 3X
    for 2024 directly from fec.gov (committee ID C00835959). Confirm or
-   correct the $260.07 million / $195.83 million figures. Identify the
+   correct the \$260.07 million / \$195.83 million figures. Identify the
    top 10 disclosed donors and compare to the names in this dossier.
 
 4. **Custodia certiorari watch.** Search the Supreme Court docket at

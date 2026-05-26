@@ -4,7 +4,7 @@
 
 ## Executive summary
 
-Eleven Trump 2.0 appointees with direct or coordinating jurisdiction over EO 14178 (the January 23, 2025 "Strengthening American Leadership in Digital Financial Technology" order) and the subsequent GENIUS Act stablecoin framework form a coherent personnel cluster: hedge funds and large investment shops (Bessent at Key Square, Miran at Hudson Bay, Hassett at the Coinbase Advisory Council), Project 2025 / Heritage / AFPI (Vought, Faulkender), homebuilder dynastic capital with personal crypto positions (Pulte), and lobbying-firm partners with disclosed industry exposure (Bondi at Ballard, Greer at King and Spalding). Three patterns dominate. First, every confirmed principal disclosed crypto-adjacent positions on the OGE-278 at nomination, ranging from $250K to $500K (Bessent's IBIT) to $1M to $5M (Hassett's Coinbase stake). Second, ethics waivers, leaves of absence, and divestment timelines were used as substitutes for full recusal: Miran took unpaid Fed leave from CEA but remained connected to Hudson Bay; Pulte did not divest Bitcoin and Solana before issuing the FHFA crypto-mortgage directive; Faulkender served simultaneously as Deputy Treasury Secretary and Acting IRS Commissioner. Third, prior-employer relationships are policy-active rather than dormant: Bessent's Treasury endorses the GENIUS Act framework that benefits Cantor's USDT custody business (the Lutnick connection), Hassett's NEC coordinates the Digital Assets Working Group while he held $1M to $5M COIN, and Greer's USTR portfolio touches BASF and Cleveland-Cliffs (prior K and S clients). The pattern matches Sacks / a16z / Quintenz: industry capital moves into regulatory chairs with positions intact, mediated by ethics paperwork rather than divestment.
+Eleven Trump 2.0 appointees with direct or coordinating jurisdiction over EO 14178 (the January 23, 2025 "Strengthening American Leadership in Digital Financial Technology" order) and the subsequent GENIUS Act stablecoin framework form a coherent personnel cluster: hedge funds and large investment shops (Bessent at Key Square, Miran at Hudson Bay, Hassett at the Coinbase Advisory Council), Project 2025 / Heritage / AFPI (Vought, Faulkender), homebuilder dynastic capital with personal crypto positions (Pulte), and lobbying-firm partners with disclosed industry exposure (Bondi at Ballard, Greer at King and Spalding). Three patterns dominate. First, every confirmed principal disclosed crypto-adjacent positions on the OGE-278 at nomination, ranging from \$250K to \$500K (Bessent's IBIT) to \$1M to \$5M (Hassett's Coinbase stake). Second, ethics waivers, leaves of absence, and divestment timelines were used as substitutes for full recusal: Miran took unpaid Fed leave from CEA but remained connected to Hudson Bay; Pulte did not divest Bitcoin and Solana before issuing the FHFA crypto-mortgage directive; Faulkender served simultaneously as Deputy Treasury Secretary and Acting IRS Commissioner. Third, prior-employer relationships are policy-active rather than dormant: Bessent's Treasury endorses the GENIUS Act framework that benefits Cantor's USDT custody business (the Lutnick connection), Hassett's NEC coordinates the Digital Assets Working Group while he held \$1M to \$5M COIN, and Greer's USTR portfolio touches BASF and Cleveland-Cliffs (prior K and S clients). The pattern matches Sacks / a16z / Quintenz: industry capital moves into regulatory chairs with positions intact, mediated by ethics paperwork rather than divestment.
 
 ## 1. Scott Bessent (Treasury Secretary)
 
@@ -14,15 +14,15 @@ Trump announced Bessent as Treasury Secretary nominee on November 22, 2024. The 
 
 ### Prior employment
 
-Soros Fund Management 1991 to 2015, eventually heading the London office; member of the SFM group that profited approximately $1 billion on Black Wednesday (September 1992) shorting the British pound (Wikipedia, citing Mallaby). Founded Key Square Group in 2015 as a global-macro hedge fund. Yale lecturer in economic history intermittently.
+Soros Fund Management 1991 to 2015, eventually heading the London office; member of the SFM group that profited approximately \$1 billion on Black Wednesday (September 1992) shorting the British pound (Wikipedia, citing Mallaby). Founded Key Square Group in 2015 as a global-macro hedge fund. Yale lecturer in economic history intermittently.
 
 ### OGE-278 financial disclosure (January 2025)
 
-Per ProPublica and Banking Dive, Bessent disclosed approximately $521M in assets at nomination, with reported ranges suggesting $521M to $784M+. Key items: iShares Bitcoin Trust ETF (IBIT) $250K to $500K (the disclosed crypto position); Key Square Group LP and affiliated partnerships $50M+ in management interests with $2.8M income; Roxo Energy preferred positions $1M to $5M+ across multiple tranches; Crake Global U.S. Feeder LP $1M to $5M; real estate in Nassau, Cashiers NC, North Dakota farmland, and Charleston SC totaling $16M to $80M; SPY and QQQ positions over $50M each. Divestment pledge: resign from Key Square upon confirmation, wind down by end of March 2025, divest IBIT (covering roughly $700M; Fortune, Hedgeweek). The North Dakota farmland drew separate ethics scrutiny from Senators Crapo and Wyden over Chinese-buyer and agricultural-trade-policy concerns (Banking Dive).
+Per ProPublica and Banking Dive, Bessent disclosed approximately \$521M in assets at nomination, with reported ranges suggesting \$521M to \$784M+. Key items: iShares Bitcoin Trust ETF (IBIT) \$250K to \$500K (the disclosed crypto position); Key Square Group LP and affiliated partnerships \$50M+ in management interests with \$2.8M income; Roxo Energy preferred positions \$1M to \$5M+ across multiple tranches; Crake Global U.S. Feeder LP \$1M to \$5M; real estate in Nassau, Cashiers NC, North Dakota farmland, and Charleston SC totaling \$16M to \$80M; SPY and QQQ positions over \$50M each. Divestment pledge: resign from Key Square upon confirmation, wind down by end of March 2025, divest IBIT (covering roughly \$700M; Fortune, Hedgeweek). The North Dakota farmland drew separate ethics scrutiny from Senators Crapo and Wyden over Chinese-buyer and agricultural-trade-policy concerns (Banking Dive).
 
 ### Position on EO 14178 and stablecoin policy
 
-Bessent has been the cabinet's most consistent public advocate for the GENIUS Act and the dollar-stablecoin framework. Statements: "Crypto is not a threat to the dollar" (Economic Club of Dallas, sb0403); "the dollar now has an internet-native payment rail that is fast, frictionless, and free of middlemen" (GENIUS Act statement, sb0197); projection that dollar-linked stablecoins could reach $2 trillion in circulation, generating "newfound demand" for U.S. Treasuries that "could lower government borrowing costs" (Bessent X post, June 2025). Treasury issued the GENIUS Act Request for Comment in 2025 (sb0228) and leads the President's Working Group banking-related recommendations (July 2025 report). The Bessent-Lutnick coordination on Tether is documented in tether-ifinex.md: Bessent's Treasury sets the GENIUS Act and master-account framework determining whether Tether's U.S.-domiciled sibling USAT (custodied by Cantor) can access Fed payment rails.
+Bessent has been the cabinet's most consistent public advocate for the GENIUS Act and the dollar-stablecoin framework. Statements: "Crypto is not a threat to the dollar" (Economic Club of Dallas, sb0403); "the dollar now has an internet-native payment rail that is fast, frictionless, and free of middlemen" (GENIUS Act statement, sb0197); projection that dollar-linked stablecoins could reach \$2 trillion in circulation, generating "newfound demand" for U.S. Treasuries that "could lower government borrowing costs" (Bessent X post, June 2025). Treasury issued the GENIUS Act Request for Comment in 2025 (sb0228) and leads the President's Working Group banking-related recommendations (July 2025 report). The Bessent-Lutnick coordination on Tether is documented in tether-ifinex.md: Bessent's Treasury sets the GENIUS Act and master-account framework determining whether Tether's U.S.-domiciled sibling USAT (custodied by Cantor) can access Fed payment rails.
 
 ### Top conflicts identified
 
@@ -102,7 +102,7 @@ OMB's role on EO 14178 is via the regulatory-review process under EO 12866 (OIRA
 
 ### Government role
 
-Confirmed March 13, 2025 by a 56–43 Senate vote (Senate Banking Committee 15–9 on March 6, 2025) as FHFA Director (Wikipedia, Bill Pulte; mortgagepoint.com). FHFA regulates Fannie Mae and Freddie Mac, the two government-sponsored enterprises that backstop roughly half of the $13 trillion U.S. residential mortgage market.
+Confirmed March 13, 2025 by a 56–43 Senate vote (Senate Banking Committee 15–9 on March 6, 2025) as FHFA Director (Wikipedia, Bill Pulte; mortgagepoint.com). FHFA regulates Fannie Mae and Freddie Mac, the two government-sponsored enterprises that backstop roughly half of the \$13 trillion U.S. residential mortgage market.
 
 ### Prior employment
 
@@ -110,7 +110,7 @@ Founder of Pulte Capital Partners (Bloomfield Hills, MI), 2011, a private invest
 
 ### OGE-278 financial disclosure
 
-Per ProPublica and reporting at crypto.news and The American Prospect: Bitcoin $500K to $1M; Solana $500K to $1M; MARA Holdings (the largest U.S. publicly-traded Bitcoin miner) equity position (range not specified in sources reviewed). Pulte did not divest these positions on taking the FHFA Directorship. Senate Democrats led by Sen. Merkley wrote to Pulte on the conflict between his "ability to order and approve" Fannie and Freddie proposals and his role chairing the Enterprises' boards, asking explicitly about divestment or recusal (Merkley letter, July 2025; Durbin letter).
+Per ProPublica and reporting at crypto.news and The American Prospect: Bitcoin \$500K to \$1M; Solana \$500K to \$1M; MARA Holdings (the largest U.S. publicly-traded Bitcoin miner) equity position (range not specified in sources reviewed). Pulte did not divest these positions on taking the FHFA Directorship. Senate Democrats led by Sen. Merkley wrote to Pulte on the conflict between his "ability to order and approve" Fannie and Freddie proposals and his role chairing the Enterprises' boards, asking explicitly about divestment or recusal (Merkley letter, July 2025; Durbin letter).
 
 ### Position on EO 14178 and the crypto-mortgage directive
 
@@ -118,7 +118,7 @@ On June 25, 2025, Pulte issued a formal FHFA directive ordering Fannie Mae and F
 
 ### Top conflicts identified
 
-(1) FHFA Director personally holding $500K to $1M each in BTC and SOL while issuing a directive that would expand the eligible-reserve definition to include those exact assets is the cleanest direct conflict in the cabinet roster. (2) MARA equity: the directive directly benefits the firms mining the underlying assets. (3) Family-trust PulteGroup inheritance creates a homebuilder-housing-finance-policy linkage adjacent to but distinct from the crypto conflict.
+(1) FHFA Director personally holding \$500K to \$1M each in BTC and SOL while issuing a directive that would expand the eligible-reserve definition to include those exact assets is the cleanest direct conflict in the cabinet roster. (2) MARA equity: the directive directly benefits the firms mining the underlying assets. (3) Family-trust PulteGroup inheritance creates a homebuilder-housing-finance-policy linkage adjacent to but distinct from the crypto conflict.
 
 ## 6. Marco Rubio (Secretary of State)
 
@@ -132,7 +132,7 @@ U.S. Senator (FL), 2011 to January 2025 (Foreign Relations, Intelligence, Small 
 
 ### OGE-278 financial disclosure
 
-Per Tully Rinckey and ProPublica appointee page: bank accounts less than $30K cash; two retirement funds less than $65K combined; personal loan $15K to $50K at approximately 16% interest. Rubio is the lowest-net-worth Trump 2.0 Cabinet member by a wide margin. No crypto holdings were disclosed in the public summaries reviewed. (Flagged in Uncertainty.)
+Per Tully Rinckey and ProPublica appointee page: bank accounts less than \$30K cash; two retirement funds less than \$65K combined; personal loan \$15K to \$50K at approximately 16% interest. Rubio is the lowest-net-worth Trump 2.0 Cabinet member by a wide margin. No crypto holdings were disclosed in the public summaries reviewed. (Flagged in Uncertainty.)
 
 ### Position on stablecoin and crypto policy
 
@@ -202,11 +202,11 @@ Confirmed February 20, 2025 by a 51–49 Senate vote (the narrowest margin in mo
 
 ### Prior employment
 
-Trump Media and Technology Group (DJT, parent of Truth Social) board director from April 2022; approximately $800,000 in stock compensation per Trump Media reporting, plus $130,000 paid in June 2022 to investigate co-founders Andy Dean and Wes Moss. Patel pledged to terminate the Trump Media position upon FBI Director confirmation. Various consulting firms (including Trishul) and media deals: at least $2.6M in disclosed income (ABC News). DoD chief of staff briefly in Trump 1.0 transition. House Intelligence Committee majority staff under Devin Nunes, 2017 to 2019. Federal public defender and federal prosecutor, 2005 to 2017. JD Pace 2005.
+Trump Media and Technology Group (DJT, parent of Truth Social) board director from April 2022; approximately \$800,000 in stock compensation per Trump Media reporting, plus \$130,000 paid in June 2022 to investigate co-founders Andy Dean and Wes Moss. Patel pledged to terminate the Trump Media position upon FBI Director confirmation. Various consulting firms (including Trishul) and media deals: at least \$2.6M in disclosed income (ABC News). DoD chief of staff briefly in Trump 1.0 transition. House Intelligence Committee majority staff under Devin Nunes, 2017 to 2019. Federal public defender and federal prosecutor, 2005 to 2017. JD Pace 2005.
 
 ### OGE-278 financial disclosure
 
-Per Yahoo Finance, TheStreet, Bitbo, and ABC News on the January 2025 nomination disclosure: Grayscale Bitcoin Trust ETF $50K to $100K; Core Scientific (CORZ, Bitcoin mining) $50K to $100K; Trump Media stock approximately $800K in value; Shein parent shares (via Trishul consulting; exact value not enumerated); total consulting and media income at least $2.6M.
+Per Yahoo Finance, TheStreet, Bitbo, and ABC News on the January 2025 nomination disclosure: Grayscale Bitcoin Trust ETF \$50K to \$100K; Core Scientific (CORZ, Bitcoin mining) \$50K to \$100K; Trump Media stock approximately \$800K in value; Shein parent shares (via Trishul consulting; exact value not enumerated); total consulting and media income at least \$2.6M.
 
 ### Position on EO 14178
 
@@ -252,11 +252,11 @@ Announced as NEC Director November 26, 2024; began the role January 20, 2025 (Wi
 
 ### Prior employment
 
-Coinbase Global Advisory Council (Academic and Regulatory Advisory Council) member; received $50,001 from Coinbase for service prior to White House role (Crypto Times). Hoover Institution Senior Fellow. CEA Chair in Trump 1.0 (2017 to 2019), then Senior Adviser to the President (2020). American Enterprise Institute economist before that. Federal Reserve Board economist early career. PhD Penn (1990).
+Coinbase Global Advisory Council (Academic and Regulatory Advisory Council) member; received \$50,001 from Coinbase for service prior to White House role (Crypto Times). Hoover Institution Senior Fellow. CEA Chair in Trump 1.0 (2017 to 2019), then Senior Adviser to the President (2020). American Enterprise Institute economist before that. Federal Reserve Board economist early career. PhD Penn (1990).
 
 ### OGE-278 financial disclosure (June 2025 filing as senior White House official)
 
-Per Crypto Times on the June 2025 OGE filing: Coinbase Global (COIN) common stock $1M to $5M; total disclosed assets minimum $7.6M. Hassett did not divest the Coinbase position on taking the NEC role; the disclosure was filed roughly six months after he began the position.
+Per Crypto Times on the June 2025 OGE filing: Coinbase Global (COIN) common stock \$1M to \$5M; total disclosed assets minimum \$7.6M. Hassett did not divest the Coinbase position on taking the NEC role; the disclosure was filed roughly six months after he began the position.
 
 ### Position on EO 14178
 
@@ -264,15 +264,15 @@ Hassett chairs the White House Digital Assets Working Group structurally; the Wo
 
 ### Top conflicts identified
 
-(1) $1M to $5M Coinbase position held during White House Digital Assets Working Group chairmanship is the structurally cleanest crypto conflict in the cabinet roster by dollar value; the Working Group's recommendations directly affect Coinbase's regulatory perimeter. (2) Coinbase Advisory Council pre-administration tenure documents a continuing relationship rather than a clean break. (3) Fed Chair candidacy creates a forward-looking conflict extending into monetary-policy authority.
+(1) \$1M to \$5M Coinbase position held during White House Digital Assets Working Group chairmanship is the structurally cleanest crypto conflict in the cabinet roster by dollar value; the Working Group's recommendations directly affect Coinbase's regulatory perimeter. (2) Coinbase Advisory Council pre-administration tenure documents a continuing relationship rather than a clean break. (3) Fed Chair candidacy creates a forward-looking conflict extending into monetary-policy authority.
 
 ## Top conflicts identified (cross-individual)
 
 The roster's structural-conflict signal sorts into three tiers.
 
 **Tier 1: direct policy-asset overlap, not divested.**
-- Pulte: $500K–$1M each in BTC and SOL + MARA equity, while issuing the FHFA crypto-mortgage directive
-- Hassett: $1M–$5M COIN while chairing the White House Digital Assets Working Group
+- Pulte: \$500K–\$1M each in BTC and SOL + MARA equity, while issuing the FHFA crypto-mortgage directive
+- Hassett: \$1M–\$5M COIN while chairing the White House Digital Assets Working Group
 - Patel: Trump Media + Core Scientific + Bitcoin ETF while leading FBI crypto-enforcement posture under the Bondi-Blanche memo framework
 
 **Tier 2: prior-employer policy reach, divestment in progress or completed.**
@@ -320,7 +320,7 @@ Per individual:
 4. **Rubio crypto holdings not located.** No direct crypto positions surfaced in his January 2025 OGE-278; worth confirming null via ProPublica.
 5. **Bondi's specific client assignments within Ballard** are not fully enumerated; Ballard reported crypto-firm clients in the overall book per Sludge reporting.
 6. **Sauer Coinbase amicus briefs beyond the Harper filing not enumerated.** Broader DOJ amicus posture in industry-vs-SEC matters under Sauer is not fully documented.
-7. **Patel Trump Media stock disposition.** Pledged termination on confirmation is on the public record; actual sale timing and price for the $800K stock position were not located.
+7. **Patel Trump Media stock disposition.** Pledged termination on confirmation is on the public record; actual sale timing and price for the \$800K stock position were not located.
 8. **Pulte recusal status post-FHFA directive unclear.** FHFA has not published a recusal memorandum; OGE position on the BTC and SOL holdings while issuing a directive that prices those exact assets in is not publicly tested.
-9. **Hassett Coinbase Advisory Council compensation history** beyond the $50,001 figure not fully documented.
+9. **Hassett Coinbase Advisory Council compensation history** beyond the \$50,001 figure not fully documented.
 10. **Personnel coverage gap.** Not separately covered here: SEC Chair (Atkins, see sacks-a16z-quintenz.md), CFTC Chair (Michael Selig, December 2025), OCC Comptroller, FDIC Chair, Fed Vice Chair for Supervision, post-Bondi DOJ leadership.

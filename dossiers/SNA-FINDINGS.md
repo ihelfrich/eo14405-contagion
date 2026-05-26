@@ -138,7 +138,7 @@ Lutnick, Brandon Lutnick, Cantor Fitzgerald, USAT, Bo Hines, Twenty
 One Capital. This is the offshore-USDT economic engine and its
 U.S.-cabinet-level conduit. The community is small because Tether's
 own corporate stack is shallow (a handful of named officers); the
-heavy edges are the Cantor 5 percent stake, the custody of $141 billion
+heavy edges are the Cantor 5 percent stake, the custody of \$141 billion
 in Tether's reported Treasury reserves, the USAT launch through
 Anchorage in January 2026, and the SPAC business combination with
 SoftBank that took the stack public. (see `tether-ifinex.md`.)
@@ -154,14 +154,14 @@ content.
 |---|---|---:|---|
 | 1 | Donald Trump | 0.473 | Holds the kinship and ownership edges that fan out across the entire graph. The graph centrality matches the political-economy claim in `trump-wlfi.md`: the signing principal is also the contractual beneficiary. |
 | 2 | Stephen Miran | 0.162 | Triple-counted: ex-Hudson Bay Capital, ex-CEA Chair, current Fed Governor (see `trump-admin-financial-roster.md` and `fed-board.md`). The "Mar-a-Lago Accord" framework is the intellectual scaffold the EO sits on. |
-| 3 | Marc Andreessen | 0.211 | Coinbase board director since December 2020, a16z co-founder, $2.5M MAGA PAC personal donor in 2024 (see `sacks-a16z-quintenz.md`). The single node that connects industry capital, the issuer roster, and the political donor base. |
-| 4 | Ben Horowitz | 0.156 | a16z co-founder, $2.5M personal MAGA PAC donation 2024 (see `sacks-a16z-quintenz.md`). Co-anchor of the second community. |
-| 5 | Scott Bessent | 0.140 | Treasury Secretary; ex-Key Square Group founder; disclosed $250K to $500K IBIT position at nomination with a March 2025 divestment pledge (see `trump-admin-financial-roster.md`). Sets the GENIUS Act implementing posture. |
+| 3 | Marc Andreessen | 0.211 | Coinbase board director since December 2020, a16z co-founder, \$2.5M MAGA PAC personal donor in 2024 (see `sacks-a16z-quintenz.md`). The single node that connects industry capital, the issuer roster, and the political donor base. |
+| 4 | Ben Horowitz | 0.156 | a16z co-founder, \$2.5M personal MAGA PAC donation 2024 (see `sacks-a16z-quintenz.md`). Co-anchor of the second community. |
+| 5 | Scott Bessent | 0.140 | Treasury Secretary; ex-Key Square Group founder; disclosed \$250K to \$500K IBIT position at nomination with a March 2025 divestment pledge (see `trump-admin-financial-roster.md`). Sets the GENIUS Act implementing posture. |
 | 6 | Christopher Waller | 0.137 | Fed Governor; intellectual author of the "skinny master account" framework EO 14405 ratifies (see `fed-board.md`). Policy conflict rather than financial conflict, but the policy conflict is exact. |
-| 7 | Kevin Hassett | 0.137 | NEC Director; chairs the White House Digital Assets Working Group while holding $1M to $5M Coinbase common stock per June 2025 OGE filing (see `trump-admin-financial-roster.md`). |
+| 7 | Kevin Hassett | 0.137 | NEC Director; chairs the White House Digital Assets Working Group while holding \$1M to \$5M Coinbase common stock per June 2025 OGE filing (see `trump-admin-financial-roster.md`). |
 | 8 | Brian Quintenz | 0.128 | ex-CFTC Commissioner, ex-a16z Global Head of Policy, withdrawn CFTC Chair nominee (see `sacks-a16z-quintenz.md`). Withdrawal under Winklevoss pressure illustrates the limits of the network's coordination. |
-| 9 | William Pulte | 0.122 | FHFA Director; $500K-$1M each in Bitcoin and Solana not divested while issuing the June 25, 2025 FHFA directive ordering Fannie and Freddie to "study" crypto as mortgage reserves (see `trump-admin-financial-roster.md`). |
-| 10 | Howard Lutnick | 0.117 | Commerce Secretary; family retains operational control of Cantor Fitzgerald via Brandon Lutnick; Cantor holds ~5% Tether equity and custodies the majority of Tether's ~$141B Treasury reserves (see `tether-ifinex.md`). |
+| 9 | William Pulte | 0.122 | FHFA Director; \$500K-\$1M each in Bitcoin and Solana not divested while issuing the June 25, 2025 FHFA directive ordering Fannie and Freddie to "study" crypto as mortgage reserves (see `trump-admin-financial-roster.md`). |
+| 10 | Howard Lutnick | 0.117 | Commerce Secretary; family retains operational control of Cantor Fitzgerald via Brandon Lutnick; Cantor holds ~5% Tether equity and custodies the majority of Tether's ~\$141B Treasury reserves (see `tether-ifinex.md`). |
 
 The pattern is internally consistent. The top ten are the people the
 dossiers also flag as the highest-risk conflict surface, in roughly the
@@ -284,8 +284,8 @@ fall apart.
    U.S.-domiciled issuer. (see `tether-ifinex.md`.)
 
 4. **Kevin Hassett.** Connects the cabinet (as NEC Director) to Coinbase
-   (as a Coinbase Global Advisory Council member receiving $50,001
-   before his appointment, then holding $1M to $5M in COIN common
+   (as a Coinbase Global Advisory Council member receiving \$50,001
+   before his appointment, then holding \$1M to \$5M in COIN common
    stock per the June 2025 OGE filing he did not divest) to the
    inter-agency policy file (as the chair of the White House Digital
    Assets Working Group). The July 2025 Working Group report on
@@ -313,7 +313,7 @@ report. To verify, here is where to look in the open record.
 1. **Trump-family revenue claim.** Open SEC EDGAR, search CIK 0002043140
    for World Liberty Financial, read the Form D/A filed July 3, 2025.
    The officers of record (Folkman, Herro) and the Reg-D sales figure
-   ($52.1 million across 1,966 investors) are there. The 75 percent
+   (\$52.1 million across 1,966 investors) are there. The 75 percent
    protocol-revenue claim through DT Marks DEFI LLC is in WLFI's
    separate disclosures, not the EDGAR filings; the gap between the
    two records is itself worth noting. (Companion: `trump-wlfi.md`.)
@@ -328,8 +328,8 @@ report. To verify, here is where to look in the open record.
 
 3. **Fairshake total spend.** Pull FEC committee filings for committee
    ID C00835959 (Fairshake), C00836221 (Defend American Jobs), C00848440
-   (Protect Progress). OpenSecrets aggregates these. The reported $260.07
-   million raised and $195.83 million spent in the 2023-2024 cycle are
+   (Protect Progress). OpenSecrets aggregates these. The reported \$260.07
+   million raised and \$195.83 million spent in the 2023-2024 cycle are
    directly verifiable. The top-three-donor figure (approximately 84
    percent of funding from Coinbase, Ripple, and a16z partners) requires
    adding the Schedule A receipts. (Companion: `fairshake-campaign-finance.md`.)
@@ -352,19 +352,19 @@ report. To verify, here is where to look in the open record.
 
 6. **Hassett Coinbase position.** The June 2025 OGE financial disclosure
    for senior White House officials is referenced in Crypto Times
-   reporting and is the canonical source for the $1M to $5M COIN figure.
-   The pre-NEC $50,001 from Coinbase Global Advisory Council service
+   reporting and is the canonical source for the \$1M to \$5M COIN figure.
+   The pre-NEC \$50,001 from Coinbase Global Advisory Council service
    should appear in the same filing. (Companion:
    `trump-admin-financial-roster.md`.)
 
 7. **Pulte FHFA crypto directive.** The June 25, 2025 directive itself
    is on the FHFA website. The crypto.news and American Prospect
-   reporting names the $500K-$1M each Bitcoin and Solana positions plus
+   reporting names the \$500K-\$1M each Bitcoin and Solana positions plus
    the MARA Holdings equity. (Companion:
    `trump-admin-financial-roster.md`.)
 
 8. **Affinity Partners Form ADV.** The March 22, 2026 amendment is
-   available via SEC IAPD search for A Fin Management LLC. The $6.16
+   available via SEC IAPD search for A Fin Management LLC. The \$6.16
    billion AUM and the LP composition (Saudi PIF, Qatar Investment
    Authority, Lunate) are in the filing. The Wyden letter of September
    24, 2024 has the most detail on the fee structure. (Companion:
@@ -372,7 +372,7 @@ report. To verify, here is where to look in the open record.
 
 9. **Senate Banking 2024 IE spending.** Pull FEC committee filings
    C00836221 (Defend American Jobs) for the Ohio Senate IE expenditures
-   against Sherrod Brown ($40.1 million). The Coindesk September 26,
+   against Sherrod Brown (\$40.1 million). The Coindesk September 26,
    2024 piece aggregates these. (Companion:
    `fairshake-campaign-finance.md`, `congress-finance-committees.md`.)
 

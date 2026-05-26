@@ -6,7 +6,7 @@
 
 ---
 
-## The argument in ninety seconds
+## The argument
 
 Executive Order 14405 directs the Federal Reserve to consider giving stablecoin issuers and other non-bank fintechs direct access to Federal Reserve payment accounts. Today these issuers route reserves through commercial banks. The order would let them park reserves at the Fed itself, the same way a member bank does. Every standard measure of contagion risk improves under the new regime: stablecoin runs become substantially less likely and substantially less severe. But the loss-absorption mechanism shifts location rather than vanishing. Under the current system, a stablecoin failure transmits to commercial bank shareholders. Under the order, it transmits to the Federal Reserve's balance sheet, where the cost depends on the rate the Fed charges for emergency liquidity. That rate has not been set. The administration that signed the order will appoint the chair who sets it. The President's family holds a 75 percent revenue claim on one of the largest beneficiaries. Whether the order is, on net, a good idea depends on choices that have not yet been made by actors whose incentives are not neutral. I think it is more likely to be welfare-degrading than welfare-improving, and I hold that view with moderate confidence.
 
@@ -75,11 +75,11 @@ I find the first argument partially persuasive, the second wholly persuasive, an
 
 ---
 
-## Part 2. The mechanism, considered carefully
+## Part 2. The mechanism
 
 Stablecoin issuers like Circle (USDC) and Tether (USDT) maintain their dollar peg by holding reserves of safe assets equal to or exceeding the value of their circulating tokens. When a holder wants to redeem a token for a dollar, the issuer pays from those reserves. Under the current regime, the reserves are mostly held as short-duration US Treasury bills (held directly or through a money market fund) and as deposits at commercial banks. The bank-deposit portion is where the stress transmits.
 
-In March 2023, Circle held approximately $3.3 billion of USDC reserves at Silicon Valley Bank, which was 8 percent of total reserves at the time. When SVB entered FDIC receivership on Friday March 10, Circle disclosed the exposure at 10pm Eastern that evening. The secondary market for USDC began trading below the peg almost immediately. By Saturday morning USDC was trading at about 87 cents. The DAI Peg Stability Module, an automated mechanism that allows one-to-one exchange between DAI and USDC, absorbed approximately a billion dollars per day of USDC during peak stress, dragging DAI's price below peg even though DAI's collateral was structurally independent of USDC's reserves. Primary-market redemptions for USDC were suspended during the weekend, which had the unintended effect of removing the only authoritative price-discovery mechanism. USDC's trough was about 86 cents. The peg was restored only after a joint Treasury-Federal Reserve-FDIC backstop announcement on Sunday evening March 12, with Circle resuming primary-market redemptions Monday morning. The Federal Reserve published its own post-mortem in FEDS Notes on December 17, 2025 ([primary source](https://www.federalreserve.gov/econres/notes/feds-notes/in-the-shadow-of-bank-run-lessons-from-the-silicon-valley-bank-failure-and-its-impact-on-stablecoins-20251217.html)).
+In March 2023, Circle held approximately \$3.3 billion of USDC reserves at Silicon Valley Bank, which was 8 percent of total reserves at the time. When SVB entered FDIC receivership on Friday March 10, Circle disclosed the exposure at 10pm Eastern that evening. The secondary market for USDC began trading below the peg almost immediately. By Saturday morning USDC was trading at about 87 cents. The DAI Peg Stability Module, an automated mechanism that allows one-to-one exchange between DAI and USDC, absorbed approximately a billion dollars per day of USDC during peak stress, dragging DAI's price below peg even though DAI's collateral was structurally independent of USDC's reserves. Primary-market redemptions for USDC were suspended during the weekend, which had the unintended effect of removing the only authoritative price-discovery mechanism. USDC's trough was about 86 cents. The peg was restored only after a joint Treasury-Federal Reserve-FDIC backstop announcement on Sunday evening March 12, with Circle resuming primary-market redemptions Monday morning. The Federal Reserve published its own post-mortem in FEDS Notes on December 17, 2025 ([primary source](https://www.federalreserve.gov/econres/notes/feds-notes/in-the-shadow-of-bank-run-lessons-from-the-silicon-valley-bank-failure-and-its-impact-on-stablecoins-20251217.html)).
 
 The key mechanism is this: a stablecoin run is governed by holder coordination, not by issuer fundamentals. A holder of USDC who sees the news on Friday night has to decide whether to redeem. If she expects others to redeem, she will redeem too, because secondary-market discounts compound under redemption pressure and the issuer can suspend primary redemptions to manage liquidity. If she expects others to roll over, she will roll over too. The two equilibria coexist. The question of which equilibrium occurs is determined by the marginal holder's expectation about everyone else's behavior.
 
@@ -97,7 +97,7 @@ where $\ell$ is the bare solvency threshold, $\lambda$ is the run-fragility para
 
 [*A hint, if you want one: rearrange the formula and use $\Phi^{-1}(1 - r) = (1 - \ell) / \lambda$ when $\theta^\star = 1.0$.*]
 
-[*A solution, if you want to check yours: $\Phi^{-1}(1 - r) = 0.20$, so $1 - r = \Phi(0.20) = 0.5793$, so $r \approx 0.42$, which is roughly a 42 percent annualized yield. That is implausibly high for risk-free assets, which tells you that no realistic yield available to a stablecoin holder can fully stabilize the peg against a serious fundamental impairment under the current $\lambda$.*]
+[*A solution, if you want to check yours: $\Phi^{-1}(1 - r) = 0.20$, so \$1 - r = \Phi(0.20) = 0.5793$, so $r \approx 0.42$, which is roughly a 42 percent annualized yield. That is implausibly high for risk-free assets, which tells you that no realistic yield available to a stablecoin holder can fully stabilize the peg against a serious fundamental impairment under the current $\lambda$.*]
 
 EO 14405 affects this equation through two channels. First, by giving stablecoin issuers direct access to Federal Reserve master accounts, holders can earn the interest-on-reserve-balances rate, currently approximately 4.5 percent. Under the current regime, holders of USDC reserves earn near-zero deposit yields at commercial banks. The rollover yield $r$ rises by roughly four hundred to four hundred fifty basis points. Second, by allowing T+0 settlement directly through the Fed payment system rather than through commercial-bank rails that operate T+1 or worse during stress, the marginal redemption cost $\lambda$ falls. The composite effect is to push $\theta^\star$ down. The model-implied probability of a run, integrated against a common public prior over the fundamental state, falls in our calibration from approximately 0.90 to approximately 0.18.
 
@@ -109,7 +109,7 @@ That looks like progress.
 
 The complication is not what the calibration says about run probability. It is what the calibration is silent about.
 
-In the current regime, the absorption mechanism when a stablecoin redemption shock hits is the commercial banking system. Banks hold the stablecoin reserves; banks face the immediate cash outflow when redemptions spike; banks then either honor the redemptions from their own liquidity, or they fail. Failure transmits to FDIC-insured depositors and is partly socialized through deposit insurance, but the residual losses fall on commercial-bank shareholders. Silicon Valley Bank shareholders lost approximately $40 billion in equity value in March 2023, with that loss absorbing some of the spillover that would otherwise have hit USDC holders.
+In the current regime, the absorption mechanism when a stablecoin redemption shock hits is the commercial banking system. Banks hold the stablecoin reserves; banks face the immediate cash outflow when redemptions spike; banks then either honor the redemptions from their own liquidity, or they fail. Failure transmits to FDIC-insured depositors and is partly socialized through deposit insurance, but the residual losses fall on commercial-bank shareholders. Silicon Valley Bank shareholders lost approximately \$40 billion in equity value in March 2023, with that loss absorbing some of the spillover that would otherwise have hit USDC holders.
 
 In the post-EO regime, when a stablecoin redemption shock hits, the absorption mechanism shifts. Reserves are at the Federal Reserve, not at a commercial bank. The Fed has effectively infinite balance sheet capacity. If redemptions spike, the issuer's master account balance falls. If the issuer is solvent and the redemption pressure is liquidity-driven rather than solvency-driven, the Fed can extend emergency liquidity, the same kind of facility the Fed has used in March 2020, in March 2023 with the Bank Term Funding Program, and in the November 2008 crisis. The price of that facility is implicit. Whether the rate the Fed lends at corresponds to the risk-fair rate is a question that, in past episodes, has been answered in favor of the borrower.
 
@@ -125,7 +125,7 @@ $$W^{post} - W^{pre} = -\tfrac{1}{3}\left[(L_H^{post} - L_H^{pre}) + (L_B^{post}
 
 Calibrated values (USD billions): $L_H^{pre} = 15.10$, $L_H^{post} = 0.15$, $L_B^{pre} = 52.00$, $L_B^{post} = 13.00$, $L_T^{pre} = 0$, $L_T^{post} = \boxed{?}$.
 
-The taxpayer loss in the post-EO regime is the Fed liquidity draw times the implicit subsidy rate. The Fed liquidity draw in our baseline scenario is $12 billion. At a 30 bp subsidy rate, $L_T^{post} = 0.30\% \times 12 = 0.036$ billion. Verify: $W^{post} - W^{pre} = -\tfrac{1}{3}[(0.15 - 15.10) + (13.00 - 52.00) + (0.036 - 0)] \approx +17.97$ billion. The EO is welfare-improving under equal weights.
+The taxpayer loss in the post-EO regime is the Fed liquidity draw times the implicit subsidy rate. The Fed liquidity draw in our baseline scenario is \$12 billion. At a 30 bp subsidy rate, $L_T^{post} = 0.30\% \times 12 = 0.036$ billion. Verify: $W^{post} - W^{pre} = -\tfrac{1}{3}[(0.15 - 15.10) + (13.00 - 52.00) + (0.036 - 0)] \approx +17.97$ billion. The EO is welfare-improving under equal weights.
 
 Now do the exercise. At what subsidy rate $s^\star$ does the welfare effect flip sign? Solve $(0.15 - 15.10) + (13.00 - 52.00) + (s^\star \times 12) = 0$.
 
@@ -139,7 +139,7 @@ This is the question the executive order does not specify: what social weights d
 
 The technical appendix runs four parallel analytical frameworks against the same calibration:
 
-**Eisenberg-Noe (2001) fixed-point clearing**, which solves for the clearing payment vector in the bilateral-exposure network under a regional-bank failure shock. Glasserman-Young amplification, the standard summary statistic, is 1.27 in the pre-EO regime (very close to the published median for real interbank networks) and 1.00 in the post-EO regime (no network amplification beyond the direct shock). Cascade depth contracts from one round to zero rounds. The stablecoin-channel creditor loss falls from $15.95 billion to zero.
+**Eisenberg-Noe (2001) fixed-point clearing**, which solves for the clearing payment vector in the bilateral-exposure network under a regional-bank failure shock. Glasserman-Young amplification, the standard summary statistic, is 1.27 in the pre-EO regime (very close to the published median for real interbank networks) and 1.00 in the post-EO regime (no network amplification beyond the direct shock). Cascade depth contracts from one round to zero rounds. The stablecoin-channel creditor loss falls from \$15.95 billion to zero.
 
 **Morris-Shin (1998, 2003) global game**, which solves for the endogenous run threshold under noisy private holder information. As discussed above, the threshold falls from 1.95 to 1.17 fundamental-units, and the model-implied run probability falls from 0.90 to 0.18.
 
@@ -171,12 +171,12 @@ A sitting president signed an executive order with provisions that materially be
 
 That sentence is a paraphrase of the dossier evidence. The primary sources are below.
 
-- **Trump-WLFI revenue channel**: SEC Form D/A filings under CIK 0002043140 (look up at [sec.gov/edgar](https://www.sec.gov/edgar)); WLFI Reg-D raise total of $52,133,139 across 1,966 investors as of July 3, 2025; DT Marks DEFI LLC contractual claim to 75 percent of protocol revenue per WLFI's separate disclosures.
-- **Cantor-Tether equity stake**: Wall Street Journal coverage of November 4, 2024; Cantor Fitzgerald acquired a five percent equity stake in Tether via a ~$600 million convertible bond; Cantor custodies Tether's reported $141 billion of US Treasury reserves; Senators Warren and Wyden's fourth formal inquiry letter of April 30, 2026.
+- **Trump-WLFI revenue channel**: SEC Form D/A filings under CIK 0002043140 (look up at [sec.gov/edgar](https://www.sec.gov/edgar)); WLFI Reg-D raise total of \$52,133,139 across 1,966 investors as of July 3, 2025; DT Marks DEFI LLC contractual claim to 75 percent of protocol revenue per WLFI's separate disclosures.
+- **Cantor-Tether equity stake**: Wall Street Journal coverage of November 4, 2024; Cantor Fitzgerald acquired a five percent equity stake in Tether via a ~\$600 million convertible bond; Cantor custodies Tether's reported \$141 billion of US Treasury reserves; Senators Warren and Wyden's fourth formal inquiry letter of April 30, 2026.
 - **Sacks ethics waiver**: White House announcement of Sacks's SGE appointment January 2025; the broad ethics waiver issued March 5, 2025; Warren and Stansbury opened a formal investigation; OGE-278 was never released publicly.
 - **Quintenz revolving door**: CFTC Commissioner 2017-2021; a16z Global Head of Policy 2022-2025; nominated CFTC Chair, withdrew September 2025 under Winklevoss pressure over a Gemini complaint.
 - **Tarbert revolving door**: 14th CFTC Chairman 2019-2021; current President of Circle Internet Group (NYSE:CRCL).
-- **Fairshake PAC**: FEC committee C00835959; raised approximately $260M, spent approximately $196M in 2023-2024 cycle; top three donors (Coinbase, Ripple, a16z partners) account for approximately 84 percent of funding; 53 wins of 58 targeted races; defeated sitting Senate Banking Chair Sherrod Brown with approximately $40 million spent against him.
+- **Fairshake PAC**: FEC committee C00835959; raised approximately \$260M, spent approximately \$196M in 2023-2024 cycle; top three donors (Coinbase, Ripple, a16z partners) account for approximately 84 percent of funding; 53 wins of 58 targeted races; defeated sitting Senate Banking Chair Sherrod Brown with approximately \$40 million spent against him.
 
 ### Verify this yourself
 
@@ -244,7 +244,7 @@ I will list six specific ways the analysis above could be wrong. If you find any
 
 ---
 
-## Part 8. The synthesis, briefly stated
+## Part 8. Synthesis
 
 EO 14405 is a topology shift on the financial-network exposure graph. It systematically reduces stablecoin run risk in every standard contagion metric, by removing commercial-bank intermediation between stablecoin issuers and the Federal Reserve. The reduction is real and large. The Wasserstein-1 run severity falls by 95 percent. The Eisenberg-Noe amplification falls from 1.27 to 1.00. The global-game run probability falls from 0.90 to 0.18. The spectral radius falls from 0.87 to 0.42. The technical case for the order's contagion-reducing effects is solid.
 

@@ -1,7 +1,9 @@
 # EO 14405 contagion model
 
-Companion code for the LinkedIn article ["EO 14405 doesn't eliminate
-stablecoin contagion. It relocates it onto the Fed's balance sheet."](article.md)
+Companion code and dossiers for the working paper *Stablecoin Run Risk
+Under Direct Federal Reserve Access*. Live versions of the paper, the
+long-form blog research note, the 700-word summary, and the OSINT
+dossiers are at [ihelfrich.github.io/eo14405-contagion](https://ihelfrich.github.io/eo14405-contagion/).
 
 Tests whether direct Federal Reserve master-account access for stablecoin
 issuers (the structural change in [EO 14405](https://www.federalregister.gov/d/2026-10399))
@@ -17,8 +19,8 @@ Same shock (an SVB-class regional bank fails), two regimes:
 | USDC peg trough                         | 0.898    | 0.998    |
 | Time to peg restoration                 | 69 h     | 30 h     |
 | System-wide contagion score             | 37.05    | 0.43     |
-| Peak Fed master-account liquidity draw  | $0       | $12.1B   |
-| Peak commercial-bank equity drawdown    | $52B     | $13B     |
+| Peak Fed master-account liquidity draw  | \$0       | \$12.1B   |
+| Peak commercial-bank equity drawdown    | \$52B     | \$13B     |
 
 The post-EO regime cuts contagion magnitude by ~99% but transfers the
 absorption mechanism onto the Fed's balance sheet. The Fed is now the

@@ -4,7 +4,7 @@
 
 ## Executive summary
 
-Circle Internet Group (NYSE: CRCL, CIK 1876042) and Coinbase Global (NASDAQ: COIN, CIK 1679788) are the two US-listed entities with the most direct upside from Executive Order 14405's instruction that the Federal Reserve evaluate non-bank access to master accounts and payment services. USDC, the second-largest stablecoin (roughly $70B in circulation as of February 2026, ~$78B by April 2026), is issued by Circle, with its reserves predominantly held in the BlackRock-managed Circle Reserve Fund and in bank deposits custodied at BNY Mellon. Coinbase, through the dissolved Centre Consortium and the restructured August 2023 commercial agreement, shares the interest income generated on USDC reserves and runs the largest distribution channel for USDC by trading and wallet volume. Both companies have unusually direct conflicts with US financial-stability policy: Circle's President is Heath Tarbert, the former 14th CFTC Chair; Coinbase's CEO Brian Armstrong has sold roughly $550M of stock in the year leading into January 2026 under a 10b5-1 plan adopted Aug 15, 2024; Coinbase founded and continues to fund Stand With Crypto and Fairshake, the largest crypto super-PAC of the 2024 cycle. The SEC's June 2023 enforcement action against Coinbase was dismissed with prejudice in February 2025.
+Circle Internet Group (NYSE: CRCL, CIK 1876042) and Coinbase Global (NASDAQ: COIN, CIK 1679788) are the two US-listed entities with the most direct upside from Executive Order 14405's instruction that the Federal Reserve evaluate non-bank access to master accounts and payment services. USDC, the second-largest stablecoin (roughly \$70B in circulation as of February 2026, ~\$78B by April 2026), is issued by Circle, with its reserves predominantly held in the BlackRock-managed Circle Reserve Fund and in bank deposits custodied at BNY Mellon. Coinbase, through the dissolved Centre Consortium and the restructured August 2023 commercial agreement, shares the interest income generated on USDC reserves and runs the largest distribution channel for USDC by trading and wallet volume. Both companies have unusually direct conflicts with US financial-stability policy: Circle's President is Heath Tarbert, the former 14th CFTC Chair; Coinbase's CEO Brian Armstrong has sold roughly \$550M of stock in the year leading into January 2026 under a 10b5-1 plan adopted Aug 15, 2024; Coinbase founded and continues to fund Stand With Crypto and Fairshake, the largest crypto super-PAC of the 2024 cycle. The SEC's June 2023 enforcement action against Coinbase was dismissed with prejudice in February 2025.
 
 ## Circle Internet Financial (CRCL)
 
@@ -32,14 +32,14 @@ Auditor history (relevant for attestation credibility):
 
 | Date | Circulating supply (USD) | Source |
 |---|---|---|
-| Jan 2023 | ~$44B | Coinmetrics, Chainalysis |
-| Mar 2023 (post-SVB low) | ~$33B | Chainalysis SVB-depeg analysis |
-| Early 2024 | ~$33B | eco.com support, citing Q1 2026 retro |
-| End 2024 | ~$42B | eco.com |
-| Feb 2025 | $54.95B (Feb 4) / $56.28B (Feb 28) | secondary aggregator |
-| June 2025 (IPO) | ~$61B | S-1 cover page (Stocktitan) |
-| Feb 2026 | ~$70B | secondary aggregator |
-| Apr 2026 | ~$78B | eco.com |
+| Jan 2023 | ~\$44B | Coinmetrics, Chainalysis |
+| Mar 2023 (post-SVB low) | ~\$33B | Chainalysis SVB-depeg analysis |
+| Early 2024 | ~\$33B | eco.com support, citing Q1 2026 retro |
+| End 2024 | ~\$42B | eco.com |
+| Feb 2025 | \$54.95B (Feb 4) / \$56.28B (Feb 28) | secondary aggregator |
+| June 2025 (IPO) | ~\$61B | S-1 cover page (Stocktitan) |
+| Feb 2026 | ~\$70B | secondary aggregator |
+| Apr 2026 | ~\$78B | eco.com |
 
 The trough is the March 2023 depeg episode. Circulating supply lost roughly a quarter of its float in the four weeks following the SVB disclosure and did not recover to pre-SVB levels until well into 2024. (Source: Federal Reserve FEDS Notes, "In the Shadow of Bank Runs: Lessons from the Silicon Valley Bank Failure and Its Impact on Stablecoins", 2025-12-17.)
 
@@ -49,7 +49,7 @@ The trough is the March 2023 depeg episode. Circulating supply lost roughly a qu
 |---|---|---|---|
 | Pre-2022 | Mixed cash + commercial paper | None | Commercial paper exposure attested by Grant Thornton |
 | 2022 (post-Mar) | Bank deposits at BNY/SVB/SilverGate/Signature/Customers/Cross River | Circle Reserve Fund launched | First clean separation into 2a-7 fund |
-| Mar 10, 2023 | $3.3B at SVB (8% of reserves) | Bulk in Reserve Fund | Disclosed Friday night, depeg overnight |
+| Mar 10, 2023 | \$3.3B at SVB (8% of reserves) | Bulk in Reserve Fund | Disclosed Friday night, depeg overnight |
 | Mid-2023 onward | BNY Mellon as primary custodian | ~87% in Circle Reserve Fund | Bank concentration reduced |
 | 2024–2026 | BNY Mellon dominant | BlackRock-managed Reserve Fund dominant | S-1 disclosure |
 
@@ -91,14 +91,14 @@ Brian Armstrong adopted a Rule **10b5-1 plan on August 15, 2024**, and has execu
 
 | Date | Shares / proceeds | Price range |
 |---|---|---|
-| 2024-11-18 | ~$293.9M sold | $289.13–$326.58 |
-| 2024-11-25 | 25,000 shares (~$7.68M) | $305.33–$309.18 |
-| 2025-06-25/26 | 449,155 Class A converted-and-sold (~$163M gross) | $358.00–$369.25 |
-| 2025-08-12 | 25,000 Class A | $324.33–$329.52 |
-| 2025-09-04 | 12,643 + 6,474 + 5,883 shares | $301.43 / $302.57 / $303.39 |
-| 2025-11-03 | ~$8.4M total | $335.12–$340.15 |
+| 2024-11-18 | ~\$293.9M sold | \$289.13–\$326.58 |
+| 2024-11-25 | 25,000 shares (~\$7.68M) | \$305.33–\$309.18 |
+| 2025-06-25/26 | 449,155 Class A converted-and-sold (~\$163M gross) | \$358.00–\$369.25 |
+| 2025-08-12 | 25,000 Class A | \$324.33–\$329.52 |
+| 2025-09-04 | 12,643 + 6,474 + 5,883 shares | \$301.43 / \$302.57 / \$303.39 |
+| 2025-11-03 | ~\$8.4M total | \$335.12–\$340.15 |
 
-Aggregate sales over the year ending January 2026 are reported at roughly **$550M, more than 1.5M shares**. (Sources: coinpaprika.com "Coinbase CEO Armstrong Sells $550M Stock Over Past Year"; coinpedia.org corroborates.) The current Form 4 activity in May 2026 (accessions 0001679788-26-000055 through -000060) reflects continued execution under the 10b5-1 plan.
+Aggregate sales over the year ending January 2026 are reported at roughly **\$550M, more than 1.5M shares**. (Sources: coinpaprika.com "Coinbase CEO Armstrong Sells \$550M Stock Over Past Year"; coinpedia.org corroborates.) The current Form 4 activity in May 2026 (accessions 0001679788-26-000055 through -000060) reflects continued execution under the 10b5-1 plan.
 
 ### SEC v. Coinbase resolution
 
@@ -107,20 +107,20 @@ Filed June 6, 2023 in the Southern District of New York. On **February 21, 2025*
 ### Stand With Crypto and Fairshake
 
 - **Stand With Crypto** founded by Coinbase in **August 2023** (not October 2023; the Coinbase blog "Crypto is Here to Stay" predates Oct). It registered a PAC in May 2024 to channel ~450,000 member contributions toward 2024 federal candidates. (Source: Coinbase blog; cointelegraph 2024-05.)
-- **Fairshake** super-PAC: founded March 2023; Coinbase made **at least six separate contributions**; total Fairshake raise from inception through December 2024 was **$260M** across 75 contributions. Coinbase's documented $25M donation on June 3, 2024 came days after Biden's veto of the SAB 121-overturning resolution. A further $25M Coinbase pledge was reported October 31, 2024. (Sources: Wikipedia "Fairshake"; Fortune Crypto 2024-06-03; Bloomberg 2024-10-31; cointelegraph "Crypto-backed group gathers $141M funding to influence US elections.")
+- **Fairshake** super-PAC: founded March 2023; Coinbase made **at least six separate contributions**; total Fairshake raise from inception through December 2024 was **\$260M** across 75 contributions. Coinbase's documented \$25M donation on June 3, 2024 came days after Biden's veto of the SAB 121-overturning resolution. A further \$25M Coinbase pledge was reported October 31, 2024. (Sources: Wikipedia "Fairshake"; Fortune Crypto 2024-06-03; Bloomberg 2024-10-31; cointelegraph "Crypto-backed group gathers \$141M funding to influence US elections.")
 
 ## Centre Consortium chronology
 
 - **Sept 2018**: Founded as a joint venture between Circle and Coinbase to govern USDC issuance, reserves, and protocol changes.
 - **2018–2022**: Operated as the formal governance body; Coinbase and Circle each had equal seats and shared in attestation responsibilities.
-- **Mar 10–13, 2023**: Centre's standardised reserve disclosures forced Circle to publicly confirm $3.3B SVB exposure on the night of March 10. USDC depegged to ~$0.87 by 2 AM Mar 11. FDIC's Mar 12 announcement that all SVB depositors would be made whole restored the peg by Mar 13. (Source: CoinDesk 2023-03-11; CNBC 2023-03-11; Federal Reserve FEDS Notes 2025-12.)
-- **Aug 21, 2023**: Circle and Coinbase **dissolved Centre**. Stated rationale: "regulatory clarity makes the consortium structure no longer necessary." Coinbase acquired a minority equity stake in Circle (widely reported at ~$210M valuation contribution against an undisclosed share count; **[uncertain on exact percentage equity]**). Aurpay's "$908M" figure for the total deal appears to be a derived/speculative number, not a direct Circle disclosure. (Sources: CoinDesk 2023-08-21; Fortune Crypto 2023-08-21; Decrypt 2023-08-21.)
+- **Mar 10–13, 2023**: Centre's standardised reserve disclosures forced Circle to publicly confirm \$3.3B SVB exposure on the night of March 10. USDC depegged to ~\$0.87 by 2 AM Mar 11. FDIC's Mar 12 announcement that all SVB depositors would be made whole restored the peg by Mar 13. (Source: CoinDesk 2023-03-11; CNBC 2023-03-11; Federal Reserve FEDS Notes 2025-12.)
+- **Aug 21, 2023**: Circle and Coinbase **dissolved Centre**. Stated rationale: "regulatory clarity makes the consortium structure no longer necessary." Coinbase acquired a minority equity stake in Circle (widely reported at ~\$210M valuation contribution against an undisclosed share count; **[uncertain on exact percentage equity]**). Aurpay's "\$908M" figure for the total deal appears to be a derived/speculative number, not a direct Circle disclosure. (Sources: CoinDesk 2023-08-21; Fortune Crypto 2023-08-21; Decrypt 2023-08-21.)
 
 ## Custody bank relationships
 
 ### Pre-March 2023
 
-USDC reserves were spread across **Silicon Valley Bank, Silvergate, Signature Bank, Customers Bank, Cross River Bank, and BNY Mellon**. The $3.3B SVB exposure represented 8% of approximately $40B in reserves at the time. Silvergate's voluntary wind-down (announced March 8, 2023) and Signature's takeover (March 12) further compressed Circle's banking optionality during the same week.
+USDC reserves were spread across **Silicon Valley Bank, Silvergate, Signature Bank, Customers Bank, Cross River Bank, and BNY Mellon**. The \$3.3B SVB exposure represented 8% of approximately \$40B in reserves at the time. Silvergate's voluntary wind-down (announced March 8, 2023) and Signature's takeover (March 12) further compressed Circle's banking optionality during the same week.
 
 ### Post-SVB shift
 
@@ -148,10 +148,10 @@ The contagion concern for the working paper: a Fed master account converts what 
 
 - EDGAR filings via `forensic-econ`: CIK 1876042 (Circle), CIK 1679788 (Coinbase).
 - Federal Reserve FEDS Notes, "In the Shadow of Bank Runs: Lessons from the Silicon Valley Bank Failure and Its Impact on Stablecoins", 2025-12-17. https://www.federalreserve.gov/econres/notes/feds-notes/in-the-shadow-of-bank-run-lessons-from-the-silicon-valley-bank-failure-and-its-impact-on-stablecoins-20251217.html
-- CoinDesk, "Circle Confirms $3.3B of USDC's Cash Reserves Stuck at Failed Silicon Valley Bank", 2023-03-11.
-- CNBC, "Stablecoin USDC breaks dollar peg after firm reveals it has $3.3 billion in SVB exposure", 2023-03-11.
+- CoinDesk, "Circle Confirms \$3.3B of USDC's Cash Reserves Stuck at Failed Silicon Valley Bank", 2023-03-11.
+- CNBC, "Stablecoin USDC breaks dollar peg after firm reveals it has \$3.3 billion in SVB exposure", 2023-03-11.
 - Circle press release, "Circle Selects BNY Mellon to Custody USDC Reserves", March 2022.
-- Stocktitan, summary of CRCL S-1 (10M shares, $61B USDC circulating).
+- Stocktitan, summary of CRCL S-1 (10M shares, \$61B USDC circulating).
 - Kavout, "What's Fueling Circle's Revenue Surge and Record Margins."
 - Blockworks, "Circle Taps Deloitte as New Auditor."
 - CoinDesk, "Coinbase Gets a Stake in Stablecoin Operator Circle and USDC Adds 6 New Blockchains", 2023-08-21.
@@ -159,11 +159,11 @@ The contagion concern for the working paper: a Fed master account converts what 
 - CoinDesk, "Coinbase Case Dropped by U.S. SEC as Agency Reverses Crypto Stance", 2025-02-27.
 - Coinbase Form 8-K, accession 0001193125-25-031346.
 - Stocktitan, multiple Form 4 summaries for COIN insider trading.
-- Coinpaprika, "Coinbase CEO Armstrong Sells $550M Stock Over Past Year."
+- Coinpaprika, "Coinbase CEO Armstrong Sells \$550M Stock Over Past Year."
 - Coinbase blog, "Crypto is Here to Stay" (Stand With Crypto founding).
 - Wikipedia, "Fairshake" PAC entry.
-- Fortune Crypto, "Coinbase donates $25 million to super PAC Fairshake days after Biden vetoes crypto custody bill", 2024-06-03.
-- Bloomberg, "Coinbase Pledges Further $25 Million of Funding for Fairshake PAC", 2024-10-31.
+- Fortune Crypto, "Coinbase donates \$25 million to super PAC Fairshake days after Biden vetoes crypto custody bill", 2024-06-03.
+- Bloomberg, "Coinbase Pledges Further \$25 Million of Funding for Fairshake PAC", 2024-10-31.
 - Heath Tarbert: LinkedIn; Wikipedia; Circle leadership page; The Block "Former CFTC head joins Circle as chief legal officer"; CFTC press release 9146-25.
 - CoinDesk, "Trump orders government, Fed to review crypto firms' access to payment rails", 2026-05-19.
 - American Banker, "Trump issues EO to revisit Fed master accounts for fintechs."
@@ -177,4 +177,4 @@ The contagion concern for the working paper: a Fed master account converts what 
 4. Auditor succession claim "Grant Thornton then BDO" in the task brief: not corroborated. Deloitte is the attested successor since FY2022. The BDO confusion may be with Tether's auditor history.
 5. Exact percentage equity Coinbase holds in Circle post-August 2023 deal — secondary reports vary; primary source would be Circle's S-1 cap table footnotes.
 6. Customers Bank and Cross River Bank present-day status as USDC banking partners — confirmed as historical, status as of May 2026 not directly verified.
-7. The "$908M" Coinbase-Circle deal value circulating in some secondary outlets appears to be a derived figure; treat as unverified.
+7. The "\$908M" Coinbase-Circle deal value circulating in some secondary outlets appears to be a derived figure; treat as unverified.

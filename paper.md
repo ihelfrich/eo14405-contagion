@@ -18,7 +18,7 @@ For non-specialist readers: a stablecoin is a privately-issued token meant to tr
 
 ### Abstract
 
-Executive Order 14405 directs the Federal Reserve to evaluate, and where legally permissible to establish, direct Reserve-Bank master-account access for non-bank financial entities, including stablecoin issuers. The change shifts the topology along which stablecoin run risk transmits while leaving aggregate exposure substantially unchanged. I formalize this proposition in four complementary frameworks: (i) Eisenberg-Noe (2001) fixed-point clearing on the bilateral exposure network, (ii) the Morris-Shin (1998, 2003) global game for the endogenous run threshold, (iii) optimal-transport with cost matrices encoding regime-specific frictions for run-severity measurement, and (iv) an Acemoglu-Ozdaglar-Tahbaz-Salehi (2015) effective feedback operator for spectral contagion. Calibrating to the March 2023 USDC/SVB episode via Bayesian posterior inference, I show that under the post-EO regime: the run threshold $\theta^\star$ falls by approximately 0.78 fundamental-units, the model-implied run probability falls from 0.90 to 0.18 under a common public prior, the system-wide Wasserstein-1 run severity drops by roughly 95 percent, and the Perron-Frobenius eigenvalue $\lambda_{\max}$ of the effective loss-feedback matrix declines from 0.87 to 0.42. The unambiguous result is the reallocation of liquidity absorption from commercial banks to the Fed's residual claimants, who absorb on the order of $12\text{B}$ of liquidity-provision exposure in the baseline scenario. The expected fiscal subsidy cost of that exposure is much smaller under the baseline 30 bp subsidy calibration, so welfare conclusions are highly sensitive to whether the social loss function prices gross liquidity exposure, expected subsidy, or tail fiscal loss.
+Executive Order 14405 directs the Federal Reserve to evaluate, and where legally permissible to establish, direct Reserve-Bank master-account access for non-bank financial entities, including stablecoin issuers. The change shifts the topology along which stablecoin run risk transmits while leaving aggregate exposure substantially unchanged. I formalize this proposition in four complementary frameworks: (i) Eisenberg-Noe (2001) fixed-point clearing on the bilateral exposure network, (ii) the Morris-Shin (1998, 2003) global game for the endogenous run threshold, (iii) optimal-transport with cost matrices encoding regime-specific frictions for run-severity measurement, and (iv) an Acemoglu-Ozdaglar-Tahbaz-Salehi (2015) effective feedback operator for spectral contagion. Calibrating to the March 2023 USDC/SVB episode via Bayesian posterior inference, I show that under the post-EO regime: the run threshold $\theta^\star$ falls by approximately 0.78 fundamental-units, the model-implied run probability falls from 0.90 to 0.18 under a common public prior, the system-wide Wasserstein-1 run severity drops by roughly 95 percent, and the Perron-Frobenius eigenvalue $\lambda_{\max}$ of the effective loss-feedback matrix declines from 0.87 to 0.42. The unambiguous result is the reallocation of liquidity absorption from commercial banks to the Fed's residual claimants, who absorb on the order of \$12\text{B}$ of liquidity-provision exposure in the baseline scenario. The expected fiscal subsidy cost of that exposure is much smaller under the baseline 30 bp subsidy calibration, so welfare conclusions are highly sensitive to whether the social loss function prices gross liquidity exposure, expected subsidy, or tail fiscal loss.
 
 **Keywords:** stablecoins, financial-network contagion, optimal transport, global games, master account, EO 14405
 
@@ -66,10 +66,10 @@ The regime change under EO 14405 corresponds to a transformation of $L$ that (i)
 
 The model is calibrated to the March 2023 USDC depeg event. The relevant facts are (Federal Reserve 2025):
 
-- Circle held $3.3 billion of USDC reserves at Silicon Valley Bank (8 percent of total reserves) when SVB entered FDIC receivership on March 10, 2023.
-- Following Circle's disclosure at 10pm ET on Friday March 10, USDC primary redemption requests spiked to a total of $3.8 billion against $0.8 billion new mints by March 15.
-- USDC reached a trough of $0.86 on the secondary market.
-- The DAI Peg Stability Module absorbed approximately $1 billion of USDC daily during peak stress, dragging DAI's price below peg despite its separate collateral backing.
+- Circle held \$3.3 billion of USDC reserves at Silicon Valley Bank (8 percent of total reserves) when SVB entered FDIC receivership on March 10, 2023.
+- Following Circle's disclosure at 10pm ET on Friday March 10, USDC primary redemption requests spiked to a total of \$3.8 billion against \$0.8 billion new mints by March 15.
+- USDC reached a trough of \$0.86 on the secondary market.
+- The DAI Peg Stability Module absorbed approximately \$1 billion of USDC daily during peak stress, dragging DAI's price below peg despite its separate collateral backing.
 - USDC's primary-market suspension during the weekend, intended to manage liquidity, amplified secondary-market dysfunction by removing the authoritative price-discovery mechanism.
 - The peg fully restored after the Treasury / Federal Reserve / FDIC joint backstop announcement at 6:15 pm ET Sunday March 12, with Circle resuming redemptions Monday March 13.
 
@@ -83,7 +83,7 @@ We instantiate the network with thirteen nodes representing the 2026 US financia
 
 Under the pre-EO regime, stablecoin issuers hold approximately 65-90 percent of their reserves as cash deposits in commercial banks (Circle's June 2023 reserve composition documents 90 percent of cash at BNY Mellon and a remainder of partner banks). Under the post-EO regime, we assume issuers migrate 70 percent of reserves to Fed master accounts, 20 percent to Treasury bills (held directly or via short-duration MMF), and 10 percent to a custodian bank for operational fiat rails. The 70/20/10 split reflects the Kraken Financial structure, which is the only public template currently available.
 
-The shock is a $60 billion equity-side impairment to REG_B (SVB-class regional). Under the pre-EO topology, this impairment propagates through stablecoin reserve impairment, redemption cascade, and secondary-market spillover. Under the post-EO topology, the same impairment does not directly affect stablecoin reserves and the propagation is muted.
+The shock is a \$60 billion equity-side impairment to REG_B (SVB-class regional). Under the pre-EO topology, this impairment propagates through stablecoin reserve impairment, redemption cascade, and secondary-market spillover. Under the post-EO topology, the same impairment does not directly affect stablecoin reserves and the propagation is muted.
 
 **Proposition 1.** *Under the calibrated bank-failure shock, the stablecoin-channel creditor loss satisfies $C^{post}_{SC} < C^{pre}_{SC}$. The Glasserman-Young amplification index is weakly lower under post-EO clearing and equals one when the shocked bank has no modeled network obligations.*
 
@@ -177,7 +177,7 @@ so $s^{post}/s^{pre} \approx \lambda^{post}/\lambda^{pre}$ if $a_t$ is regime-in
 
 The orchestrator in `src/analyze.py` composes the six analytical layers and produces a nine-panel figure (Figure 1). Numerical results across the layers:
 
-**Eisenberg-Noe clearing.** After correcting the liability orientation, Glasserman-Young amplification falls from $\Gamma^{pre} \approx 1.27$ to $\Gamma^{post} \approx 1.00$ under the REG_B shock. The stablecoin-channel creditor loss falls from $15.95$ B to zero because REG_B no longer owes reserve-deposit balances to stablecoin issuers. Cascade depth is one round in the pre-EO case and zero rounds in the post-EO clearing network.
+**Eisenberg-Noe clearing.** After correcting the liability orientation, Glasserman-Young amplification falls from $\Gamma^{pre} \approx 1.27$ to $\Gamma^{post} \approx 1.00$ under the REG_B shock. The stablecoin-channel creditor loss falls from \$15.95$ B to zero because REG_B no longer owes reserve-deposit balances to stablecoin issuers. Cascade depth is one round in the pre-EO case and zero rounds in the post-EO clearing network.
 
 **Global-game equilibrium.** The run threshold $\theta^\star$ falls from 1.95 to 1.17 under our calibration, a reduction of approximately 0.78 fundamental-units. With common public prior mean $y=1.50$ and $\sigma_\theta=0.35$, the model-implied run probability falls from 0.90 to 0.18. The local elasticities $\partial \theta^\star / \partial r$ and $\partial \theta^\star / \partial \lambda$ are both first-order significant: a 100 bp increase in $r$ reduces $\theta^\star$ by approximately 0.28 fundamental-units, and a unit decrease in $\lambda$ reduces $\theta^\star$ by approximately 2.6 units.
 
@@ -195,7 +195,7 @@ The four frameworks converge on a single structural finding: EO 14405 is a topol
 
 This convergence is not a coincidence. The four frameworks measure different aspects of the same underlying object: the topology of bilateral exposures and the cost of moving across it under stress. The EO modifies that topology in a single coherent direction: it removes commercial-bank intermediation between stablecoin issuers and the Fed and replaces it with direct master-account access. Every metric that measures distance, propagation, or amplification along that topology decreases.
 
-But the welfare analysis shows that the topology shift does not reduce total expected loss; it reallocates it. The Fed becomes the counterparty whose policy choices determine whether a stablecoin redemption run translates into a depeg event. Under the post-EO regime, $L_T$ rises from zero to approximately $4 B in our baseline scenario, reflecting the expected fiscal cost of implicit Fed liquidity extension at below-fair rates. This is small in our calibration because the run is contained quickly under post-EO assumptions; under worst-case assumptions where the Fed extends discount-window-equivalent support during a multi-day systemic stress, the order of magnitude could be larger.
+But the welfare analysis shows that the topology shift does not reduce total expected loss; it reallocates it. The Fed becomes the counterparty whose policy choices determine whether a stablecoin redemption run translates into a depeg event. Under the post-EO regime, $L_T$ rises from zero to approximately \$4 B in our baseline scenario, reflecting the expected fiscal cost of implicit Fed liquidity extension at below-fair rates. This is small in our calibration because the run is contained quickly under post-EO assumptions; under worst-case assumptions where the Fed extends discount-window-equivalent support during a multi-day systemic stress, the order of magnitude could be larger.
 
 Three policy implications follow.
 
@@ -242,18 +242,18 @@ Under this calibration, the expected fiscal subsidy cost of Fed liquidity provis
 
 ### 9.2 Cross-jurisdiction contagion
 
-The baseline network is US-only. Tether (USDT, the largest stablecoin globally with approximately $140 billion in circulation) is registered in the British Virgin Islands via iFinex Inc.; reserves are custodied through Cantor Fitzgerald (US-domiciled), Deltec Bank and Trust (Bahamas), and various offshore correspondent banks. USDC (Circle) is US-domiciled but a substantial fraction of USDC holders are non-US (an estimated 45 percent per Chainalysis 2024 cross-border reporting). The module `src/jurisdiction.py` extends the network with foreign banking nodes (Deltec, BBVA, HSBC, Banco Santander) and computes cross-border transmission under two regimes.
+The baseline network is US-only. Tether (USDT, the largest stablecoin globally with approximately \$140 billion in circulation) is registered in the British Virgin Islands via iFinex Inc.; reserves are custodied through Cantor Fitzgerald (US-domiciled), Deltec Bank and Trust (Bahamas), and various offshore correspondent banks. USDC (Circle) is US-domiciled but a substantial fraction of USDC holders are non-US (an estimated 45 percent per Chainalysis 2024 cross-border reporting). The module `src/jurisdiction.py` extends the network with foreign banking nodes (Deltec, BBVA, HSBC, Banco Santander) and computes cross-border transmission under two regimes.
 
-For a $60 billion shock to a US regional bank (REG_B in the baseline network):
+For a \$60 billion shock to a US regional bank (REG_B in the baseline network):
 
 | Channel                     | Pre-EO | Post-EO |
 |-----------------------------|--------|---------|
-| US direct loss              | $60.0B | $60.0B  |
-| Foreign loss (EU+Asia+LatAm)| $0.09B | $0.06B  |
+| US direct loss              | \$60.0B | \$60.0B  |
+| Foreign loss (EU+Asia+LatAm)| \$0.09B | \$0.06B  |
 | USDT offshore depeg         | 0.50%  | 0.10%   |
 | FDUSD depeg                 | 0.30%  | 0.10%   |
 
-The foreign-loss flows are small relative to the US direct loss because USDC reserves are predominantly held in US assets (the Circle Reserve Fund managed by BlackRock, US Treasury bills, US bank deposits). The cross-jurisdiction channel matters more for the reverse direction: a Deltec failure (Tether's Bahamas custodian) at 30 percent severity transmits approximately $3.6 billion of direct loss to Tether, propagates to $1.2 billion of US panic-driven loss (Cantor convertible-bond markdown, equity-stake impairment), and produces a 3 percent offshore-USDT depeg. The full transmission matrix is documented in the module.
+The foreign-loss flows are small relative to the US direct loss because USDC reserves are predominantly held in US assets (the Circle Reserve Fund managed by BlackRock, US Treasury bills, US bank deposits). The cross-jurisdiction channel matters more for the reverse direction: a Deltec failure (Tether's Bahamas custodian) at 30 percent severity transmits approximately \$3.6 billion of direct loss to Tether, propagates to \$1.2 billion of US panic-driven loss (Cantor convertible-bond markdown, equity-stake impairment), and produces a 3 percent offshore-USDT depeg. The full transmission matrix is documented in the module.
 
 ### 9.3 Stablecoin reserve composition heterogeneity
 
@@ -263,7 +263,7 @@ Approximate Q1 2026 reserve composition by issuer:
 
 - USDC (Circle): approximately 87 percent in the BlackRock-managed Circle Reserve Fund (T-bills), approximately 13 percent in bank deposits at BNY Mellon and partner banks.
 - USDT (Tether): approximately 72 percent US Treasuries (via Cantor), approximately 10 percent gold, approximately 5 percent Bitcoin, approximately 13 percent other (cash equivalents, secured loans, corporate bonds; opacity is a feature of Tether's structure).
-- DAI (MakerDAO): collateralized by a mix of cryptoassets and a USDC PSM (Peg Stability Module) holding approximately $3 billion. DAI's stability is therefore conditional on USDC's stability.
+- DAI (MakerDAO): collateralized by a mix of cryptoassets and a USDC PSM (Peg Stability Module) holding approximately \$3 billion. DAI's stability is therefore conditional on USDC's stability.
 - PYUSD (Paxos): approximately 100 percent reserves at Paxos custodian banks plus State Street.
 - FDUSD (First Digital Trust): Hong Kong-domiciled custodian structure with regional banking partners.
 
@@ -271,7 +271,7 @@ The heterogeneity affects which issuer fails first under a given shock and which
 
 ### 9.4 Stablecoin-to-MMF substitution
 
-When a stablecoin depegs, some redemptions flow not to fiat cash but to government money market funds. This second-order flow affects MMF AUM, MMF Treasury demand, and indirectly the Federal Reserve's reverse-repo facility usage. The baseline model assumes redemptions flow to fiat cash; in practice, during March 2023, government MMF AUM rose by approximately $300 billion in the two weeks following the USDC depeg (per Investment Company Institute weekly MMF data). The flow is not negligible at the macro scale but produces only second-order effects on the stablecoin run dynamics themselves, because the substitution speed is much slower than the on-chain redemption velocity. I therefore leave it outside the baseline and note its existence here as an unmodeled channel of macroeconomic transmission rather than of contagion amplification.
+When a stablecoin depegs, some redemptions flow not to fiat cash but to government money market funds. This second-order flow affects MMF AUM, MMF Treasury demand, and indirectly the Federal Reserve's reverse-repo facility usage. The baseline model assumes redemptions flow to fiat cash; in practice, during March 2023, government MMF AUM rose by approximately \$300 billion in the two weeks following the USDC depeg (per Investment Company Institute weekly MMF data). The flow is not negligible at the macro scale but produces only second-order effects on the stablecoin run dynamics themselves, because the substitution speed is much slower than the on-chain redemption velocity. I therefore leave it outside the baseline and note its existence here as an unmodeled channel of macroeconomic transmission rather than of contagion amplification.
 
 ### 9.5 Operational fiat rails residual
 
