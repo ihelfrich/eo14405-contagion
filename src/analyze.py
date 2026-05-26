@@ -540,6 +540,104 @@ def main() -> None:
     out = here / "figures" / "analysis_nine_panel.png"
     out.parent.mkdir(parents=True, exist_ok=True)
     make_paper_figure(results, out)
+    emit_json_for_julia(results, here / "figures" / "analysis_data.json")
+
+
+def emit_json_for_julia(results: dict, out_path: Path) -> None:
+    """
+    Serialize numerical results to JSON for src/figures.jl (CairoMakie
+    pipeline). Strips numpy/dataclass objects to plain Python lists/dicts
+    so Julia's JSON.parsefile reads cleanly.
+    """
+    import json
+
+    def _list(x):
+        if hasattr(x, "tolist"):
+            return x.tolist()
+        if isinstance(x, (list, tuple)):
+            return [_list(v) for v in x]
+        return x
+
+    sim_pre  = results["welfare"]["sim_pre"]
+    sim_post = results["welfare"]["sim_post"]
+    sp_pre, sp_post = results["sp"]["pre"], results["sp"]["post"]
+    en = results["en"]
+
+    # Top-6 Katz nodes union across regimes
+    pre_top  = sp_pre.super_spreaders[:6]
+    post_top = sp_post.super_spreaders[:6]
+    katz_labels = list(dict.fromkeys(pre_top + post_top))[:6]
+
+    # Global-game theta* curves vs rollover yield r
+    import numpy as _np
+    from scipy.stats import norm as _norm
+    rs = _np.linspace(0.001, 0.06, 200)
+    theta_pre  = 0.92 + 0.40 * _norm.ppf(1.0 - rs)
+    theta_post = 0.92 + 0.15 * _norm.ppf(1.0 - rs)
+
+    L_pre  = results["welfare"]["pre"]
+    L_post = results["welfare"]["post"]
+
+    band = results["bayes"]["band"]
+
+    payload = {
+        # (a) calibration
+        "sim_pre":  {"hours": _list(sim_pre.hours),  "usdc_peg": _list(sim_pre.peg["USDC"])},
+        "sim_post": {"hours": _list(sim_post.hours), "usdc_peg": _list(sim_post.peg["USDC"])},
+        "usdc_empirical_hours": [int(h) for h in
+                                 __import__("bayes").USDC_EMPIRICAL["hours"].tolist()],
+        "usdc_empirical_peg":   [float(p) for p in
+                                 __import__("bayes").USDC_EMPIRICAL["peg"].tolist()],
+
+        # (b) Bayesian counterfactual
+        "bayes_band": {
+            "median": _list(band["median"]),
+            "lower":  _list(band["lower"]),
+            "upper":  _list(band["upper"]),
+        },
+
+        # (c) OT severity vs shock magnitude
+        "ot_sev_pre_x":  _list(results["ot"]["sev_pre"][0]),
+        "ot_sev_pre_y":  _list(results["ot"]["sev_pre"][1]),
+        "ot_sev_post_x": _list(results["ot"]["sev_post"][0]),
+        "ot_sev_post_y": _list(results["ot"]["sev_post"][1]),
+
+        # (d) global game
+        "gg_r_grid": rs.tolist(),
+        "gg_theta_pre":  theta_pre.tolist(),
+        "gg_theta_post": theta_post.tolist(),
+        "gg_theta_star_pre":  float(results["gg"]["pre"].theta_star),
+        "gg_theta_star_post": float(results["gg"]["post"].theta_star),
+
+        # (e) spectral metrics
+        "spectral_pre":  [float(sp_pre.lambda_max),  float(sp_pre.lambda_2),
+                          float(sp_pre.spectral_gap),  float(sp_pre.fiedler)],
+        "spectral_post": [float(sp_post.lambda_max), float(sp_post.lambda_2),
+                          float(sp_post.spectral_gap), float(sp_post.fiedler)],
+
+        # (f) Katz centrality
+        "katz_labels": katz_labels,
+        "katz_pre":    [float(sp_pre.katz_centrality.get(n,  0.0)) for n in katz_labels],
+        "katz_post":   [float(sp_post.katz_centrality.get(n, 0.0)) for n in katz_labels],
+
+        # (g) welfare incidence
+        "welfare_pre":   [float(L_pre.holders),  float(L_pre.banks),  float(L_pre.taxpayers)],
+        "welfare_post":  [float(L_post.holders), float(L_post.banks), float(L_post.taxpayers)],
+        "welfare_delta": [float(L_post.holders - L_pre.holders),
+                          float(L_post.banks - L_pre.banks),
+                          float(L_post.taxpayers - L_pre.taxpayers)],
+
+        # (h) Eisenberg-Noe
+        "en_pre":  [float(en["pre"].amplification),
+                    float(en["cd_pre"]),
+                    float(en["pre"].defaulted.sum())],
+        "en_post": [float(en["post"].amplification),
+                    float(en["cd_post"]),
+                    float(en["post"].defaulted.sum())],
+    }
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    print(f"JSON for Julia → {out_path}")
 
 
 if __name__ == "__main__":
