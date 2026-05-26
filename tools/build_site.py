@@ -46,6 +46,12 @@ DOSSIERS = [
     ("dossiers/tether-ifinex.md",           "Tether + iFinex + Cantor Fitzgerald"),
     ("dossiers/custodia-wyoming-spdi.md",   "Custodia + Wyoming SPDIs"),
     ("dossiers/fairshake-campaign-finance.md", "Fairshake PAC + Stand With Crypto"),
+    ("dossiers/fed-board.md",               "Federal Reserve Board + Reserve Bank presidents"),
+    ("dossiers/trump-extended-family.md",   "Trump extended family financial exposure"),
+    ("dossiers/trump-admin-financial-roster.md", "Trump 2.0 administration financial-policy roster"),
+    ("dossiers/congress-finance-committees.md",  "Senate Banking + House Financial Services 119th Congress"),
+    ("dossiers/stablecoin-board-interlocks.md",  "Stablecoin ecosystem board interlocks + regulator alumni"),
+    ("dossiers/SNA-FINDINGS.md",            "Social Network Analysis: findings from the 153-node conflict graph"),
 ]
 
 
@@ -205,14 +211,26 @@ def render_index() -> None:
     <p class="desc">Synthesis of six OSINT dossiers documenting the financial and personnel networks among the actors whose interests the order affects. Source-cited from SEC EDGAR, FEC filings, Federal Register, court dockets, and the Federal Reserve.</p>
   </a>
 
-  <h2 style="margin-top:36px;font-size:20px;color:var(--carolina-navy);border-bottom:1.5px solid var(--old-gold);padding-bottom:8px;">Individual dossiers</h2>
+  <a class="card" href="dossiers/SNA-FINDINGS.html" style="border-left-color:var(--indiana-crimson);">
+    <div class="tag" style="color:var(--indiana-crimson);">Social Network Analysis</div>
+    <h2>The 153-node conflict-of-interest graph</h2>
+    <p class="desc">Eigenvector centrality, Louvain communities, and the minimum-cut analysis identifying the five-person spine linking the Trump administration, the Federal Reserve, and the stablecoin issuers. Includes two publication figures and a reviewer-auditable edge CSV.</p>
+  </a>
+
+  <h2 style="margin-top:36px;font-size:20px;color:var(--carolina-navy);border-bottom:1.5px solid var(--old-gold);padding-bottom:8px;">Individual OSINT dossiers (44,000+ words, source-cited)</h2>
   <ul style="list-style:none;padding:0;">
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/trump-wlfi.html" style="color:var(--carolina-blue);">Trump family + World Liberty Financial + USD1</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/trump-extended-family.html" style="color:var(--carolina-blue);">Trump extended family financial exposure (Kushner, Boulos, others)</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/trump-admin-financial-roster.html" style="color:var(--carolina-blue);">Trump 2.0 administration financial-policy roster (Bessent, Pulte, Hassett, more)</a></li>
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/sacks-a16z-quintenz.html" style="color:var(--carolina-blue);">David Sacks + a16z + Brian Quintenz crypto-policy nexus</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/fed-board.html" style="color:var(--carolina-blue);">Federal Reserve Board + 12 Reserve Bank presidents</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/congress-finance-committees.html" style="color:var(--carolina-blue);">Senate Banking + House Financial Services 119th Congress</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/stablecoin-board-interlocks.html" style="color:var(--carolina-blue);">Stablecoin ecosystem board interlocks + regulator alumni</a></li>
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/circle-coinbase.html" style="color:var(--carolina-blue);">Circle (CRCL) + Coinbase (COIN) + Centre Consortium</a></li>
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/tether-ifinex.html" style="color:var(--carolina-blue);">Tether + iFinex + Cantor Fitzgerald nexus</a></li>
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/custodia-wyoming-spdi.html" style="color:var(--carolina-blue);">Custodia + Wyoming SPDIs + the EO 14405 legal substrate</a></li>
     <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/fairshake-campaign-finance.html" style="color:var(--carolina-blue);">Crypto campaign finance: Fairshake, Stand With Crypto, and the 2024 cycle</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid var(--mist);"><a href="dossiers/synthesis.html" style="color:var(--carolina-blue);">Political-economy synthesis (the original 6-dossier overview)</a></li>
   </ul>
 
   <div class="meta-foot">
