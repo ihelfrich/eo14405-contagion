@@ -1,0 +1,4691 @@
+{
+  "graph_stats": {
+    "n_nodes": 153,
+    "n_edges_directed": 219,
+    "n_edges_undirected": 211,
+    "density_undirected": 0.018145854833161335,
+    "diameter_largest_cc": 9,
+    "avg_shortest_path_largest_cc": 4.226398210290828,
+    "n_communities": 12
+  },
+  "communities": [
+    {
+      "id": 0,
+      "size": 22,
+      "members": [
+        "Alberto Musalem",
+        "Anna Paulson",
+        "Austan Goolsbee",
+        "Caitlin Long",
+        "Christopher Waller",
+        "Custodia Bank",
+        "David Sacks",
+        "EO 14405",
+        "Federal Reserve Board",
+        "Hudson Bay Capital",
+        "John Williams",
+        "Kevin Warsh",
+        "Lisa Cook",
+        "Lorie Logan",
+        "Mary Daly",
+        "Michael Barr",
+        "Michelle Bowman",
+        "Philip Jefferson",
+        "Stanley Druckenmiller",
+        "Stephen Miran",
+        "Susan Collins",
+        "Tom Barkin"
+      ]
+    },
+    {
+      "id": 1,
+      "size": 8,
+      "members": [
+        "Affinity Partners",
+        "Ballard Partners",
+        "Ivanka Trump",
+        "Jared Kushner",
+        "Lunate",
+        "Pamela Bondi",
+        "Qatar Investment Authority",
+        "Saudi PIF"
+      ]
+    },
+    {
+      "id": 2,
+      "size": 28,
+      "members": [
+        "American Bitcoin (ABTC)",
+        "Barron Trump",
+        "Ben Horowitz",
+        "Chase Herro",
+        "D. John Sauer",
+        "DT Marks DEFI LLC",
+        "Donald Trump",
+        "Donald Trump Jr.",
+        "Eric Trump",
+        "FBI",
+        "FHFA",
+        "Jamieson Greer",
+        "Kash Patel",
+        "Kimberly Guilfoyle",
+        "King & Spalding",
+        "Lara Trump",
+        "Marco Rubio",
+        "Massad Boulos",
+        "Michael Boulos",
+        "Mike Faulkender",
+        "Russell Vought",
+        "Scott Bessent",
+        "Tiffany Trump",
+        "Treasury",
+        "Trump Media (DJT)",
+        "William Pulte",
+        "World Liberty Financial",
+        "Zachary Folkman"
+      ]
+    },
+    {
+      "id": 3,
+      "size": 11,
+      "members": [
+        "Bitfinex",
+        "Bo Hines",
+        "Brandon Lutnick",
+        "Cantor Fitzgerald",
+        "Giancarlo Devasini",
+        "Howard Lutnick",
+        "Paolo Ardoino",
+        "Tether (USDT)",
+        "Twenty One Capital",
+        "USAT",
+        "iFinex"
+      ]
+    },
+    {
+      "id": 4,
+      "size": 8,
+      "members": [
+        "Bill Hagerty",
+        "Cynthia Lummis",
+        "Elizabeth Warren",
+        "Jack Reed",
+        "Mike Crapo",
+        "Senate Banking Committee",
+        "Sherrod Brown",
+        "Tim Scott"
+      ]
+    },
+    {
+      "id": 5,
+      "size": 3,
+      "members": [
+        "Patomak Global Partners",
+        "Paul Atkins",
+        "SEC"
+      ]
+    },
+    {
+      "id": 6,
+      "size": 13,
+      "members": [
+        "Anchorage Digital",
+        "BitGo",
+        "BitGo Trust",
+        "Brian Brooks",
+        "Chris Lehane",
+        "Diogo Monica",
+        "Haun Ventures",
+        "Katie Biber",
+        "Katie Haun",
+        "MGX",
+        "Nathan McCauley",
+        "Paradigm",
+        "USD1"
+      ]
+    },
+    {
+      "id": 7,
+      "size": 10,
+      "members": [
+        "Brian Armstrong",
+        "Coinbase Global",
+        "Faryar Shirzad",
+        "Frederick Ehrsam",
+        "Kevin Hassett",
+        "Marc Andreessen",
+        "Paul Clement",
+        "Paul Grewal",
+        "Stand With Crypto Alliance",
+        "White House Digital Assets Working Group"
+      ]
+    },
+    {
+      "id": 8,
+      "size": 4,
+      "members": [
+        "Jeffrey Schmid",
+        "Jesse Powell",
+        "Kansas City Fed",
+        "Kraken Financial"
+      ]
+    },
+    {
+      "id": 9,
+      "size": 19,
+      "members": [
+        "BNY Mellon",
+        "BUIDL",
+        "Beth Hammack",
+        "BlackRock",
+        "Circle Internet Group",
+        "Circle Reserve Fund",
+        "Craig Broderick",
+        "Dante Disparte",
+        "Goldman Sachs",
+        "Heath Tarbert",
+        "Jeremy Allaire",
+        "Larry Fink",
+        "M. Michele Burns",
+        "Neel Kashkari",
+        "Philipp Hildebrand",
+        "Rajeev Date",
+        "Robert Mitchnick",
+        "Securitize",
+        "USDC"
+      ]
+    },
+    {
+      "id": 10,
+      "size": 3,
+      "members": [
+        "Charles Cascarilla",
+        "Paxos Trust",
+        "State Street"
+      ]
+    },
+    {
+      "id": 11,
+      "size": 24,
+      "members": [
+        "Andreessen Horowitz (a16z)",
+        "Andy Barr",
+        "Bernie Moreno",
+        "Bill Huizenga",
+        "Brad Garlinghouse",
+        "Brian Quintenz",
+        "Bryan Steil",
+        "Cameron Winklevoss",
+        "Chris Dixon",
+        "Coinbase",
+        "Crypto.com (Foris DAX)",
+        "Defend American Jobs",
+        "Fairshake PAC",
+        "Frank Lucas",
+        "French Hill",
+        "House Financial Services Committee",
+        "Keep America Great PAC",
+        "Maxine Waters",
+        "Protect Progress",
+        "Ripple",
+        "Ruben Gallego",
+        "Scott Kupor",
+        "Stephen Lynch",
+        "Tyler Winklevoss"
+      ]
+    }
+  ],
+  "eigenvector": [
+    {
+      "node": "Donald Trump",
+      "value": 0.472926515758051
+    },
+    {
+      "node": "EO 14405",
+      "value": 0.32997228946593404
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 0.2586299194026024
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 0.2133882644280378
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 0.2104895930518197
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 0.19845956671336235
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 0.18295309242456984
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 0.16183557932431575
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 0.15574927743565295
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 0.14962160374541916
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 0.1398049976048811
+    },
+    {
+      "node": "USAT",
+      "value": 0.1375361252295516
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 0.13654493460877953
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 0.13645161333785616
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 0.1280984734195659
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 0.12139703143859633
+    },
+    {
+      "node": "David Sacks",
+      "value": 0.11614840324756373
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 0.1146727090480905
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 0.10971029193565922
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 0.10719013457583214
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 0.10386047383097775
+    },
+    {
+      "node": "USD1",
+      "value": 0.09784093928648926
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 0.0861312836074885
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 0.08485384874248213
+    },
+    {
+      "node": "Eric Trump",
+      "value": 0.07746709109564723
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 0.07642485845665246
+    },
+    {
+      "node": "Kash Patel",
+      "value": 0.07508427651152685
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 0.0730152943519834
+    },
+    {
+      "node": "Barron Trump",
+      "value": 0.07220988214759308
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 0.07072305371300147
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 0.0682630261643148
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 0.06612664142731024
+    },
+    {
+      "node": "Treasury",
+      "value": 0.06486439897204917
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 0.06483249488521302
+    },
+    {
+      "node": "USDC",
+      "value": 0.06444517544606097
+    },
+    {
+      "node": "William Pulte",
+      "value": 0.06242981419674653
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 0.061471371672410395
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 0.059997405549304904
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 0.05942695215114857
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 0.058994179468845054
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 0.05873716675457416
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 0.05800260339871545
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 0.05797510549333796
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 0.05736850939904275
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 0.05703558974665888
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 0.05637198948248215
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 0.056371989482482086
+    },
+    {
+      "node": "Russell Vought",
+      "value": 0.05485514596782962
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 0.05485514596782961
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 0.054855145967829595
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 0.05485514596782958
+    },
+    {
+      "node": "Protect Progress",
+      "value": 0.05291805861197899
+    },
+    {
+      "node": "Andy Barr",
+      "value": 0.05222511392912853
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 0.05134286021563782
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 0.05128772247501486
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 0.05039867371368314
+    },
+    {
+      "node": "Ripple",
+      "value": 0.05005854994586032
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 0.04925474098053584
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 0.04756078235546093
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 0.045159991940573914
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 0.04317988960981261
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 0.04029774006746033
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 0.03844592541792019
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 0.03754289104468548
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 0.036413316399303404
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 0.03633887076000465
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 0.03626083537207021
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 0.03607913381754927
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 0.034222314096286295
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 0.03283355067068332
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 0.03194502996402712
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 0.031654275739630124
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 0.03140530686095339
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 0.03123782742732835
+    },
+    {
+      "node": "Mary Daly",
+      "value": 0.0299987027746525
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 0.029998702774652494
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 0.029998702774652476
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 0.029998702774652473
+    },
+    {
+      "node": "John Williams",
+      "value": 0.029998702774652473
+    },
+    {
+      "node": "Susan Collins",
+      "value": 0.029998702774652466
+    },
+    {
+      "node": "Michael Barr",
+      "value": 0.029998702774652452
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 0.029998702774652445
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 0.029998702774652424
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 0.02999870277465242
+    },
+    {
+      "node": "iFinex",
+      "value": 0.027939753384943422
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 0.026937764159411997
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 0.02690843949459409
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 0.026402950928209296
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 0.025337831899379732
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 0.024866148471475176
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 0.024751085005794742
+    },
+    {
+      "node": "Paul Clement",
+      "value": 0.02475108500579473
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 0.024093728147824813
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 0.023753658166832326
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 0.02301949274999681
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 0.023019492749996772
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 0.02122088370141205
+    },
+    {
+      "node": "Coinbase",
+      "value": 0.021220883701412046
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 0.020033887451832655
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 0.019502336280900402
+    },
+    {
+      "node": "BitGo",
+      "value": 0.018152868679383448
+    },
+    {
+      "node": "FBI",
+      "value": 0.01741817728839651
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 0.01693821131235196
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 0.016938211312351955
+    },
+    {
+      "node": "Tim Scott",
+      "value": 0.016938211312351938
+    },
+    {
+      "node": "Katie Biber",
+      "value": 0.01623667367350298
+    },
+    {
+      "node": "Bo Hines",
+      "value": 0.015952931320045806
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 0.01592691686499434
+    },
+    {
+      "node": "BlackRock",
+      "value": 0.015825108105463895
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 0.015585605542378506
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 0.015340169971409247
+    },
+    {
+      "node": "FHFA",
+      "value": 0.014482573746230876
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 0.014260232630550615
+    },
+    {
+      "node": "SEC",
+      "value": 0.014260232630550602
+    },
+    {
+      "node": "French Hill",
+      "value": 0.01362594715542364
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 0.013625947155423613
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 0.01356769770659786
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 0.013455694506225833
+    },
+    {
+      "node": "King & Spalding",
+      "value": 0.013449162896860597
+    },
+    {
+      "node": "Bitfinex",
+      "value": 0.013249342763538119
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 0.013077269336873143
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 0.012804342275415156
+    },
+    {
+      "node": "MGX",
+      "value": 0.01177313251761295
+    },
+    {
+      "node": "BUIDL",
+      "value": 0.011298190083229655
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 0.009888788691493823
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 0.00923208318459199
+    },
+    {
+      "node": "Lara Trump",
+      "value": 0.008985473320191065
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 0.00890962412711008
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 0.008469105656176009
+    },
+    {
+      "node": "Jack Reed",
+      "value": 0.008469105656175953
+    },
+    {
+      "node": "Paradigm",
+      "value": 0.007729090219612861
+    },
+    {
+      "node": "Chase Herro",
+      "value": 0.006842784699497435
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 0.0068427846994974315
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 0.006812973577711848
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 0.0068129735777118375
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 0.006812973577711797
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 0.005478922857676284
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 0.005058562129755028
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 0.005008471862958121
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 0.005008471862958119
+    },
+    {
+      "node": "Larry Fink",
+      "value": 0.003671135308158651
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 0.0036711353081585853
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 0.0036595934871867467
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 0.002970372948592707
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 0.0019338733095189537
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 0.0018355676540793122
+    },
+    {
+      "node": "Securitize",
+      "value": 0.0013104866095199272
+    },
+    {
+      "node": "Katie Haun",
+      "value": 0.001173493787170146
+    },
+    {
+      "node": "Lunate",
+      "value": 0.001147008951797551
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 4.700839324180912e-17
+    },
+    {
+      "node": "State Street",
+      "value": 4.005816470529457e-17
+    },
+    {
+      "node": "Paxos Trust",
+      "value": -5.56100630710146e-17
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": -0.0025641249685484915
+    }
+  ],
+  "betweenness": [
+    {
+      "node": "Donald Trump",
+      "value": 0.42128745074978813
+    },
+    {
+      "node": "EO 14405",
+      "value": 0.2591445317631678
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 0.2201070847558508
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 0.15060833338997978
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 0.14207484392416647
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 0.13034755983101862
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 0.127618388915974
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 0.12359976929077654
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 0.1139691237897135
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 0.09795528863735471
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 0.09407095968397819
+    },
+    {
+      "node": "David Sacks",
+      "value": 0.09384733009878869
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 0.08693386818794091
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 0.07756912977808761
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 0.07620108285817066
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 0.06795486232136633
+    },
+    {
+      "node": "Kash Patel",
+      "value": 0.0666114790286976
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 0.06572878064923847
+    },
+    {
+      "node": "USAT",
+      "value": 0.06512662765096956
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 0.06371933938178048
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 0.055928050107206584
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 0.05306581851980948
+    },
+    {
+      "node": "USDC",
+      "value": 0.047820918189513506
+    },
+    {
+      "node": "BlackRock",
+      "value": 0.044453642384105964
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 0.041046289841601774
+    },
+    {
+      "node": "USD1",
+      "value": 0.04032349576661335
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 0.03706140350877193
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 0.03660465318926456
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 0.03470721505751132
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 0.03353348754185285
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 0.03330356105495527
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 0.03306393052166841
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 0.032641188373804246
+    },
+    {
+      "node": "Andy Barr",
+      "value": 0.029792610665737188
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 0.02614151272220286
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 0.025703459450163346
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 0.02566225165562914
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 0.02457597823446397
+    },
+    {
+      "node": "Eric Trump",
+      "value": 0.023538417944619663
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 0.018618566283257813
+    },
+    {
+      "node": "BUIDL",
+      "value": 0.016962937144184963
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 0.015713106579915582
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 0.015430754037411407
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 0.013467650915367887
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "William Pulte",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 0.012874695015684908
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 0.012700418264203555
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 0.012225756167460597
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 0.012090449634018821
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 0.010663722928934718
+    },
+    {
+      "node": "Katie Biber",
+      "value": 0.010488763298975915
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 0.009272975485070292
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 0.009233763215986986
+    },
+    {
+      "node": "Bitfinex",
+      "value": 0.008718920645985825
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 0.008359474846055539
+    },
+    {
+      "node": "Barron Trump",
+      "value": 0.006943337874134373
+    },
+    {
+      "node": "MGX",
+      "value": 0.0068972664955585785
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 0.0066757332071901605
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 0.006522307424189613
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 0.006393778319972116
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 0.006393778319972116
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 0.005437918748305641
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 0.004988672011153711
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 0.004566050888811433
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 0.004531195538515162
+    },
+    {
+      "node": "BitGo",
+      "value": 0.0032589752527012903
+    },
+    {
+      "node": "Paradigm",
+      "value": 0.002755232451990905
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 0.0021290809805971887
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 0.0018959858254908799
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 0.0011545834785639596
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 0.001059457418380388
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 0.0006971070059254096
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 0.0003485535029627048
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 8.71383757406762e-05
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 8.71383757406762e-05
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 4.35691878703381e-05
+    },
+    {
+      "node": "Russell Vought",
+      "value": 0.0
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 0.0
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 0.0
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 0.0
+    },
+    {
+      "node": "Lara Trump",
+      "value": 0.0
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 0.0
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 0.0
+    },
+    {
+      "node": "Chase Herro",
+      "value": 0.0
+    },
+    {
+      "node": "Lunate",
+      "value": 0.0
+    },
+    {
+      "node": "Treasury",
+      "value": 0.0
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 0.0
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 0.0
+    },
+    {
+      "node": "FHFA",
+      "value": 0.0
+    },
+    {
+      "node": "FBI",
+      "value": 0.0
+    },
+    {
+      "node": "King & Spalding",
+      "value": 0.0
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 0.0
+    },
+    {
+      "node": "SEC",
+      "value": 0.0
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 0.0
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 0.0
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 0.0
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 0.0
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 0.0
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 0.0
+    },
+    {
+      "node": "Michael Barr",
+      "value": 0.0
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 0.0
+    },
+    {
+      "node": "John Williams",
+      "value": 0.0
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 0.0
+    },
+    {
+      "node": "Susan Collins",
+      "value": 0.0
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 0.0
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 0.0
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 0.0
+    },
+    {
+      "node": "Mary Daly",
+      "value": 0.0
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 0.0
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 0.0
+    },
+    {
+      "node": "Tim Scott",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 0.0
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 0.0
+    },
+    {
+      "node": "Jack Reed",
+      "value": 0.0
+    },
+    {
+      "node": "French Hill",
+      "value": 0.0
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 0.0
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 0.0
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 0.0
+    },
+    {
+      "node": "Protect Progress",
+      "value": 0.0
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 0.0
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 0.0
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 0.0
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 0.0
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 0.0
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Clement",
+      "value": 0.0
+    },
+    {
+      "node": "Katie Haun",
+      "value": 0.0
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 0.0
+    },
+    {
+      "node": "iFinex",
+      "value": 0.0
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 0.0
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 0.0
+    },
+    {
+      "node": "Bo Hines",
+      "value": 0.0
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 0.0
+    },
+    {
+      "node": "State Street",
+      "value": 0.0
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 0.0
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 0.0
+    },
+    {
+      "node": "Larry Fink",
+      "value": 0.0
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 0.0
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 0.0
+    },
+    {
+      "node": "Securitize",
+      "value": 0.0
+    },
+    {
+      "node": "Coinbase",
+      "value": 0.0
+    },
+    {
+      "node": "Ripple",
+      "value": 0.0
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 0.0
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 0.0
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 0.0
+    }
+  ],
+  "katz": [
+    {
+      "node": "Donald Trump",
+      "value": 0.21100595248923248
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 0.16515540116324381
+    },
+    {
+      "node": "EO 14405",
+      "value": 0.15622127225867669
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 0.1496158856729993
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 0.14904385199290657
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 0.12183280058672899
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 0.11949569036993542
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 0.11601742337240635
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 0.11111788914592254
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 0.1106003356819133
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 0.10968955098510048
+    },
+    {
+      "node": "USAT",
+      "value": 0.1043093405679825
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 0.10327669803802748
+    },
+    {
+      "node": "BlackRock",
+      "value": 0.10099521171454949
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 0.09930228729395142
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 0.09856282992649709
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 0.09731236211180778
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 0.09641938926640901
+    },
+    {
+      "node": "USDC",
+      "value": 0.09537692815815244
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 0.09464310647235391
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 0.09406201747591487
+    },
+    {
+      "node": "USD1",
+      "value": 0.09229332677916505
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 0.0909496599142253
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 0.08997326442467583
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 0.08980345194882114
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 0.08864542100661643
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 0.08857782942006188
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 0.08493584803037824
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 0.08492743103289448
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 0.08473779275084184
+    },
+    {
+      "node": "Andy Barr",
+      "value": 0.08471132195674107
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 0.08316591494486447
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 0.08293264194759631
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 0.08225625693097074
+    },
+    {
+      "node": "David Sacks",
+      "value": 0.08211878587336109
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 0.08158492739663509
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 0.08156492268061624
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 0.08137677464532307
+    },
+    {
+      "node": "Kash Patel",
+      "value": 0.08092564798006975
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 0.0807601243006027
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 0.08031075860174723
+    },
+    {
+      "node": "Protect Progress",
+      "value": 0.08029838491709804
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 0.08005096408956974
+    },
+    {
+      "node": "Eric Trump",
+      "value": 0.08000139325487715
+    },
+    {
+      "node": "Ripple",
+      "value": 0.07994144551813838
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 0.07876637985555242
+    },
+    {
+      "node": "William Pulte",
+      "value": 0.07854195707651172
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 0.07744834263724948
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 0.07709614792727264
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 0.07691810054140855
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 0.07676087598362911
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 0.07671011743168966
+    },
+    {
+      "node": "iFinex",
+      "value": 0.07654660748699624
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 0.0765001343032903
+    },
+    {
+      "node": "Treasury",
+      "value": 0.07647818810181214
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 0.07647385228925296
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 0.07582112286207295
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 0.07577598242429791
+    },
+    {
+      "node": "BUIDL",
+      "value": 0.07560645756022376
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 0.07547753627985815
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 0.07538786531202675
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 0.07489009548229986
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 0.07474919324173243
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 0.07472996029470069
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 0.07425350510660354
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 0.07418132472295351
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 0.07410956446319297
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 0.07400436183228533
+    },
+    {
+      "node": "BitGo",
+      "value": 0.0735838782205789
+    },
+    {
+      "node": "Barron Trump",
+      "value": 0.07314422372741565
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 0.07314072344209295
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 0.07310487977236133
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 0.07290706721543302
+    },
+    {
+      "node": "Bitfinex",
+      "value": 0.07279080543126491
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 0.07262979319491533
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 0.07155121759053987
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 0.07145665473509773
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 0.07145665473509773
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 0.07130373899669805
+    },
+    {
+      "node": "Katie Biber",
+      "value": 0.07124440746658502
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 0.07115526360215979
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 0.07076866437227934
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 0.07065570998840902
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 0.07060675783704412
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 0.07037645351925541
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 0.06964524211151292
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 0.06961307646750754
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 0.06926752694386977
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 0.06915598342130463
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 0.06911107758754088
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 0.0687258181748205
+    },
+    {
+      "node": "Tim Scott",
+      "value": 0.06872581817482049
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 0.06872581817482049
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 0.06867574038638247
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 0.06837272444874362
+    },
+    {
+      "node": "Russell Vought",
+      "value": 0.0682160822310908
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 0.0682160822310908
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 0.06821608223109078
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 0.06821608223109078
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 0.06799345441043189
+    },
+    {
+      "node": "Larry Fink",
+      "value": 0.06776530577808407
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 0.06776530577808407
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 0.06759601333602429
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 0.06739702081780995
+    },
+    {
+      "node": "French Hill",
+      "value": 0.06730772353327008
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 0.06730772353327004
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 0.0671550909343023
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 0.06674013251209067
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 0.06653032670729081
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 0.06592355466479145
+    },
+    {
+      "node": "John Williams",
+      "value": 0.06592355466479143
+    },
+    {
+      "node": "Susan Collins",
+      "value": 0.06592355466479138
+    },
+    {
+      "node": "Mary Daly",
+      "value": 0.06592355466479138
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 0.06592355466479137
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 0.06592355466479137
+    },
+    {
+      "node": "Michael Barr",
+      "value": 0.06592355466479136
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 0.06592355466479136
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 0.06592355466479136
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 0.06592355466479136
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 0.06580346207116147
+    },
+    {
+      "node": "SEC",
+      "value": 0.06580346207116147
+    },
+    {
+      "node": "FBI",
+      "value": 0.06575834940463612
+    },
+    {
+      "node": "MGX",
+      "value": 0.06573600482496446
+    },
+    {
+      "node": "FHFA",
+      "value": 0.06551998031428036
+    },
+    {
+      "node": "Coinbase",
+      "value": 0.0651465788902791
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 0.0651465788902791
+    },
+    {
+      "node": "King & Spalding",
+      "value": 0.06513878063609925
+    },
+    {
+      "node": "Paul Clement",
+      "value": 0.06511797720627452
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 0.06511797720627445
+    },
+    {
+      "node": "Paradigm",
+      "value": 0.06501906112306205
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 0.06492876392612072
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 0.06481145008013886
+    },
+    {
+      "node": "Katie Haun",
+      "value": 0.0647813109668451
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 0.06438129370005939
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 0.06375742463596568
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 0.06375742463596559
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 0.06364056912512595
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 0.0636405691251259
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 0.06341353428926322
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 0.06319580139072484
+    },
+    {
+      "node": "Jack Reed",
+      "value": 0.06319580139072484
+    },
+    {
+      "node": "Bo Hines",
+      "value": 0.06288125163502828
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 0.0627155451923566
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 0.06248675406994962
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 0.06248675406994962
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 0.06248675406994959
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 0.061812416704008964
+    },
+    {
+      "node": "Chase Herro",
+      "value": 0.061812416704008964
+    },
+    {
+      "node": "Lunate",
+      "value": 0.06174503097646094
+    },
+    {
+      "node": "Lara Trump",
+      "value": 0.06166585426937294
+    },
+    {
+      "node": "Securitize",
+      "value": 0.061446107484640335
+    },
+    {
+      "node": "State Street",
+      "value": 0.06102353915334427
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 0.05578484494440553
+    }
+  ],
+  "degree_total": [
+    {
+      "node": "Donald Trump",
+      "value": 30.0
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 20.0
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 14.0
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 13.0
+    },
+    {
+      "node": "EO 14405",
+      "value": 12.0
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 10.0
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 10.0
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 9.0
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 8.0
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 7.0
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 7.0
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 7.0
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 6.0
+    },
+    {
+      "node": "BlackRock",
+      "value": 6.0
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 5.0
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 5.0
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 5.0
+    },
+    {
+      "node": "USAT",
+      "value": 5.0
+    },
+    {
+      "node": "Eric Trump",
+      "value": 4.0
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 4.0
+    },
+    {
+      "node": "USD1",
+      "value": 4.0
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 4.0
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 4.0
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 4.0
+    },
+    {
+      "node": "Kash Patel",
+      "value": 4.0
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 4.0
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 4.0
+    },
+    {
+      "node": "USDC",
+      "value": 4.0
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 4.0
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 4.0
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 4.0
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 3.0
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 3.0
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 3.0
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 3.0
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 3.0
+    },
+    {
+      "node": "William Pulte",
+      "value": 3.0
+    },
+    {
+      "node": "David Sacks",
+      "value": 3.0
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 3.0
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 3.0
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 3.0
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 3.0
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 3.0
+    },
+    {
+      "node": "Andy Barr",
+      "value": 3.0
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 3.0
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 3.0
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 3.0
+    },
+    {
+      "node": "Bitfinex",
+      "value": 3.0
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 3.0
+    },
+    {
+      "node": "BUIDL",
+      "value": 3.0
+    },
+    {
+      "node": "Barron Trump",
+      "value": 2.0
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 2.0
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 2.0
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 2.0
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 2.0
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 2.0
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 2.0
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 2.0
+    },
+    {
+      "node": "MGX",
+      "value": 2.0
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 2.0
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 2.0
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 2.0
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 2.0
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 2.0
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 2.0
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 2.0
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 2.0
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 2.0
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 2.0
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 2.0
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 2.0
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 2.0
+    },
+    {
+      "node": "Protect Progress",
+      "value": 2.0
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 2.0
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 2.0
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 2.0
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 2.0
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 2.0
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 2.0
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 2.0
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 2.0
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 2.0
+    },
+    {
+      "node": "Paradigm",
+      "value": 2.0
+    },
+    {
+      "node": "Katie Biber",
+      "value": 2.0
+    },
+    {
+      "node": "iFinex",
+      "value": 2.0
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 2.0
+    },
+    {
+      "node": "BitGo",
+      "value": 2.0
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 2.0
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 2.0
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 2.0
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 2.0
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 2.0
+    },
+    {
+      "node": "Ripple",
+      "value": 2.0
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 2.0
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 2.0
+    },
+    {
+      "node": "Treasury",
+      "value": 2.0
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 2.0
+    },
+    {
+      "node": "Lara Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 1.0
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 1.0
+    },
+    {
+      "node": "Chase Herro",
+      "value": 1.0
+    },
+    {
+      "node": "Lunate",
+      "value": 1.0
+    },
+    {
+      "node": "Russell Vought",
+      "value": 1.0
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 1.0
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 1.0
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 1.0
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 1.0
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 1.0
+    },
+    {
+      "node": "Michael Barr",
+      "value": 1.0
+    },
+    {
+      "node": "John Williams",
+      "value": 1.0
+    },
+    {
+      "node": "Susan Collins",
+      "value": 1.0
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 1.0
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 1.0
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 1.0
+    },
+    {
+      "node": "Mary Daly",
+      "value": 1.0
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 1.0
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 1.0
+    },
+    {
+      "node": "Tim Scott",
+      "value": 1.0
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 1.0
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 1.0
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 1.0
+    },
+    {
+      "node": "Jack Reed",
+      "value": 1.0
+    },
+    {
+      "node": "French Hill",
+      "value": 1.0
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 1.0
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 1.0
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 1.0
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 1.0
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 1.0
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 1.0
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 1.0
+    },
+    {
+      "node": "Paul Clement",
+      "value": 1.0
+    },
+    {
+      "node": "Katie Haun",
+      "value": 1.0
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 1.0
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 1.0
+    },
+    {
+      "node": "Bo Hines",
+      "value": 1.0
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 1.0
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 1.0
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 1.0
+    },
+    {
+      "node": "Larry Fink",
+      "value": 1.0
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 1.0
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 1.0
+    },
+    {
+      "node": "Securitize",
+      "value": 1.0
+    },
+    {
+      "node": "State Street",
+      "value": 1.0
+    },
+    {
+      "node": "Coinbase",
+      "value": 1.0
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 1.0
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 1.0
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 1.0
+    },
+    {
+      "node": "FHFA",
+      "value": 1.0
+    },
+    {
+      "node": "FBI",
+      "value": 1.0
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 1.0
+    },
+    {
+      "node": "King & Spalding",
+      "value": 1.0
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 1.0
+    },
+    {
+      "node": "SEC",
+      "value": 1.0
+    }
+  ],
+  "in_degree": [
+    {
+      "node": "Federal Reserve Board",
+      "value": 19.0
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 11.0
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 10.0
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 9.0
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 8.0
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 7.0
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 7.0
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 7.0
+    },
+    {
+      "node": "EO 14405",
+      "value": 7.0
+    },
+    {
+      "node": "Donald Trump",
+      "value": 5.0
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 5.0
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 5.0
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 5.0
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 5.0
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 4.0
+    },
+    {
+      "node": "USAT",
+      "value": 4.0
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 4.0
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 4.0
+    },
+    {
+      "node": "BlackRock",
+      "value": 4.0
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 3.0
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 3.0
+    },
+    {
+      "node": "USDC",
+      "value": 3.0
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 3.0
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 3.0
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 2.0
+    },
+    {
+      "node": "USD1",
+      "value": 2.0
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 2.0
+    },
+    {
+      "node": "MGX",
+      "value": 2.0
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 2.0
+    },
+    {
+      "node": "Andy Barr",
+      "value": 2.0
+    },
+    {
+      "node": "Paradigm",
+      "value": 2.0
+    },
+    {
+      "node": "Bitfinex",
+      "value": 2.0
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 2.0
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 2.0
+    },
+    {
+      "node": "Treasury",
+      "value": 2.0
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 1.0
+    },
+    {
+      "node": "Eric Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Barron Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 1.0
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 1.0
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Lara Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 1.0
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 1.0
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 1.0
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 1.0
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 1.0
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 1.0
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 1.0
+    },
+    {
+      "node": "William Pulte",
+      "value": 1.0
+    },
+    {
+      "node": "Russell Vought",
+      "value": 1.0
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 1.0
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 1.0
+    },
+    {
+      "node": "Kash Patel",
+      "value": 1.0
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 1.0
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 1.0
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 1.0
+    },
+    {
+      "node": "David Sacks",
+      "value": 1.0
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 1.0
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 1.0
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 1.0
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 1.0
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 1.0
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 1.0
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 1.0
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 1.0
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 1.0
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 1.0
+    },
+    {
+      "node": "Protect Progress",
+      "value": 1.0
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 1.0
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 1.0
+    },
+    {
+      "node": "BitGo",
+      "value": 1.0
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 1.0
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 1.0
+    },
+    {
+      "node": "BUIDL",
+      "value": 1.0
+    },
+    {
+      "node": "Securitize",
+      "value": 1.0
+    },
+    {
+      "node": "State Street",
+      "value": 1.0
+    },
+    {
+      "node": "Ripple",
+      "value": 1.0
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 1.0
+    },
+    {
+      "node": "FHFA",
+      "value": 1.0
+    },
+    {
+      "node": "FBI",
+      "value": 1.0
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 1.0
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 1.0
+    },
+    {
+      "node": "King & Spalding",
+      "value": 1.0
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 1.0
+    },
+    {
+      "node": "SEC",
+      "value": 1.0
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 0.0
+    },
+    {
+      "node": "Chase Herro",
+      "value": 0.0
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 0.0
+    },
+    {
+      "node": "Lunate",
+      "value": 0.0
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 0.0
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 0.0
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 0.0
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 0.0
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 0.0
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 0.0
+    },
+    {
+      "node": "Michael Barr",
+      "value": 0.0
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 0.0
+    },
+    {
+      "node": "John Williams",
+      "value": 0.0
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 0.0
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 0.0
+    },
+    {
+      "node": "Susan Collins",
+      "value": 0.0
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 0.0
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 0.0
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 0.0
+    },
+    {
+      "node": "Mary Daly",
+      "value": 0.0
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 0.0
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 0.0
+    },
+    {
+      "node": "Tim Scott",
+      "value": 0.0
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 0.0
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 0.0
+    },
+    {
+      "node": "Jack Reed",
+      "value": 0.0
+    },
+    {
+      "node": "French Hill",
+      "value": 0.0
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 0.0
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 0.0
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 0.0
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 0.0
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 0.0
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 0.0
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 0.0
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 0.0
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 0.0
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 0.0
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 0.0
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 0.0
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Clement",
+      "value": 0.0
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 0.0
+    },
+    {
+      "node": "Katie Haun",
+      "value": 0.0
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 0.0
+    },
+    {
+      "node": "Katie Biber",
+      "value": 0.0
+    },
+    {
+      "node": "iFinex",
+      "value": 0.0
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 0.0
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 0.0
+    },
+    {
+      "node": "Bo Hines",
+      "value": 0.0
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 0.0
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 0.0
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 0.0
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 0.0
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 0.0
+    },
+    {
+      "node": "Larry Fink",
+      "value": 0.0
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 0.0
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 0.0
+    },
+    {
+      "node": "Coinbase",
+      "value": 0.0
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 0.0
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 0.0
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 0.0
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 0.0
+    }
+  ],
+  "out_degree": [
+    {
+      "node": "Donald Trump",
+      "value": 25.0
+    },
+    {
+      "node": "EO 14405",
+      "value": 5.0
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 4.0
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 4.0
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 4.0
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 4.0
+    },
+    {
+      "node": "Eric Trump",
+      "value": 3.0
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 3.0
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 3.0
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 3.0
+    },
+    {
+      "node": "Kash Patel",
+      "value": 3.0
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 3.0
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 3.0
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 3.0
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 2.0
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 2.0
+    },
+    {
+      "node": "USD1",
+      "value": 2.0
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 2.0
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 2.0
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 2.0
+    },
+    {
+      "node": "William Pulte",
+      "value": 2.0
+    },
+    {
+      "node": "David Sacks",
+      "value": 2.0
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 2.0
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 2.0
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 2.0
+    },
+    {
+      "node": "Christopher Waller",
+      "value": 2.0
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 2.0
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 2.0
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 2.0
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 2.0
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 2.0
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 2.0
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 2.0
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 2.0
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 2.0
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 2.0
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 2.0
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 2.0
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 2.0
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 2.0
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 2.0
+    },
+    {
+      "node": "Katie Biber",
+      "value": 2.0
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 2.0
+    },
+    {
+      "node": "iFinex",
+      "value": 2.0
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 2.0
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 2.0
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 2.0
+    },
+    {
+      "node": "BlackRock",
+      "value": 2.0
+    },
+    {
+      "node": "BUIDL",
+      "value": 2.0
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 2.0
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 2.0
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 2.0
+    },
+    {
+      "node": "Barron Trump",
+      "value": 1.0
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 1.0
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 1.0
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 1.0
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 1.0
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 1.0
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 1.0
+    },
+    {
+      "node": "Chase Herro",
+      "value": 1.0
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 1.0
+    },
+    {
+      "node": "Lunate",
+      "value": 1.0
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 1.0
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 1.0
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 1.0
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 1.0
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 1.0
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 1.0
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 1.0
+    },
+    {
+      "node": "Michael Barr",
+      "value": 1.0
+    },
+    {
+      "node": "John Williams",
+      "value": 1.0
+    },
+    {
+      "node": "Susan Collins",
+      "value": 1.0
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 1.0
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 1.0
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 1.0
+    },
+    {
+      "node": "Mary Daly",
+      "value": 1.0
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 1.0
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 1.0
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 1.0
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 1.0
+    },
+    {
+      "node": "Tim Scott",
+      "value": 1.0
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 1.0
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 1.0
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 1.0
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 1.0
+    },
+    {
+      "node": "Andy Barr",
+      "value": 1.0
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 1.0
+    },
+    {
+      "node": "Jack Reed",
+      "value": 1.0
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 1.0
+    },
+    {
+      "node": "French Hill",
+      "value": 1.0
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 1.0
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 1.0
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 1.0
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 1.0
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 1.0
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 1.0
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 1.0
+    },
+    {
+      "node": "Protect Progress",
+      "value": 1.0
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 1.0
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 1.0
+    },
+    {
+      "node": "USDC",
+      "value": 1.0
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 1.0
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 1.0
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 1.0
+    },
+    {
+      "node": "Paul Clement",
+      "value": 1.0
+    },
+    {
+      "node": "Katie Haun",
+      "value": 1.0
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 1.0
+    },
+    {
+      "node": "Bitfinex",
+      "value": 1.0
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 1.0
+    },
+    {
+      "node": "USAT",
+      "value": 1.0
+    },
+    {
+      "node": "Bo Hines",
+      "value": 1.0
+    },
+    {
+      "node": "BitGo",
+      "value": 1.0
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 1.0
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 1.0
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 1.0
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 1.0
+    },
+    {
+      "node": "Larry Fink",
+      "value": 1.0
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 1.0
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 1.0
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 1.0
+    },
+    {
+      "node": "Coinbase",
+      "value": 1.0
+    },
+    {
+      "node": "Ripple",
+      "value": 1.0
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 1.0
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 1.0
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 1.0
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 0.0
+    },
+    {
+      "node": "Lara Trump",
+      "value": 0.0
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 0.0
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 0.0
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 0.0
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 0.0
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 0.0
+    },
+    {
+      "node": "MGX",
+      "value": 0.0
+    },
+    {
+      "node": "Russell Vought",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 0.0
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 0.0
+    },
+    {
+      "node": "Paradigm",
+      "value": 0.0
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 0.0
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 0.0
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 0.0
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 0.0
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 0.0
+    },
+    {
+      "node": "Securitize",
+      "value": 0.0
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 0.0
+    },
+    {
+      "node": "State Street",
+      "value": 0.0
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 0.0
+    },
+    {
+      "node": "FHFA",
+      "value": 0.0
+    },
+    {
+      "node": "Treasury",
+      "value": 0.0
+    },
+    {
+      "node": "FBI",
+      "value": 0.0
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 0.0
+    },
+    {
+      "node": "King & Spalding",
+      "value": 0.0
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 0.0
+    },
+    {
+      "node": "SEC",
+      "value": 0.0
+    }
+  ],
+  "clustering": [
+    {
+      "node": "Christopher Waller",
+      "value": 0.5
+    },
+    {
+      "node": "Jeffrey Schmid",
+      "value": 0.5
+    },
+    {
+      "node": "Brian Armstrong",
+      "value": 0.3968502629920499
+    },
+    {
+      "node": "Ripple",
+      "value": 0.3968502629920499
+    },
+    {
+      "node": "Brad Garlinghouse",
+      "value": 0.3968502629920499
+    },
+    {
+      "node": "Barron Trump",
+      "value": 0.3149802624737183
+    },
+    {
+      "node": "Jared Kushner",
+      "value": 0.3149802624737183
+    },
+    {
+      "node": "Stand With Crypto Alliance",
+      "value": 0.3149802624737183
+    },
+    {
+      "node": "M. Michele Burns",
+      "value": 0.3149802624737183
+    },
+    {
+      "node": "Craig Broderick",
+      "value": 0.25
+    },
+    {
+      "node": "Brandon Lutnick",
+      "value": 0.23727684182192274
+    },
+    {
+      "node": "Cantor Fitzgerald",
+      "value": 0.17386413134052547
+    },
+    {
+      "node": "Kansas City Fed",
+      "value": 0.16666666666666666
+    },
+    {
+      "node": "Howard Lutnick",
+      "value": 0.13228342099734997
+    },
+    {
+      "node": "Custodia Bank",
+      "value": 0.13228342099734997
+    },
+    {
+      "node": "Stephen Miran",
+      "value": 0.11863842091096137
+    },
+    {
+      "node": "Twenty One Capital",
+      "value": 0.11863842091096137
+    },
+    {
+      "node": "Trump Media (DJT)",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "Donald Trump Jr.",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "Ivanka Trump",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "David Sacks",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "Cynthia Lummis",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "Faryar Shirzad",
+      "value": 0.10499342082457276
+    },
+    {
+      "node": "DT Marks DEFI LLC",
+      "value": 0.09449407874211549
+    },
+    {
+      "node": "Kraken Financial",
+      "value": 0.08333333333333333
+    },
+    {
+      "node": "Tether (USDT)",
+      "value": 0.0684540525292991
+    },
+    {
+      "node": "USAT",
+      "value": 0.06299605249474366
+    },
+    {
+      "node": "Eric Trump",
+      "value": 0.05249671041228638
+    },
+    {
+      "node": "Kash Patel",
+      "value": 0.05249671041228638
+    },
+    {
+      "node": "EO 14405",
+      "value": 0.0339188077788675
+    },
+    {
+      "node": "Affinity Partners",
+      "value": 0.03149802624737183
+    },
+    {
+      "node": "Goldman Sachs",
+      "value": 0.026903822022558015
+    },
+    {
+      "node": "Circle Internet Group",
+      "value": 0.01569389617982551
+    },
+    {
+      "node": "Coinbase Global",
+      "value": 0.010785310991905578
+    },
+    {
+      "node": "Fairshake PAC",
+      "value": 0.008721983802023074
+    },
+    {
+      "node": "Senate Banking Committee",
+      "value": 0.0069995613883048514
+    },
+    {
+      "node": "Federal Reserve Board",
+      "value": 0.006808950136758419
+    },
+    {
+      "node": "Donald Trump",
+      "value": 0.0049996867059320365
+    },
+    {
+      "node": "Tiffany Trump",
+      "value": 0.0
+    },
+    {
+      "node": "Scott Bessent",
+      "value": 0.0
+    },
+    {
+      "node": "Kevin Hassett",
+      "value": 0.0
+    },
+    {
+      "node": "William Pulte",
+      "value": 0.0
+    },
+    {
+      "node": "Russell Vought",
+      "value": 0.0
+    },
+    {
+      "node": "Pamela Bondi",
+      "value": 0.0
+    },
+    {
+      "node": "Jamieson Greer",
+      "value": 0.0
+    },
+    {
+      "node": "D. John Sauer",
+      "value": 0.0
+    },
+    {
+      "node": "Marco Rubio",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Faulkender",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Atkins",
+      "value": 0.0
+    },
+    {
+      "node": "Massad Boulos",
+      "value": 0.0
+    },
+    {
+      "node": "Kimberly Guilfoyle",
+      "value": 0.0
+    },
+    {
+      "node": "Lisa Cook",
+      "value": 0.0
+    },
+    {
+      "node": "American Bitcoin (ABTC)",
+      "value": 0.0
+    },
+    {
+      "node": "Lara Trump",
+      "value": 0.0
+    },
+    {
+      "node": "Michael Boulos",
+      "value": 0.0
+    },
+    {
+      "node": "World Liberty Financial",
+      "value": 0.0
+    },
+    {
+      "node": "USD1",
+      "value": 0.0
+    },
+    {
+      "node": "BitGo Trust",
+      "value": 0.0
+    },
+    {
+      "node": "MGX",
+      "value": 0.0
+    },
+    {
+      "node": "Zachary Folkman",
+      "value": 0.0
+    },
+    {
+      "node": "Chase Herro",
+      "value": 0.0
+    },
+    {
+      "node": "Saudi PIF",
+      "value": 0.0
+    },
+    {
+      "node": "Qatar Investment Authority",
+      "value": 0.0
+    },
+    {
+      "node": "Lunate",
+      "value": 0.0
+    },
+    {
+      "node": "Treasury",
+      "value": 0.0
+    },
+    {
+      "node": "White House Digital Assets Working Group",
+      "value": 0.0
+    },
+    {
+      "node": "Hudson Bay Capital",
+      "value": 0.0
+    },
+    {
+      "node": "FHFA",
+      "value": 0.0
+    },
+    {
+      "node": "Ballard Partners",
+      "value": 0.0
+    },
+    {
+      "node": "FBI",
+      "value": 0.0
+    },
+    {
+      "node": "King & Spalding",
+      "value": 0.0
+    },
+    {
+      "node": "Andreessen Horowitz (a16z)",
+      "value": 0.0
+    },
+    {
+      "node": "Patomak Global Partners",
+      "value": 0.0
+    },
+    {
+      "node": "SEC",
+      "value": 0.0
+    },
+    {
+      "node": "Brian Quintenz",
+      "value": 0.0
+    },
+    {
+      "node": "Scott Kupor",
+      "value": 0.0
+    },
+    {
+      "node": "Heath Tarbert",
+      "value": 0.0
+    },
+    {
+      "node": "Brian Brooks",
+      "value": 0.0
+    },
+    {
+      "node": "Anchorage Digital",
+      "value": 0.0
+    },
+    {
+      "node": "BitGo",
+      "value": 0.0
+    },
+    {
+      "node": "Kevin Warsh",
+      "value": 0.0
+    },
+    {
+      "node": "Stanley Druckenmiller",
+      "value": 0.0
+    },
+    {
+      "node": "Michelle Bowman",
+      "value": 0.0
+    },
+    {
+      "node": "Philip Jefferson",
+      "value": 0.0
+    },
+    {
+      "node": "Michael Barr",
+      "value": 0.0
+    },
+    {
+      "node": "John Williams",
+      "value": 0.0
+    },
+    {
+      "node": "Beth Hammack",
+      "value": 0.0
+    },
+    {
+      "node": "Neel Kashkari",
+      "value": 0.0
+    },
+    {
+      "node": "Susan Collins",
+      "value": 0.0
+    },
+    {
+      "node": "Alberto Musalem",
+      "value": 0.0
+    },
+    {
+      "node": "Austan Goolsbee",
+      "value": 0.0
+    },
+    {
+      "node": "Lorie Logan",
+      "value": 0.0
+    },
+    {
+      "node": "Mary Daly",
+      "value": 0.0
+    },
+    {
+      "node": "Tom Barkin",
+      "value": 0.0
+    },
+    {
+      "node": "Anna Paulson",
+      "value": 0.0
+    },
+    {
+      "node": "Tim Scott",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Hagerty",
+      "value": 0.0
+    },
+    {
+      "node": "Mike Crapo",
+      "value": 0.0
+    },
+    {
+      "node": "Bernie Moreno",
+      "value": 0.0
+    },
+    {
+      "node": "Ruben Gallego",
+      "value": 0.0
+    },
+    {
+      "node": "Andy Barr",
+      "value": 0.0
+    },
+    {
+      "node": "House Financial Services Committee",
+      "value": 0.0
+    },
+    {
+      "node": "Elizabeth Warren",
+      "value": 0.0
+    },
+    {
+      "node": "Jack Reed",
+      "value": 0.0
+    },
+    {
+      "node": "Sherrod Brown",
+      "value": 0.0
+    },
+    {
+      "node": "French Hill",
+      "value": 0.0
+    },
+    {
+      "node": "Bryan Steil",
+      "value": 0.0
+    },
+    {
+      "node": "Maxine Waters",
+      "value": 0.0
+    },
+    {
+      "node": "Bill Huizenga",
+      "value": 0.0
+    },
+    {
+      "node": "Frank Lucas",
+      "value": 0.0
+    },
+    {
+      "node": "Stephen Lynch",
+      "value": 0.0
+    },
+    {
+      "node": "Defend American Jobs",
+      "value": 0.0
+    },
+    {
+      "node": "Protect Progress",
+      "value": 0.0
+    },
+    {
+      "node": "Keep America Great PAC",
+      "value": 0.0
+    },
+    {
+      "node": "USDC",
+      "value": 0.0
+    },
+    {
+      "node": "BlackRock",
+      "value": 0.0
+    },
+    {
+      "node": "BNY Mellon",
+      "value": 0.0
+    },
+    {
+      "node": "Jeremy Allaire",
+      "value": 0.0
+    },
+    {
+      "node": "Dante Disparte",
+      "value": 0.0
+    },
+    {
+      "node": "Rajeev Date",
+      "value": 0.0
+    },
+    {
+      "node": "Marc Andreessen",
+      "value": 0.0
+    },
+    {
+      "node": "Ben Horowitz",
+      "value": 0.0
+    },
+    {
+      "node": "Frederick Ehrsam",
+      "value": 0.0
+    },
+    {
+      "node": "Paradigm",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Grewal",
+      "value": 0.0
+    },
+    {
+      "node": "Paul Clement",
+      "value": 0.0
+    },
+    {
+      "node": "Chris Lehane",
+      "value": 0.0
+    },
+    {
+      "node": "Haun Ventures",
+      "value": 0.0
+    },
+    {
+      "node": "Katie Haun",
+      "value": 0.0
+    },
+    {
+      "node": "Chris Dixon",
+      "value": 0.0
+    },
+    {
+      "node": "Katie Biber",
+      "value": 0.0
+    },
+    {
+      "node": "iFinex",
+      "value": 0.0
+    },
+    {
+      "node": "Bitfinex",
+      "value": 0.0
+    },
+    {
+      "node": "Paolo Ardoino",
+      "value": 0.0
+    },
+    {
+      "node": "Giancarlo Devasini",
+      "value": 0.0
+    },
+    {
+      "node": "Bo Hines",
+      "value": 0.0
+    },
+    {
+      "node": "Diogo Monica",
+      "value": 0.0
+    },
+    {
+      "node": "Nathan McCauley",
+      "value": 0.0
+    },
+    {
+      "node": "Paxos Trust",
+      "value": 0.0
+    },
+    {
+      "node": "State Street",
+      "value": 0.0
+    },
+    {
+      "node": "Charles Cascarilla",
+      "value": 0.0
+    },
+    {
+      "node": "Jesse Powell",
+      "value": 0.0
+    },
+    {
+      "node": "Caitlin Long",
+      "value": 0.0
+    },
+    {
+      "node": "Circle Reserve Fund",
+      "value": 0.0
+    },
+    {
+      "node": "BUIDL",
+      "value": 0.0
+    },
+    {
+      "node": "Larry Fink",
+      "value": 0.0
+    },
+    {
+      "node": "Philipp Hildebrand",
+      "value": 0.0
+    },
+    {
+      "node": "Robert Mitchnick",
+      "value": 0.0
+    },
+    {
+      "node": "Securitize",
+      "value": 0.0
+    },
+    {
+      "node": "Coinbase",
+      "value": 0.0
+    },
+    {
+      "node": "Tyler Winklevoss",
+      "value": 0.0
+    },
+    {
+      "node": "Cameron Winklevoss",
+      "value": 0.0
+    },
+    {
+      "node": "Crypto.com (Foris DAX)",
+      "value": 0.0
+    }
+  ],
+  "node_community": {
+    "Michelle Bowman": 0,
+    "John Williams": 0,
+    "David Sacks": 0,
+    "Christopher Waller": 0,
+    "Mary Daly": 0,
+    "Alberto Musalem": 0,
+    "Austan Goolsbee": 0,
+    "EO 14405": 0,
+    "Lorie Logan": 0,
+    "Michael Barr": 0,
+    "Tom Barkin": 0,
+    "Philip Jefferson": 0,
+    "Kevin Warsh": 0,
+    "Stephen Miran": 0,
+    "Susan Collins": 0,
+    "Federal Reserve Board": 0,
+    "Hudson Bay Capital": 0,
+    "Custodia Bank": 0,
+    "Caitlin Long": 0,
+    "Anna Paulson": 0,
+    "Lisa Cook": 0,
+    "Stanley Druckenmiller": 0,
+    "Qatar Investment Authority": 1,
+    "Saudi PIF": 1,
+    "Ivanka Trump": 1,
+    "Jared Kushner": 1,
+    "Affinity Partners": 1,
+    "Ballard Partners": 1,
+    "Lunate": 1,
+    "Pamela Bondi": 1,
+    "Russell Vought": 2,
+    "Marco Rubio": 2,
+    "Kash Patel": 2,
+    "Trump Media (DJT)": 2,
+    "King & Spalding": 2,
+    "Treasury": 2,
+    "Chase Herro": 2,
+    "Massad Boulos": 2,
+    "World Liberty Financial": 2,
+    "Michael Boulos": 2,
+    "Kimberly Guilfoyle": 2,
+    "D. John Sauer": 2,
+    "Barron Trump": 2,
+    "Scott Bessent": 2,
+    "American Bitcoin (ABTC)": 2,
+    "Donald Trump": 2,
+    "FHFA": 2,
+    "Jamieson Greer": 2,
+    "Zachary Folkman": 2,
+    "Eric Trump": 2,
+    "William Pulte": 2,
+    "Donald Trump Jr.": 2,
+    "Mike Faulkender": 2,
+    "FBI": 2,
+    "Tiffany Trump": 2,
+    "DT Marks DEFI LLC": 2,
+    "Ben Horowitz": 2,
+    "Lara Trump": 2,
+    "Brandon Lutnick": 3,
+    "Tether (USDT)": 3,
+    "Bo Hines": 3,
+    "Giancarlo Devasini": 3,
+    "iFinex": 3,
+    "Cantor Fitzgerald": 3,
+    "Paolo Ardoino": 3,
+    "Howard Lutnick": 3,
+    "Twenty One Capital": 3,
+    "Bitfinex": 3,
+    "USAT": 3,
+    "Mike Crapo": 4,
+    "Senate Banking Committee": 4,
+    "Tim Scott": 4,
+    "Jack Reed": 4,
+    "Cynthia Lummis": 4,
+    "Bill Hagerty": 4,
+    "Elizabeth Warren": 4,
+    "Sherrod Brown": 4,
+    "Paul Atkins": 5,
+    "SEC": 5,
+    "Patomak Global Partners": 5,
+    "USD1": 6,
+    "MGX": 6,
+    "Katie Biber": 6,
+    "Paradigm": 6,
+    "Diogo Monica": 6,
+    "Nathan McCauley": 6,
+    "BitGo": 6,
+    "Katie Haun": 6,
+    "Chris Lehane": 6,
+    "BitGo Trust": 6,
+    "Anchorage Digital": 6,
+    "Haun Ventures": 6,
+    "Brian Brooks": 6,
+    "Kevin Hassett": 7,
+    "Faryar Shirzad": 7,
+    "Paul Grewal": 7,
+    "Coinbase Global": 7,
+    "Frederick Ehrsam": 7,
+    "Stand With Crypto Alliance": 7,
+    "Paul Clement": 7,
+    "Brian Armstrong": 7,
+    "White House Digital Assets Working Group": 7,
+    "Marc Andreessen": 7,
+    "Kraken Financial": 8,
+    "Kansas City Fed": 8,
+    "Jesse Powell": 8,
+    "Jeffrey Schmid": 8,
+    "Beth Hammack": 9,
+    "Craig Broderick": 9,
+    "BNY Mellon": 9,
+    "Robert Mitchnick": 9,
+    "Circle Internet Group": 9,
+    "BlackRock": 9,
+    "Philipp Hildebrand": 9,
+    "Rajeev Date": 9,
+    "Dante Disparte": 9,
+    "BUIDL": 9,
+    "Larry Fink": 9,
+    "Jeremy Allaire": 9,
+    "Heath Tarbert": 9,
+    "Neel Kashkari": 9,
+    "Securitize": 9,
+    "Goldman Sachs": 9,
+    "M. Michele Burns": 9,
+    "USDC": 9,
+    "Circle Reserve Fund": 9,
+    "State Street": 10,
+    "Charles Cascarilla": 10,
+    "Paxos Trust": 10,
+    "Bryan Steil": 11,
+    "Ruben Gallego": 11,
+    "Coinbase": 11,
+    "Defend American Jobs": 11,
+    "Keep America Great PAC": 11,
+    "Scott Kupor": 11,
+    "Maxine Waters": 11,
+    "Protect Progress": 11,
+    "Bill Huizenga": 11,
+    "House Financial Services Committee": 11,
+    "Frank Lucas": 11,
+    "Andreessen Horowitz (a16z)": 11,
+    "Stephen Lynch": 11,
+    "Brad Garlinghouse": 11,
+    "French Hill": 11,
+    "Crypto.com (Foris DAX)": 11,
+    "Andy Barr": 11,
+    "Tyler Winklevoss": 11,
+    "Ripple": 11,
+    "Bernie Moreno": 11,
+    "Cameron Winklevoss": 11,
+    "Chris Dixon": 11,
+    "Fairshake PAC": 11,
+    "Brian Quintenz": 11
+  }
+}
