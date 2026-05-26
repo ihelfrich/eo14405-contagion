@@ -61,8 +61,10 @@ The Trump family channel is documented in WLFI's separate disclosures
 - DT Marks DEFI LLC is reportedly 70 percent owned by Donald Trump and
   30 percent by other family members.
 - USD1, WLFI's dollar-backed stablecoin, launched in 2025. Its custodian
-  is BitGo Trust (South Dakota state-chartered, master-account-eligible
-  under EO 14405 Section 4).
+  is BitGo Trust, which converted from a South Dakota state-chartered
+  trust company to an OCC national trust bank (BitGo Bank and Trust,
+  N.A.) in December 2025 and is now master-account-eligible under EO
+  14405 Section 4.
 
 The order's Section 4(b) and 4(c) directly affect USD1's regulatory
 trajectory. Direct master-account access for USD1's BitGo Trust
@@ -72,7 +74,7 @@ contractual revenue claim flows through that channel.
 
 A parallel exposure: **DJT (Trump Media and Technology Group, NASDAQ:DJT,
 CIK 0001849635)** disclosed in its Q1 2026 10-Q filed 8 May 2026 a
-treasury position of **11,542 BTC plus 756 million CRO tokens** built
+treasury position of **9,542.16 BTC plus 756,079,523 CRO tokens** built
 mid-2025 from \$2.3 billion in stock and note proceeds. The 10-Q reports
 a \$405.9 million Q1 2026 net loss almost entirely from crypto markdowns.
 This is a second conflict surface that EO 14405 does not directly affect

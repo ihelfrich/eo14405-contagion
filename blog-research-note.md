@@ -17,7 +17,7 @@ Different readers want different depth. Pick a path:
 - **Five minutes**: read this 90-second summary, look at the figure below in `figures/analysis_helfrich.png`, scan Part 8 (the synthesis).
 - **Half an hour**: read Parts 1, 2, and 3 for the mechanism, then Part 5 for the political economy, then Part 8.
 - **Two hours**: read the whole note, do at least three of the nine exercises, follow the inline source links.
-- **Half a day**: clone the repository, run `python src/analyze.py` to reproduce the numbers, read the six OSINT dossiers in `dossiers/`, read the formal paper at `paper.md`, look at the technical references.
+- **Half a day**: clone the repository, run `python src/analyze.py` to reproduce the numbers, read the twelve OSINT dossiers in `dossiers/` (plus the validation files in `dossiers/validation/`), read the formal paper at `paper.md`, look at the technical references.
 
 If you find any step opaque or any source unverifiable, mark it and tell me. The whole point of the format is that you should be able to verify rather than trust.
 

@@ -30,7 +30,7 @@ Primary source: SEC Form D/A, World Liberty Financial, Inc., accession `00020431
 | Officers and directors of record: Zachary Folkman and Chase Herro only | CONFIRMED | Item 3 lists only these two related persons, each with all three boxes (Executive Officer, Director, Promoter) checked |
 | Folkman address in Dorado, Puerto Rico | CONFIRMED | "425 Carr 693 PMB 285, Dorado, PUERTO RICO, 00646" |
 | Herro address in Dorado, Puerto Rico | CONTRADICTED | Herro's Item 3 address is "407 Ayre St. PMB #1358, Wilmington, DELAWARE, 19805", not Dorado. The dossier paragraph "Zachary Folkman ... listed address in Dorado, Puerto Rico) and Chase Herro (same combined roles)" reads as if both are in Dorado, which the filing does not support. Roles are identical; addresses are not. |
-| Cumulative Reg-D sales of $52,133,139 as of July 3, 2025 | CONFIRMED | Item 13 shows Total Offering Amount $52,133,139, Total Amount Sold $52,133,139, Total Remaining $0 |
+| Cumulative Reg-D sales of \$52,133,139 as of July 3, 2025 | CONFIRMED | Item 13 shows Total Offering Amount \$52,133,139, Total Amount Sold \$52,133,139, Total Remaining \$0 |
 | 1,966 investors | CONFIRMED | Item 14 reports 1,966 total investors |
 | Clarification note about a separate concurrent Regulation S offering | CONFIRMED | Item 13 clarification reads "The TAS excludes amounts offered and sold to non-US persons in a separate concurrent, offering consistent with Regulation S." |
 | Above the operating corp sits WLF Holdco LLC, above that DT Marks DEFI LLC | NOT IN FORM D | The Form D names only the issuer. The Holdco / DT Marks chain is sourced to press (CNBC October 2024, Reuters March 2025) and to the April 2, 2025 Warren-Waters letter, which describes DT Marks DEFI LLC as "an entity affiliated with Donald J. Trump and certain of his family members." Acceptable as press-confirmed but not from a primary SEC filing. |
@@ -53,14 +53,14 @@ There is also a Form 3 on file, accession `0001104659-25-111655`, filed November
 | BitGo Trust is South Dakota state-chartered | PARTIALLY CONFIRMED, NOW STALE | BitGo Trust Company, Inc. was originally a South Dakota state-chartered trust company. In December 2025 the OCC granted full unconditional approval to convert it to BitGo Bank & Trust, N.A., a federally chartered national trust bank (OCC NR 2025-125c; BitGo press of December 12, 2025). The dossier description "South Dakota state-chartered" is correct for the period in which USD1 launched but is no longer the current charter. The paper should say "originally South Dakota state-chartered; converted to OCC-chartered national trust bank effective December 2025" because that conversion changes the regulatory channel through which EO 14405 reaches USD1. |
 | Launched 2025 | CONFIRMED | March 2025 launch on Ethereum and BNB Chain is press-consistent; New York Times "Trump's Crypto Venture Introduces New Digital Currency" (David Yaffe-Bellany, March 25, 2025) anchors the date. |
 | Reserves managed by BlackRock; cash plus short-duration Treasuries | NOT IN PRIMARY SOURCE | This composition appears on the company website and in eco.com and CoinMarketCap explainers. No published independent attestation report (analogous to Circle's USDC monthly attestation by Deloitte) was located in this validation pass. Mark as "company-disclosed, not independently attested" in the dossier. |
-| Circulating supply roughly $2B late 2025, above $4B by April 2026 | PRESS-CONFIRMED | CoinMarketCap profile and other tracker sites agree on the magnitude. Acceptable as a press claim. |
+| Circulating supply roughly \$2B late 2025, above \$4B by April 2026 | PRESS-CONFIRMED | CoinMarketCap profile and other tracker sites agree on the magnitude. Acceptable as a press claim. |
 
 ### House investigation
 
 | Claim | Status | Notes |
 |---|---|---|
-| House investigation into an alleged $500M, 49% UAE stake purchase | CONFIRMED with refinement | The House inquiry was opened by the **House Select Committee on the Chinese Communist Party**, ranking member Rep. Ro Khanna (D-CA), in a letter dated February 4, 2026. The dossier refers to it generically as a "House investigation" which is correct; for any paper-grade citation the committee name needs to be specified, because "House investigation" by default reads as House Financial Services or House Oversight, neither of which opened this probe. |
-| WSJ original report on the deal | CONFIRMED | WSJ reported the deal in early February 2026 (the WSJ article itself is paywalled; CNN, The Block, Ledger Insights, and the House letter all reference and quote it). The deal: Aryam Investment 1 vehicle, $500 million for 49% of WLFI, signed roughly four days before January 2025 inauguration, $250M at signing and $250M by mid-July 2025, with approximately $187M of the first tranche flowing to Trump-family entities and approximately $31M to Witkoff-family entities. Signed by Eric Trump. Closing terms remain confidential; the SEC Form D does not reflect this transaction. |
+| House investigation into an alleged \$500M, 49% UAE stake purchase | CONFIRMED with refinement | The House inquiry was opened by the **House Select Committee on the Chinese Communist Party**, ranking member Rep. Ro Khanna (D-CA), in a letter dated February 4, 2026. The dossier refers to it generically as a "House investigation" which is correct; for any paper-grade citation the committee name needs to be specified, because "House investigation" by default reads as House Financial Services or House Oversight, neither of which opened this probe. |
+| WSJ original report on the deal | CONFIRMED | WSJ reported the deal in early February 2026 (the WSJ article itself is paywalled; CNN, The Block, Ledger Insights, and the House letter all reference and quote it). The deal: Aryam Investment 1 vehicle, \$500 million for 49% of WLFI, signed roughly four days before January 2025 inauguration, \$250M at signing and \$250M by mid-July 2025, with approximately \$187M of the first tranche flowing to Trump-family entities and approximately \$31M to Witkoff-family entities. Signed by Eric Trump. Closing terms remain confidential; the SEC Form D does not reflect this transaction. |
 
 ### DJT (Trump Media) crypto treasury
 
@@ -71,7 +71,7 @@ Primary source: Trump Media & Technology Group Corp. Q1 2026 10-Q, accession `00
 | 10-Q filed May 8, 2026 | CONFIRMED | EDGAR filing date matches |
 | 11,542 BTC as of March 31, 2026 | CONTRADICTED | The XBRL-tagged value under `djt:DigitalAssetNumberOfUnits` for the Bitcoin row of the Note 4 Digital Assets table is **9,542.16 BTC**, identical to the December 31, 2025 figure (no net BTC purchases or sales in Q1 2026). The dossier figure of 11,542 BTC is off by roughly 2,000 BTC and is wrong. The 9,542.16 figure is the consolidated holdings. The filing also separately reports 4,260.73 BTC pledged as collateral to convertible notes and a covered-call position over 4,000 BTC with 2,000 BTC posted as collateral; none of those sum to 11,542. This appears to be a transposition or a confusion with an earlier reporting period. |
 | 756,079,523 CRO (Cronos) as of March 31, 2026 | CONFIRMED | XBRL value 756,079,523.00, of which 615,984,303.6 is subject to contractual sale restriction. |
-| Q1 2026 net loss of $405.9M from crypto markdowns | CONFIRMED with mild refinement | XBRL-tagged `us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic` is $(405,813.5) thousand for Q1 2026, which rounds to $405.8M. The dossier's "$405.9 million" is within rounding. Note that consolidated `us-gaap:NetIncomeLoss` (parent + noncontrolling) is $(387,849.8) thousand or $387.8M; "net loss" can be quoted either way, so the dossier should specify "net loss available to common stockholders" for precision. |
+| Q1 2026 net loss of \$405.9M from crypto markdowns | CONFIRMED with mild refinement | XBRL-tagged `us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic` is $(405,813.5) thousand for Q1 2026, which rounds to \$405.8M. The dossier's "\$405.9 million" is within rounding. Note that consolidated `us-gaap:NetIncomeLoss` (parent + noncontrolling) is $(387,849.8) thousand or \$387.8M; "net loss" can be quoted either way, so the dossier should specify "net loss available to common stockholders" for precision. |
 | Net loss is "almost entirely unrealized losses on crypto" | DIRECTIONALLY CONFIRMED | The 10-Q's MD&A discussion of digital asset fair-value changes is the dominant driver of the loss; the exact share is computable from the filing's fair-value tables. The dossier's framing is acceptable but the precise number would require a one-line addition from the Note 4 fair-value reconciliation. |
 
 ### Senate Banking letter to SEC
@@ -95,7 +95,7 @@ Primary source: PDF retrieved from `https://www.banking.senate.gov/imo/media/doc
 
 | Claim | Status | Notes |
 |---|---|---|
-| Sun filed suit against WLF in April 2026 alleging fraud, breach of contract, $75M frozen tokens | CONFIRMED via press, refined | Filed April 21-22, 2026 in the U.S. District Court for the Northern District of California (San Francisco). The dispute concerns roughly 4 billion frozen WLFI tokens (Sun puts the value near $320M; the $75M figure in the dossier appears to reflect the investment principal Sun publicly committed, not the asserted current value). The dossier's "$75 million" is incomplete. |
+| Sun filed suit against WLF in April 2026 alleging fraud, breach of contract, \$75M frozen tokens | CONFIRMED via press, refined | Filed April 21-22, 2026 in the U.S. District Court for the Northern District of California (San Francisco). The dispute concerns roughly 4 billion frozen WLFI tokens (Sun puts the value near \$320M; the \$75M figure in the dossier appears to reflect the investment principal Sun publicly committed, not the asserted current value). The dossier's "\$75 million" is incomplete. |
 | WLF countersued for defamation | CONFIRMED | Filed by WLF on May 4, 2026 in the Eleventh Judicial Circuit Court for Miami-Dade County, Florida (state court, not federal). The dossier currently does not specify state vs. federal venue; for precision the paper should. |
 | CourtListener docket numbers | NOT FOUND IN PRIMARY SOURCES | `forensic-econ osint court` returned 401 (no API token in environment). The N.D. Cal. case caption and Miami-Dade case caption are available via press; the docket numbers would be retrievable through PACER or with a CourtListener key. Mark as a follow-up. |
 
@@ -115,7 +115,7 @@ In order of how much they would matter for a paper:
 
 6. **Duke FinReg framing.** A blog post by Lee Reiners, not an institutional Duke analysis. Cite by author.
 
-7. **Sun litigation venue and dollar figure.** California Northern District for Sun v. WLF; Miami-Dade Circuit for the WLF defamation countersuit; Sun's asserted damages are not $75M but rather the value of approximately 4 billion frozen WLFI tokens, with the $75M figure being the original investment principal.
+7. **Sun litigation venue and dollar figure.** California Northern District for Sun v. WLF; Miami-Dade Circuit for the WLF defamation countersuit; Sun's asserted damages are not \$75M but rather the value of approximately 4 billion frozen WLFI tokens, with the \$75M figure being the original investment principal.
 
 8. **DT Marks DEFI LLC ownership chain.** None of the 75% revenue claim, the 70/30 Trump/family split, or the 60% → 38% Holdco equity step-down is in any primary SEC filing. All three rest on Reuters / CNBC / The Block reporting plus company-published materials. This is acceptable for a dossier but the paper text should phrase them as "according to company gold paper and Reuters reporting" rather than as if they were SEC disclosures.
 
@@ -123,7 +123,7 @@ In order of how much they would matter for a paper:
 
 - **PACER / CourtListener docket numbers** for Sun v. World Liberty Financial (N.D. Cal., April 2026) and World Liberty Financial v. Sun (Eleventh Judicial Circuit, Miami-Dade, May 2026). Either acquire a CourtListener API token for the local `forensic-econ` client or pull through PACER directly.
 
-- **Reg-S concurrent offering size.** The July 2025 Form D/A explicitly excludes non-US sales under a separate Regulation S concurrent offering. Reuters reported aggregate token sales above $500M as of early 2025; the residual (above the $52.13M US-person Reg-D figure) is the Reg-S tranche, but that tranche has no public filing on EDGAR because Regulation S sales are not subject to Form D. Tracking the size requires either company disclosure or, more practically, on-chain analysis of wallet flows.
+- **Reg-S concurrent offering size.** The July 2025 Form D/A explicitly excludes non-US sales under a separate Regulation S concurrent offering. Reuters reported aggregate token sales above \$500M as of early 2025; the residual (above the \$52.13M US-person Reg-D figure) is the Reg-S tranche, but that tranche has no public filing on EDGAR because Regulation S sales are not subject to Form D. Tracking the size requires either company disclosure or, more practically, on-chain analysis of wallet flows.
 
 - **USD1 reserve attestation.** No published independent attestation report was located. Either the engagement exists and is not publicly posted, or there is none. For any Howey or run-risk argument the existence of an attestation matters; the paper should not assume one exists.
 
@@ -131,7 +131,7 @@ In order of how much they would matter for a paper:
 
 - **DT Marks DEFI LLC Delaware filing.** Available through the Delaware Division of Corporations entity search. Would establish formation date, registered agent, and any amendments. Not done in this pass.
 
-- **WLFI ALTS Form 3 (November 2025)** — worth a separate look at what ALTS is and why WLFI is reporting a 1,000,000-share Director-plus-Other beneficial-ownership position in it. This filing is on the WLFI EDGAR page but is not mentioned in the dossier.
+- **WLFI ALTS Form 3 (November 2025)**, worth a separate look at what ALTS is and why WLFI is reporting a 1,000,000-share Director-plus-Other beneficial-ownership position in it. This filing is on the WLFI EDGAR page but is not mentioned in the dossier.
 
 ## Aggregate confidence assessment
 
@@ -139,12 +139,12 @@ Per top-level claim block, with action recommended for the paper draft:
 
 | Claim block | Confidence after this pass | Action |
 |---|---|---|
-| WLFI corporate structure (CIK, Delaware, Miami address, Folkman and Herro as officers, $52.13M, 1,966 investors, Reg-S exclusion) | HIGH (primary-source confirmed) | **ELEVATE TO PAPER** with the corrected Herro Wilmington-DE address. |
+| WLFI corporate structure (CIK, Delaware, Miami address, Folkman and Herro as officers, \$52.13M, 1,966 investors, Reg-S exclusion) | HIGH (primary-source confirmed) | **ELEVATE TO PAPER** with the corrected Herro Wilmington-DE address. |
 | Trump family revenue channel (75% protocol revenue via DT Marks DEFI LLC; 70/30 internal split; 60% → 38% Holdco equity) | MEDIUM (press-confirmed, no SEC filing) | **KEEP IN DOSSIER WITH HEDGE** "according to Reuters and CNBC reporting and company-published materials, not on the face of any SEC filing." |
 | USD1 custodian, charter, launch date | MEDIUM-HIGH but stale on charter | **ELEVATE TO PAPER** with the BitGo charter update (South Dakota state-chartered through December 2025; OCC-chartered national trust bank thereafter). |
 | USD1 reserve composition (BlackRock-managed, T-bill plus cash) | LOW-MEDIUM (company-disclosed, no third-party attestation found) | **KEEP IN DOSSIER WITH HEDGE** "company-disclosed reserve composition; no independent attestation publicly available as of May 26, 2026." |
-| House investigation into $500M UAE 49% stake | HIGH | **ELEVATE TO PAPER** naming the House Select Committee on the CCP and ranking member Khanna, with WSJ reporting as the trigger and the Aryam Investment 1 vehicle. |
-| DJT Q1 2026 10-Q figures | MIXED | **ELEVATE TO PAPER** with the corrected BTC figure of 9,542.16 (not 11,542). Keep the CRO and net-loss figures. Clarify "net loss available to common stockholders" for the $405.8M figure. |
+| House investigation into \$500M UAE 49% stake | HIGH | **ELEVATE TO PAPER** naming the House Select Committee on the CCP and ranking member Khanna, with WSJ reporting as the trigger and the Aryam Investment 1 vehicle. |
+| DJT Q1 2026 10-Q figures | MIXED | **ELEVATE TO PAPER** with the corrected BTC figure of 9,542.16 (not 11,542). Keep the CRO and net-loss figures. Clarify "net loss available to common stockholders" for the \$405.8M figure. |
 | Senate Banking letter to SEC | HIGH | **ELEVATE TO PAPER** as the Warren-Waters joint letter of April 2, 2025 to Acting SEC Chair Uyeda. |
 | Duke FinReg "analysis" | MEDIUM (it's a blog post by Lee Reiners, not an institutional position) | **KEEP IN DOSSIER WITH HEDGE** as "blog post by Lee Reiners, Duke FinReg Blog, May 8, 2026, arguing WLFI satisfies Howey." Do not characterize as the institutional position of Duke Law. |
 
@@ -157,9 +157,9 @@ For a paper-grade citation pass I would (a) fix BTC, (b) fix the BitGo charter, 
 File: `/Users/ian/Projects/eo14405-contagion/dossiers/validation/wlfi-deep-dive.md`
 
 Six-line summary:
-1. Form D/A primary data (Miami office, $52.13M, 1,966 investors, Folkman and Herro as the only related persons, Reg-S exclusion clause) all match the dossier exactly; Herro's address is Wilmington DE, not Dorado PR as the dossier groups it.
+1. Form D/A primary data (Miami office, \$52.13M, 1,966 investors, Folkman and Herro as the only related persons, Reg-S exclusion clause) all match the dossier exactly; Herro's address is Wilmington DE, not Dorado PR as the dossier groups it.
 2. DJT Q1 2026 10-Q reports 9,542.16 BTC, not 11,542 BTC: the dossier figure is wrong by roughly two thousand coins. CRO and net loss survive verification.
 3. The April 2, 2025 Senate Banking letter is real and on file; it is jointly signed by Sen. Warren and Rep. Waters to Acting SEC Chair Uyeda, not Senate-Banking-only.
-4. The House investigation into the alleged $500M UAE 49% stake exists; it was opened by the House Select Committee on the CCP (ranking member Khanna), not by a Financial Services or Oversight committee.
+4. The House investigation into the alleged \$500M UAE 49% stake exists; it was opened by the House Select Committee on the CCP (ranking member Khanna), not by a Financial Services or Oversight committee.
 5. BitGo Trust Company's South Dakota state charter is now historical; the OCC approved conversion to BitGo Bank & Trust, N.A. in December 2025.
 6. The Duke FinReg "analysis" is a blog post by Lee Reiners; the 75% protocol-revenue and DT Marks DEFI LLC ownership claims are press-only, not in any SEC filing, and the dossier should hedge them accordingly.

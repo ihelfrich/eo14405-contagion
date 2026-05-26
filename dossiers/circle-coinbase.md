@@ -16,7 +16,7 @@ IPO: priced on NYSE under ticker CRCL the week of **June 5, 2025** (not June 202
 
 Most recent annual report: 10-K for FY2025 filed 2026-03-09 (accession 0001876042-26-000062). First post-IPO 10-Q was for the period ended 2025-06-30 (accession 0001628280-25-039781).
 
-### S-1 highlights — reserve composition and custody
+### S-1 highlights, reserve composition and custody
 
 The S-1 discloses that Circle earns "nearly all" of its revenue from interest income on USDC reserves. Reserves are held in two forms:
 
@@ -24,9 +24,9 @@ The S-1 discloses that Circle earns "nearly all" of its revenue from interest in
 2. **Cash deposits at banks**, with **BNY Mellon as primary custodian** (announced March 2022). The S-1 also lists Cross River Bank and Customers Bank as banking partners in the historical period. (Source: Circle press release "Circle Selects BNY Mellon to Custody USDC Reserves", March 2022; cointelegraph; decrypt.)
 
 Auditor history (relevant for attestation credibility):
-- **Grant Thornton LLP**: independent auditor and monthly attestation provider from 2015 through 2022. (Source: Circle blog "USDC Reserve Attestation Report from Grant Thornton LLP — March 2021".)
+- **Grant Thornton LLP**: independent auditor and monthly attestation provider from 2015 through 2022. (Source: Circle blog "USDC Reserve Attestation Report from Grant Thornton LLP, March 2021".)
 - **Deloitte & Touche LLP**: independent auditor since fiscal year 2022. (Source: Blockworks, "Circle Taps Deloitte as New Auditor.")
-- Note: secondary sources occasionally claim "BDO" succeeded Grant Thornton. This appears to be a confusion with Tether's auditor switch. **[uncertain — Deloitte is more strongly attested in sources reviewed]**.
+- Note: secondary sources occasionally claim "BDO" succeeded Grant Thornton. This appears to be a confusion with Tether's auditor switch. **[uncertain, Deloitte is more strongly attested in sources reviewed]**.
 
 ### USDC circulating supply trajectory
 
@@ -55,13 +55,13 @@ The trough is the March 2023 depeg episode. Circulating supply lost roughly a qu
 
 ### Key personnel and holdings
 
-- **Jeremy Allaire** — CEO, co-founder. Form 3 filed at IPO; subsequent Form 4s in the May 2025 cleanup. The full holdings table would require parsing the individual Form 4 XML, which is feasible from the accession list above but not done in this dossier. **[uncertain on precise share count; recommend dedicated Form 4 parse]**
-- **Heath Tarbert** — joined Circle as **Chief Legal Officer and Head of Corporate Affairs in June 2023**; elevated to **President** by 2025. Former **14th Chairman of the CFTC (2019–2021)**; previously Assistant Secretary of the Treasury for International Markets and Development; acting Under Secretary of the Treasury for International Affairs. Tarbert is publicly quoted endorsing the GENIUS Act and CFTC Acting Chair Pham's tokenized-collateral pilot. (Sources: Tarbert LinkedIn; Wikipedia; Circle leadership page; CFTC press release 9146-25.) This is the single most direct revolving-door connection between US derivatives regulation and the dominant US-public stablecoin issuer.
-- **Dante Disparte** — Chief Strategy Officer / Head of Global Policy. Previously Head of Policy and Communications for the Diem (formerly Libra) Association. **[Diem affiliation widely reported but not re-verified in this pass]**.
+- **Jeremy Allaire**, CEO, co-founder. Form 3 filed at IPO; subsequent Form 4s in the May 2025 cleanup. The full holdings table would require parsing the individual Form 4 XML, which is feasible from the accession list above but not done in this dossier. **[uncertain on precise share count; recommend dedicated Form 4 parse]**
+- **Heath Tarbert**, joined Circle as **Chief Legal Officer and Head of Corporate Affairs in June 2023**; elevated to **President** by 2025. Former **14th Chairman of the CFTC (2019–2021)**; previously Assistant Secretary of the Treasury for International Markets and Development; acting Under Secretary of the Treasury for International Affairs. Tarbert is publicly quoted endorsing the GENIUS Act and CFTC Acting Chair Pham's tokenized-collateral pilot. (Sources: Tarbert LinkedIn; Wikipedia; Circle leadership page; CFTC press release 9146-25.) This is the single most direct revolving-door connection between US derivatives regulation and the dominant US-public stablecoin issuer.
+- **Dante Disparte**, Chief Strategy Officer / Head of Global Policy. Previously Head of Policy and Communications for the Diem (formerly Libra) Association. **[Diem affiliation widely reported but not re-verified in this pass]**.
 
 ### Recent regulatory / legal exposure
 
-No active SEC enforcement action against Circle disclosed in the 10-K reviewed. CourtListener query returned a 401 (`forensic-econ osint court` needs `COURTLISTENER_TOKEN`); recommend re-running with auth. **[uncertain — pending CourtListener re-run]**.
+No active SEC enforcement action against Circle disclosed in the 10-K reviewed. CourtListener query returned a 401 (`forensic-econ osint court` needs `COURTLISTENER_TOKEN`); recommend re-running with auth. **[uncertain, pending CourtListener re-run]**.
 
 ## Coinbase Global (COIN)
 
@@ -83,7 +83,7 @@ CIK 1679788. Annual filers since IPO (April 2021 direct listing):
 
 Under the **August 2023 restructured commercial agreement** (which dissolved Centre and gave Coinbase a minority equity stake in Circle), Circle and Coinbase **equally share interest income generated on USDC reserves, weighted by distribution and usage** (i.e., USDC held on Coinbase's platform generates revenue that flows largely to Coinbase; USDC held elsewhere generates revenue that flows largely to Circle, with a base equal-share component). (Sources: CoinDesk 2023-08-21; Fortune Crypto 2023-08-21; Decrypt 2023-08-21.)
 
-Coinbase 10-K and 10-Q filings break out a "stablecoin revenue" line item, which is materially driven by USDC reserve interest. Precise FY2024 and FY2023 figures could not be extracted in this pass because the SEC EDGAR HTML returned 403 to the WebFetch tool. **[uncertain on exact dollar figures — recommend pulling via `forensic-econ edgar facts --cik 1679788` to get XBRL-tagged values, or via direct EDGAR fetch with proper UA header]**.
+Coinbase 10-K and 10-Q filings break out a "stablecoin revenue" line item, which is materially driven by USDC reserve interest. Precise FY2024 and FY2023 figures could not be extracted in this pass because the SEC EDGAR HTML returned 403 to the WebFetch tool. **[uncertain on exact dollar figures, recommend pulling via `forensic-econ edgar facts --cik 1679788` to get XBRL-tagged values, or via direct EDGAR fetch with proper UA header]**.
 
 ### CEO Form 4 trading pattern
 
@@ -142,7 +142,7 @@ Direct benefits to Circle and Coinbase if implemented:
 1. **Circle**: a Fed master account would allow USDC to hold reserves directly at the Fed rather than at BNY Mellon, eliminating one layer of bank-deposit counterparty risk. This would functionally make USDC a synthetic CBDC sitting on Circle's balance sheet but fully reserved at the Fed. The same change would also let Circle internalise the spread that BNY Mellon currently earns on the float, materially increasing Circle's net interest margin on reserves.
 2. **Coinbase**: direct settlement access via a Coinbase Fed account would let USDC redemptions clear without going through a correspondent bank, eliminating the SVB-style "stuck deposits" failure mode that triggered the March 2023 depeg. Coinbase's revenue share on USDC reserve interest would also benefit pro-rata from Circle's margin expansion.
 
-The contagion concern for the working paper: a Fed master account converts what is currently a private-sector run risk (USDC redemption pressure flowing through commercial banks) into a direct Fed balance-sheet exposure. The Fed becomes the implicit lender-of-last-resort for the stablecoin sector without statutory authority to set capital, liquidity, or activity restrictions on the issuers — the asymmetry the working paper's Eisenberg-Noe and global-game modules are designed to formalise.
+The contagion concern for the working paper: a Fed master account converts what is currently a private-sector run risk (USDC redemption pressure flowing through commercial banks) into a direct Fed balance-sheet exposure. The Fed becomes the implicit lender-of-last-resort for the stablecoin sector without statutory authority to set capital, liquidity, or activity restrictions on the issuers, the asymmetry the working paper's Eisenberg-Noe and global-game modules are designed to formalise.
 
 ## Sources
 
@@ -171,10 +171,10 @@ The contagion concern for the working paper: a Fed master account converts what 
 
 ## Uncertainty
 
-1. Exact FY2024 / FY2023 dollar values for Coinbase's stablecoin revenue line — SEC EDGAR HTML 403'd. Recommend rerun via `forensic-econ edgar facts --cik 1679788` for XBRL-tagged values, or direct fetch with proper UA.
-2. Allaire and Tarbert share counts and option holdings — Form 4 XML not parsed in this pass. The full Form 4 accession list is captured above; targeted parse is straightforward.
+1. Exact FY2024 / FY2023 dollar values for Coinbase's stablecoin revenue line, SEC EDGAR HTML 403'd. Recommend rerun via `forensic-econ edgar facts --cik 1679788` for XBRL-tagged values, or direct fetch with proper UA.
+2. Allaire and Tarbert share counts and option holdings, Form 4 XML not parsed in this pass. The full Form 4 accession list is captured above; targeted parse is straightforward.
 3. CourtListener queries failed with 401 (missing `COURTLISTENER_TOKEN`). The SEC v. Coinbase docket history and any Circle-related civil cases should be re-pulled with auth.
 4. Auditor succession claim "Grant Thornton then BDO" in the task brief: not corroborated. Deloitte is the attested successor since FY2022. The BDO confusion may be with Tether's auditor history.
-5. Exact percentage equity Coinbase holds in Circle post-August 2023 deal — secondary reports vary; primary source would be Circle's S-1 cap table footnotes.
-6. Customers Bank and Cross River Bank present-day status as USDC banking partners — confirmed as historical, status as of May 2026 not directly verified.
+5. Exact percentage equity Coinbase holds in Circle post-August 2023 deal, secondary reports vary; primary source would be Circle's S-1 cap table footnotes.
+6. Customers Bank and Cross River Bank present-day status as USDC banking partners, confirmed as historical, status as of May 2026 not directly verified.
 7. The "\$908M" Coinbase-Circle deal value circulating in some secondary outlets appears to be a derived figure; treat as unverified.
