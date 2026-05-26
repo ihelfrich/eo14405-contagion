@@ -92,7 +92,7 @@ The second-largest documented conflict in this dossier set involves the
 US Secretary of Commerce, Howard Lutnick, and the world's largest
 stablecoin, Tether (USDT).
 
-Per the Wall Street Journal (4 November 2024) and subsequent disclosures:
+Per the Wall Street Journal (24 November 2024) and subsequent disclosures:
 
 - **Cantor Fitzgerald** (Lutnick's investment bank prior to his Cabinet
   confirmation) acquired an approximately 5 percent equity stake in
@@ -105,8 +105,7 @@ Per the Wall Street Journal (4 November 2024) and subsequent disclosures:
 
 In January 2026, Cantor/Tether launched **USAT**, a GENIUS-Act-compliant
 US sibling to USDT. Bo Hines is named CEO. USAT operates through
-Anchorage Digital Bank, an OCC-chartered trust company that already
-holds Fed master-account access. This is the operational pathway through
+Anchorage Digital Bank, an OCC-chartered trust company whose OCC trust-bank charter is the regulatory pathway to Fed master-account eligibility under EO 14405 Section 4. This is the operational pathway through
 which the offshore-USDT economic engine can acquire US Fed payment rails
 without iFinex itself submitting to US consolidated supervision.
 

@@ -153,15 +153,15 @@ content.
 | Rank | Individual | Eig. cent. | Dossier conflict assessment |
 |---|---|---:|---|
 | 1 | Donald Trump | 0.473 | Holds the kinship and ownership edges that fan out across the entire graph. The graph centrality matches the political-economy claim in `trump-wlfi.md`: the signing principal is also the contractual beneficiary. |
-| 2 | Stephen Miran | 0.162 | Triple-counted: ex-Hudson Bay Capital, ex-CEA Chair, current Fed Governor (see `trump-admin-financial-roster.md` and `fed-board.md`). The "Mar-a-Lago Accord" framework is the intellectual scaffold the EO sits on. |
-| 3 | Marc Andreessen | 0.211 | Coinbase board director since December 2020, a16z co-founder, \$2.5M MAGA PAC personal donor in 2024 (see `sacks-a16z-quintenz.md`). The single node that connects industry capital, the issuer roster, and the political donor base. |
+| 2 | Marc Andreessen | 0.211 | Coinbase board director since December 2020, a16z co-founder, \$2.5M MAGA PAC personal donor in 2024 (see `sacks-a16z-quintenz.md`). The single node that connects industry capital, the issuer roster, and the political donor base. |
+| 3 | Stephen Miran | 0.162 | Triple-counted: ex-Hudson Bay Capital, ex-CEA Chair, current Fed Governor (see `trump-admin-financial-roster.md` and `fed-board.md`). The "Mar-a-Lago Accord" framework is the intellectual scaffold the EO sits on. |
 | 4 | Ben Horowitz | 0.156 | a16z co-founder, \$2.5M personal MAGA PAC donation 2024 (see `sacks-a16z-quintenz.md`). Co-anchor of the second community. |
 | 5 | Scott Bessent | 0.140 | Treasury Secretary; ex-Key Square Group founder; disclosed \$250K to \$500K IBIT position at nomination with a March 2025 divestment pledge (see `trump-admin-financial-roster.md`). Sets the GENIUS Act implementing posture. |
 | 6 | Christopher Waller | 0.137 | Fed Governor; intellectual author of the "skinny master account" framework EO 14405 ratifies (see `fed-board.md`). Policy conflict rather than financial conflict, but the policy conflict is exact. |
 | 7 | Kevin Hassett | 0.137 | NEC Director; chairs the White House Digital Assets Working Group while holding \$1M to \$5M Coinbase common stock per June 2025 OGE filing (see `trump-admin-financial-roster.md`). |
 | 8 | Brian Quintenz | 0.128 | ex-CFTC Commissioner, ex-a16z Global Head of Policy, withdrawn CFTC Chair nominee (see `sacks-a16z-quintenz.md`). Withdrawal under Winklevoss pressure illustrates the limits of the network's coordination. |
-| 9 | William Pulte | 0.122 | FHFA Director; \$500K-\$1M each in Bitcoin and Solana not divested while issuing the June 25, 2025 FHFA directive ordering Fannie and Freddie to "study" crypto as mortgage reserves (see `trump-admin-financial-roster.md`). |
-| 10 | Howard Lutnick | 0.117 | Commerce Secretary; family retains operational control of Cantor Fitzgerald via Brandon Lutnick; Cantor holds ~5% Tether equity and custodies the majority of Tether's ~\$141B Treasury reserves (see `tether-ifinex.md`). |
+| 9 | David Sacks | 0.116 | Co-hosted the San Francisco fundraiser for Trump; a16z LP; Coinbase advocate (see `sacks-a16z-quintenz.md`). Structural node connecting Silicon Valley fundraising to the administrative core. |
+| 10 | D. John Sauer | 0.110 | Solicitor General; former personal attorney to the President in immunity and criminal cases; oversight of DOJ amicus posture in digital-asset litigation (see `trump-admin-financial-roster.md`). |
 
 The pattern is internally consistent. The top ten are the people the
 dossiers also flag as the highest-risk conflict surface, in roughly the
@@ -302,8 +302,13 @@ fall apart.
 
 If a reviewer wants the shortest possible answer to "who connects the
 three subnetworks?", it is Warsh, Miran, Lutnick, Hassett, and Quintenz.
-A wider answer adds Bessent (Treasury-WLFI), Pulte (FHFA-crypto-mortgage),
-and Tarbert (CFTC-Circle).
+However, graph analysis shows the network is structurally redundant: even
+removing these five nodes, the clusters remain connected via Trump's
+personal donation to Marc Andreessen (the Circle/Coinbase nexus) and the
+litigation edge to Governor Lisa Cook. The "spine" is a policy-active
+bridge, but the political-economy network is structurally more robust
+than the five-node cut suggests. A wider answer adds Bessent
+(Treasury-WLFI), Pulte (FHFA-crypto-mortgage), and Tarbert (CFTC-Circle).
 
 ## Reader exercises
 
