@@ -1,23 +1,35 @@
 """
-style.py — Dr. Ian Helfrich publication palette and matplotlib defaults.
+style.py — Helfrich publication palette and matplotlib defaults.
 
-Mirrors the Pictures of Inference styling (poi/style.py) so that figures
-in this project share visual identity with the PoI textbook and other
-Helfrich publications. Palette is semantic, not decorative: each color
-encodes a story role.
+Identity system documented in docs/style-guide.md.
+
+Heritage palette drawn from Dr. Helfrich's institutions:
+  CAROLINA_BLUE  UNC Chapel Hill primary
+  CAROLINA_NAVY  UNC institutional navy
+  OLD_GOLD       Georgia Tech Old Gold
+  BSE_TEAL       Barcelona Graduate School of Economics aesthetic
+  INDIANA_CRIMSON Indiana University Bloomington crimson
+  PARCHMENT      warm cream background (scholarship over startup)
+  SLATE          secondary text
+  MIST           low-contrast separators
+
+Palette is semantic, not decorative. Each color encodes a role.
 
 Usage
 -----
-    from style import helfrich_style, INK, RUST, SAGE, GOLD, VIOLET, DIM, TEAL
-    import matplotlib.pyplot as plt
+    from style import (helfrich_style,
+                       CAROLINA_BLUE, CAROLINA_NAVY, OLD_GOLD,
+                       BSE_TEAL, INDIANA_CRIMSON,
+                       PARCHMENT, SLATE, MIST)
 
     @helfrich_style
     def fig_my_panel():
         fig, ax = plt.subplots()
-        ax.plot(x, y, color=INK)
+        ax.plot(x, y, color=CAROLINA_BLUE)
         return fig
 
-The decorator applies fonts, sizing, and saves to figures/<name>.pdf+png.
+Backward-compatible aliases (INK, RUST, etc.) preserved so existing
+figures continue to render. New work should use the heritage names.
 """
 from __future__ import annotations
 
@@ -28,25 +40,49 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # ----------------------------------------------------------------------
-# Palette (semantic colors). Identical hex values to PoI.
+# Heritage palette
 # ----------------------------------------------------------------------
 
-INK    = "#1a4f7a"   # primary  — pre-EO / baseline / dominant story
-RUST   = "#b85c38"   # contrast — post-EO / treatment / alternative
-SAGE   = "#5a7247"   # control  — placebo / comparison
-GOLD   = "#b8941e"   # highlight — derived / synthesized
-VIOLET = "#6a5acd"   # uncertain — predicted / posterior
-DIM    = "#8a8a8a"   # background — support / muted
-TEAL   = "#3a8a99"   # secondary contrast
+CAROLINA_BLUE   = "#4B9CD3"   # UNC primary  — dominant brand
+CAROLINA_NAVY   = "#13294B"   # UNC navy     — body ink, headings
+OLD_GOLD        = "#B3A369"   # GT Old Gold  — heritage accent, emphasis
+BSE_TEAL        = "#2C7873"   # BGSE         — comparison, alternative
+INDIANA_CRIMSON = "#990000"   # IU crimson   — warning, dissent (sparing)
+
+PARCHMENT       = "#FAF8F3"   # warm cream background
+SLATE           = "#4E5667"   # secondary text, axis labels
+MIST            = "#E8E2D5"   # borders, dividers
 
 # Sequential and diverging maps for heatmaps / continuous quantities
-SEQ_BLUES = ["#d6e4f0", "#a8c5e0", "#6c9bc7", "#3a73a8", INK]
-SEQ_WARM  = ["#f5dccb", "#e8b395", "#d68a64", RUST,     "#7a3a1f"]
-DIV_BLUE_RUST = [INK, "#6c9bc7", "#d6e4f0", "#f5f5f5",
-                 "#f5dccb", "#d68a64", RUST]
+SEQ_BLUES = ["#E3EEF7", "#B8D3E8", "#7FB1D3", "#4B9CD3", CAROLINA_NAVY]
+SEQ_GOLDS = ["#F4EFDC", "#E0D2A4", "#C7B97A", OLD_GOLD,  "#7E6F3B"]
+DIV_BLUE_GOLD = [CAROLINA_NAVY, "#4B9CD3", "#B8D3E8", PARCHMENT,
+                 "#E0D2A4", OLD_GOLD, "#7E6F3B"]
 
-PALETTE = {"INK": INK, "RUST": RUST, "SAGE": SAGE, "GOLD": GOLD,
-           "VIOLET": VIOLET, "DIM": DIM, "TEAL": TEAL}
+# Backward-compatible aliases (so existing figures keep rendering)
+INK    = CAROLINA_NAVY        # was #1a4f7a; now Carolina Navy
+RUST   = INDIANA_CRIMSON      # was #b85c38; now Indiana Crimson
+SAGE   = BSE_TEAL             # was #5a7247; now BSE Teal
+GOLD   = OLD_GOLD             # was #b8941e; now Old Gold
+VIOLET = "#6a5acd"            # retained (not heritage but useful)
+DIM    = SLATE                # was #8a8a8a; now Slate (warmer)
+TEAL   = BSE_TEAL             # alias
+
+# Re-export legacy sequence maps under the same names so existing imports
+# keep working; the new heritage versions are SEQ_GOLDS and DIV_BLUE_GOLD.
+SEQ_WARM      = SEQ_GOLDS
+DIV_BLUE_RUST = DIV_BLUE_GOLD
+
+PALETTE = {
+    "CAROLINA_BLUE":   CAROLINA_BLUE,
+    "CAROLINA_NAVY":   CAROLINA_NAVY,
+    "OLD_GOLD":        OLD_GOLD,
+    "BSE_TEAL":        BSE_TEAL,
+    "INDIANA_CRIMSON": INDIANA_CRIMSON,
+    "PARCHMENT":       PARCHMENT,
+    "SLATE":           SLATE,
+    "MIST":            MIST,
+}
 
 # Figure sizes in inches
 FIG_SINGLE   = (5.5, 3.6)
@@ -109,18 +145,25 @@ def apply_defaults() -> None:
         "grid.linewidth": 0.6,
         "grid.color": "#888888",
 
+        # Default color cycle uses the heritage palette in order of
+        # narrative role: primary, contrast, comparison, emphasis,
+        # then accents.
         "axes.prop_cycle": matplotlib.cycler(color=[
-            INK, RUST, SAGE, GOLD, VIOLET, TEAL, DIM,
+            CAROLINA_BLUE, INDIANA_CRIMSON, BSE_TEAL, OLD_GOLD,
+            CAROLINA_NAVY, VIOLET, SLATE,
         ]),
+
+        # Warm parchment background for figures (scholarship over startup)
+        "figure.facecolor": PARCHMENT,
+        "axes.facecolor":   PARCHMENT,
 
         "savefig.dpi": 300,
         "savefig.bbox": "tight",
         "savefig.pad_inches": 0.18,
         "savefig.transparent": False,
-        "savefig.facecolor": "white",
+        "savefig.facecolor": PARCHMENT,
         "figure.dpi": 150,
-        "figure.facecolor": "white",
-        "figure.edgecolor": "white",
+        "figure.edgecolor": PARCHMENT,
     })
 
 

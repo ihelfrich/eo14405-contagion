@@ -24,24 +24,39 @@ using Statistics
 using LinearAlgebra
 
 # ---------------------------------------------------------------------
-# Palette (semantic, identical to Python src/style.py)
+# Heritage palette (identical hex to Python src/style.py)
+# Drawn from UNC Chapel Hill, Georgia Tech, BGSE, Indiana University.
+# Documented in docs/style-guide.md.
 # ---------------------------------------------------------------------
-const INK    = colorant"#1a4f7a"
-const RUST   = colorant"#b85c38"
-const SAGE   = colorant"#5a7247"
-const GOLD   = colorant"#b8941e"
+const CAROLINA_BLUE   = colorant"#4B9CD3"
+const CAROLINA_NAVY   = colorant"#13294B"
+const OLD_GOLD        = colorant"#B3A369"
+const BSE_TEAL        = colorant"#2C7873"
+const INDIANA_CRIMSON = colorant"#990000"
+const PARCHMENT       = colorant"#FAF8F3"
+const SLATE           = colorant"#4E5667"
+const MIST            = colorant"#E8E2D5"
+
+# Backward-compatible aliases (so existing panel code continues to work)
+const INK    = CAROLINA_NAVY
+const RUST   = INDIANA_CRIMSON
+const SAGE   = BSE_TEAL
+const GOLD   = OLD_GOLD
 const VIOLET = colorant"#6a5acd"
-const DIM    = colorant"#8a8a8a"
-const TEAL   = colorant"#3a8a99"
+const DIM    = SLATE
+const TEAL   = BSE_TEAL
 const EDGE   = colorant"#444444"
 
-const SEQ_BLUES = [colorant"#d6e4f0", colorant"#a8c5e0",
-                   colorant"#6c9bc7", colorant"#3a73a8", INK]
-const SEQ_WARM  = [colorant"#f5dccb", colorant"#e8b395",
-                   colorant"#d68a64", RUST,             colorant"#7a3a1f"]
-const DIV_BLUE_RUST = [INK, colorant"#6c9bc7", colorant"#d6e4f0",
-                       colorant"#f5f5f5",
-                       colorant"#f5dccb", colorant"#d68a64", RUST]
+const SEQ_BLUES = [colorant"#E3EEF7", colorant"#B8D3E8", colorant"#7FB1D3",
+                   CAROLINA_BLUE, CAROLINA_NAVY]
+const SEQ_GOLDS = [colorant"#F4EFDC", colorant"#E0D2A4", colorant"#C7B97A",
+                   OLD_GOLD, colorant"#7E6F3B"]
+const DIV_BLUE_GOLD = [CAROLINA_NAVY, CAROLINA_BLUE, colorant"#B8D3E8",
+                       PARCHMENT, colorant"#E0D2A4", OLD_GOLD,
+                       colorant"#7E6F3B"]
+# Legacy aliases
+const SEQ_WARM      = SEQ_GOLDS
+const DIV_BLUE_RUST = DIV_BLUE_GOLD
 
 # ---------------------------------------------------------------------
 # Theme
@@ -176,9 +191,9 @@ function panel_katz!(ax, data)
     pre_vals  = Float64.(data["katz_pre"])
     post_vals = Float64.(data["katz_post"])
     n = length(labels); y = 1:n; w = 0.36
-    barplot!(ax, pre_vals,  y .- w/2, width = w, direction = :x,
+    barplot!(ax, y .- w/2, pre_vals, width = w, direction = :x,
              color = INK,  label = "Pre-EO")
-    barplot!(ax, post_vals, y .+ w/2, width = w, direction = :x,
+    barplot!(ax, y .+ w/2, post_vals, width = w, direction = :x,
              color = RUST, label = "Post-EO")
     ax.yticks = (1:n, labels)
     ax.xlabel = L"\text{Katz centrality } \kappa_i"

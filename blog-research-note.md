@@ -1,8 +1,43 @@
-# Direct Federal Reserve Access for Stablecoins, Considered Slowly
-## A research note on Executive Order 14405, written as an investigation you can join
+# Notes on Executive Order 14405
+## Master account access and stablecoin run dynamics
 
 **Ian Helfrich** · 26 May 2026
 *Available at [github.com/ihelfrich/eo14405-contagion](https://github.com/ihelfrich/eo14405-contagion). Cross-posted to my blog. Comments via GitHub Issues.*
+
+---
+
+## The argument in ninety seconds
+
+Executive Order 14405 directs the Federal Reserve to consider giving stablecoin issuers and other non-bank fintechs direct access to Federal Reserve payment accounts. Today these issuers route reserves through commercial banks. The order would let them park reserves at the Fed itself, the same way a member bank does. Every standard measure of contagion risk improves under the new regime: stablecoin runs become substantially less likely and substantially less severe. But the loss-absorption mechanism shifts location rather than vanishing. Under the current system, a stablecoin failure transmits to commercial bank shareholders. Under the order, it transmits to the Federal Reserve's balance sheet, where the cost depends on the rate the Fed charges for emergency liquidity. That rate has not been set. The administration that signed the order will appoint the chair who sets it. The President's family holds a 75 percent revenue claim on one of the largest beneficiaries. Whether the order is, on net, a good idea depends on choices that have not yet been made by actors whose incentives are not neutral. I think it is more likely to be welfare-degrading than welfare-improving, and I hold that view with moderate confidence.
+
+## Reading guide
+
+Different readers want different depth. Pick a path:
+
+- **Five minutes**: read this 90-second summary, look at the figure below in `figures/analysis_helfrich.png`, scan Part 8 (the synthesis).
+- **Half an hour**: read Parts 1, 2, and 3 for the mechanism, then Part 5 for the political economy, then Part 8.
+- **Two hours**: read the whole note, do at least three of the nine exercises, follow the inline source links.
+- **Half a day**: clone the repository, run `python src/analyze.py` to reproduce the numbers, read the six OSINT dossiers in `dossiers/`, read the formal paper at `paper.md`, look at the technical references.
+
+If you find any step opaque or any source unverifiable, mark it and tell me. The whole point of the format is that you should be able to verify rather than trust.
+
+## Glossary of technical terms
+
+I use a small set of technical terms repeatedly. If any is unfamiliar, this short list is the entry point.
+
+- **Stablecoin**: a privately issued digital token meant to trade one-to-one with a national currency. Backed by reserves of safe assets (Treasury bills, commercial bank deposits, or, under the order, Federal Reserve balances).
+- **Peg**: the target one-to-one exchange rate between a stablecoin and its reference currency. A "depeg" is when the market price diverges from the peg.
+- **Master account**: an account a financial institution holds directly at a Federal Reserve Bank. Holders earn the IORB rate and can settle payments through Fedwire. Currently restricted mostly to depository institutions.
+- **Run**: a coordination failure where holders rush to redeem before others, even when the issuer is fundamentally solvent. The classic bank-run dynamic.
+- **Eisenberg-Noe clearing** (2001): a method for computing how payment obligations cascade through a network of mutually owing institutions when one fails. The cornerstone of modern financial-network contagion analysis.
+- **Global game** (Morris-Shin 1998, 2003): a model of coordination problems under noisy private information. Used to derive the unique run threshold endogenously rather than treating runs as unmodeled.
+- **Wasserstein-1 distance**: a way to measure how different two distributions are by computing the minimum-cost reallocation between them under a specified cost matrix. Here used to give "run severity" a well-defined unit.
+- **Perron-Frobenius eigenvalue**: the largest-modulus eigenvalue of a non-negative matrix. In the Acemoglu-Ozdaglar-Tahbaz-Salehi (2015) framework, this eigenvalue governs whether a financial network amplifies or absorbs shocks.
+- **Negishi-Pareto weights**: a method of comparing welfare across different agents by assigning each agent a weight that sums to one across all agents. The choice of weights is a value judgment.
+- **Bayesian counterfactual**: a probability distribution over the outcomes that would have occurred under an alternative scenario, given the data that did occur. Provides credible intervals rather than point estimates.
+- **Implicit subsidy rate**: the gap between what the Federal Reserve charges for emergency liquidity and the rate a risk-fair private lender would charge. If the Fed lends below the risk-fair rate, the difference is a transfer.
+
+These are not standalone definitions; they are pointers to where I use the concepts. The mechanism appears in Part 2, the math in Parts 3 and 4, the welfare analysis in Part 5.
 
 ---
 
@@ -213,7 +248,7 @@ I will list six specific ways the analysis above could be wrong. If you find any
 
 EO 14405 is a topology shift on the financial-network exposure graph. It systematically reduces stablecoin run risk in every standard contagion metric, by removing commercial-bank intermediation between stablecoin issuers and the Federal Reserve. The reduction is real and large. The Wasserstein-1 run severity falls by 95 percent. The Eisenberg-Noe amplification falls from 1.27 to 1.00. The global-game run probability falls from 0.90 to 0.18. The spectral radius falls from 0.87 to 0.42. The technical case for the order's contagion-reducing effects is solid.
 
-The complication is that the order does not eliminate the absorption mechanism; it relocates it. The Federal Reserve's balance sheet, not the commercial banking system, becomes the counterparty whose policy choices determine whether a stablecoin redemption shock produces a depeg. Whether this is a net welfare improvement depends on the rate at which the Federal Reserve will price the implicit liquidity backstop, which the order does not specify and which has not yet been determined. Under my baseline calibration the order is welfare-improving under equal Negishi-Pareto weights. Under heavy taxpayer weighting it is welfare-degrading.
+The complication is that absorption of stress shifts location rather than vanishing. The Federal Reserve's balance sheet replaces the commercial banking system as the counterparty whose policy choices determine whether a stablecoin redemption shock produces a depeg. Whether this is a net welfare improvement depends on the rate at which the Federal Reserve will price the implicit liquidity backstop, which the order does not specify and which has not yet been determined. Under my baseline calibration the order is welfare-improving under equal Negishi-Pareto weights. Under heavy taxpayer weighting it is welfare-degrading.
 
 The political-economy facts documented in Part 5 do not invalidate the technical analysis. They do situate the implementing decisions in an institutional environment in which several of the actors who will set the operative parameters have direct financial relationships with the policy beneficiaries. The 120-day Section 4(b) report will be drafted under a Federal Reserve chair appointed by the same administration that signed the order. That is not corruption per se. It is a pattern that should be disclosed alongside the welfare analysis, because the welfare conclusion is sensitive to choices that those institutional actors will make.
 

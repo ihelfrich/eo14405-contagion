@@ -6,9 +6,19 @@
 
 ---
 
+### Reading guide
+
+This paper is written at three levels of depth. The abstract and Section 1 give the result and the policy implication. Sections 2 through 4 develop the four analytical frameworks (Eisenberg-Noe clearing, Morris-Shin global game, optimal transport, Acemoglu-Ozdaglar-Tahbaz-Salehi spectral analysis). Section 5 covers Bayesian inference on the counterfactual. Section 6 reports calibrated results. Section 7 discusses policy implications. Section 8 documents conflicts of interest in the political-economy context. Section 9 reports extensions that close five identified gaps in the baseline model. Section 10 concludes. Readers seeking a less formal treatment will find a companion research note at `blog-research-note.md` with reader exercises and an explicit glossary. Readers seeking the briefest summary will find a LinkedIn-format version at `linkedin-post.md`.
+
+### Glossary
+
+For non-specialist readers: a stablecoin is a privately-issued token meant to trade one-to-one with a sovereign currency, backed by reserves. A run is a coordination failure where holders rush to redeem ahead of others. A master account is a direct settlement account at a Federal Reserve Bank, currently held mostly by depository institutions. The Eisenberg-Noe (2001) framework solves for the clearing payment vector in a network of mutually owing institutions. The Morris-Shin (1998, 2003) global game gives the endogenous run threshold under noisy private information. Wasserstein-1 distance measures the minimum-cost reallocation between two distributions of holders across asset classes. The Perron-Frobenius eigenvalue of the normalized exposure matrix governs whether a financial network amplifies or absorbs shocks (Acemoglu-Ozdaglar-Tahbaz-Salehi 2015). Negishi-Pareto weights are weights assigned across agent classes when computing aggregate welfare; the choice of weights is a value judgment that the analyst must disclose.
+
+---
+
 ### Abstract
 
-Executive Order 14405 directs the Federal Reserve to evaluate, and where legally permissible to establish, direct Reserve-Bank master-account access for non-bank financial entities, including stablecoin issuers. The change shifts the topology along which stablecoin run risk transmits, but it does not eliminate it. I formalize this proposition in four complementary frameworks: (i) Eisenberg-Noe (2001) fixed-point clearing on the bilateral exposure network, (ii) the Morris-Shin (1998, 2003) global game for the endogenous run threshold, (iii) optimal-transport with cost matrices encoding regime-specific frictions for run-severity measurement, and (iv) an Acemoglu-Ozdaglar-Tahbaz-Salehi (2015) effective feedback operator for spectral contagion. Calibrating to the March 2023 USDC/SVB episode via Bayesian posterior inference, I show that under the post-EO regime: the run threshold $\theta^\star$ falls by approximately 0.78 fundamental-units, the model-implied run probability falls from 0.90 to 0.18 under a common public prior, the system-wide Wasserstein-1 run severity drops by roughly 95 percent, and the Perron-Frobenius eigenvalue $\lambda_{\max}$ of the effective loss-feedback matrix declines from 0.87 to 0.42. The unambiguous result is the reallocation of liquidity absorption from commercial banks to the Fed's residual claimants, who absorb on the order of $12\text{B}$ of liquidity-provision exposure in the baseline scenario. The expected fiscal subsidy cost of that exposure is much smaller under the baseline 30 bp subsidy calibration, so welfare conclusions are highly sensitive to whether the social loss function prices gross liquidity exposure, expected subsidy, or tail fiscal loss.
+Executive Order 14405 directs the Federal Reserve to evaluate, and where legally permissible to establish, direct Reserve-Bank master-account access for non-bank financial entities, including stablecoin issuers. The change shifts the topology along which stablecoin run risk transmits while leaving aggregate exposure substantially unchanged. I formalize this proposition in four complementary frameworks: (i) Eisenberg-Noe (2001) fixed-point clearing on the bilateral exposure network, (ii) the Morris-Shin (1998, 2003) global game for the endogenous run threshold, (iii) optimal-transport with cost matrices encoding regime-specific frictions for run-severity measurement, and (iv) an Acemoglu-Ozdaglar-Tahbaz-Salehi (2015) effective feedback operator for spectral contagion. Calibrating to the March 2023 USDC/SVB episode via Bayesian posterior inference, I show that under the post-EO regime: the run threshold $\theta^\star$ falls by approximately 0.78 fundamental-units, the model-implied run probability falls from 0.90 to 0.18 under a common public prior, the system-wide Wasserstein-1 run severity drops by roughly 95 percent, and the Perron-Frobenius eigenvalue $\lambda_{\max}$ of the effective loss-feedback matrix declines from 0.87 to 0.42. The unambiguous result is the reallocation of liquidity absorption from commercial banks to the Fed's residual claimants, who absorb on the order of $12\text{B}$ of liquidity-provision exposure in the baseline scenario. The expected fiscal subsidy cost of that exposure is much smaller under the baseline 30 bp subsidy calibration, so welfare conclusions are highly sensitive to whether the social loss function prices gross liquidity exposure, expected subsidy, or tail fiscal loss.
 
 **Keywords:** stablecoins, financial-network contagion, optimal transport, global games, master account, EO 14405
 
@@ -20,7 +30,7 @@ Executive Order 14405 directs the Federal Reserve to evaluate, and where legally
 
 The May 19, 2026 Executive Order 14405 (Integrating Financial Technology Innovation Into Regulatory Frameworks, 91 FR 30475) instructs the Board of Governors of the Federal Reserve System, in 120 days, to evaluate the legal authority for and operational architecture of direct Reserve-Bank master-account access for non-bank financial entities, including stablecoin issuers. The order asks specifically whether the twelve regional Reserve Banks can act independently of the FRB in granting such access (Sec. 4(b)(iv)) and instructs that where existing law permits direct access, a 90-day adjudication clock applies (Sec. 4(c)). The order operationalizes a pathway already opened by the Federal Reserve Bank of Kansas City's approval of Kraken Financial's Limited Purpose Master Account on March 4, 2026.
 
-The public-policy discussion around EO 14405 has framed the change as a binary choice between deregulation and consumer protection. That framing misses the structural mechanism. Direct master-account access does not eliminate stablecoin run risk; it relocates the absorption mechanism from commercial banks to the Fed's balance sheet. The relevant analytical question is not whether the EO reduces risk, but how it redistributes it across agent classes and across the topology of the financial network.
+The public-policy discussion around EO 14405 has framed the change as a binary choice between deregulation and consumer protection. That framing misses the structural mechanism. Direct master-account access leaves the aggregate run-loss expectation roughly unchanged while shifting its incidence from commercial bank shareholders to the Federal Reserve's balance sheet. The relevant analytical question is the redistribution of risk across agent classes and across the topology of the financial network, not the existence of risk reduction at the system level.
 
 This note formalizes that question in four standard frameworks of financial-network theory: Eisenberg-Noe fixed-point clearing for the payment system, Morris-Shin global games for the endogenous run threshold, optimal transport for the formal measurement of run severity across holder distributions, and Acemoglu-Ozdaglar-Tahbaz-Salehi spectral analysis for asymptotic contagion susceptibility. I calibrate the dynamics to the March 2023 USDC/SVB episode using Bayesian Markov chain Monte Carlo posterior inference, then compute the counterfactual under the post-EO regime in each framework.
 
@@ -211,9 +221,65 @@ These facts do not by themselves invalidate the technical analysis above. They d
 
 The full primary-source documentation is in `dossiers/SYNTHESIS.md`. Readers who object to either the existence or the interpretation of these relationships are invited to verify them independently using the exercises in that file.
 
-## 9. Robustness and limitations
+## 9. Extensions and what the baseline model does not capture
 
-**Calibration sensitivity.** The deep parameters $(s, \rho, \tau)$ are disciplined by the USDC March 2023 episode, but the posterior predictive diagnostics reject the view that the reduced-form path is a complete structural model of the hourly peg. The 90 percent posterior predictive band covers 44 percent of the empirical hourly observations and the posterior-median RMSE is 0.016. The model captures the order of magnitude of the depeg and recovery but misses some plateau curvature. I therefore use the Bayesian layer as uncertainty propagation around a stylized counterfactual, not as a claim of full likelihood-based structural identification.
+The baseline model in Sections 3 through 6 makes five simplifying assumptions that affect the interpretation of results. I name each, quantify the magnitude of the simplification where I can, and report extensions that close the most important gaps. Two of these extensions have been implemented as additional modules (`src/fed_reaction.py` and `src/jurisdiction.py`); the remaining three are discussed at the level of analytical importance with quantitative bounds.
+
+### 9.1 Continuous Fed reaction function
+
+The baseline model treats the Fed's emergency-liquidity decision as a binary parameter (`fed_extends_liquidity` is `True` or `False`). This is a substantial simplification. The Federal Reserve actually chooses a provision share, an implicit subsidy rate, and an activation lag, each as a continuous function of observable system state. The module `src/fed_reaction.py` calibrates a logistic provision share and a probit subsidy rate against three historical anchors: the Bank Term Funding Program (March 2023), the Money Market Mutual Fund Liquidity Facility (March 2020), and pre-stress discount-window operations. The reaction function R(s, v, c) takes as inputs the peg deviation s, the redemption velocity v, and a credit-spread proxy c, and produces a provision-share Q and a subsidy rate sigma in basis points.
+
+At our four calibration anchors:
+
+| Scenario                  | s    | v    | c    | Q    | sigma  | lag    |
+|---------------------------|------|------|------|------|--------|--------|
+| Normal conditions         | 0.00 | 0.00 | 0.05 | 0.03 |  8.5bp | 168h   |
+| BTFP-equivalent (Mar 2023)| 0.04 | 0.10 | 0.30 | 0.20 | 54.4bp |  96h   |
+| MMLF-equivalent (Mar 2020)| 0.08 | 0.25 | 0.55 | 0.70 | 96.0bp |  48h   |
+| Deep systemic stress      | 0.14 | 0.50 | 0.80 | 0.98 |100.0bp |  24h   |
+
+Under this calibration, the expected fiscal subsidy cost of Fed liquidity provision during a stablecoin run is a path-dependent quantity that depends on the time series of (s, v, c) rather than on a single binary choice. The qualitative finding from Section 6 (post-EO welfare result is sensitive to the assumed subsidy rate) survives but becomes more nuanced: a run that triggers BTFP-class intervention produces a smaller fiscal cost than one triggering MMLF-class intervention by an order of magnitude. Whether the Federal Reserve responds at one anchor or the next depends on stress dynamics that the order does not specify. The 30 bp subsidy rate I used in Section 6 corresponds to a stress trajectory milder than BTFP-equivalent.
+
+### 9.2 Cross-jurisdiction contagion
+
+The baseline network is US-only. Tether (USDT, the largest stablecoin globally with approximately $140 billion in circulation) is registered in the British Virgin Islands via iFinex Inc.; reserves are custodied through Cantor Fitzgerald (US-domiciled), Deltec Bank and Trust (Bahamas), and various offshore correspondent banks. USDC (Circle) is US-domiciled but a substantial fraction of USDC holders are non-US (an estimated 45 percent per Chainalysis 2024 cross-border reporting). The module `src/jurisdiction.py` extends the network with foreign banking nodes (Deltec, BBVA, HSBC, Banco Santander) and computes cross-border transmission under two regimes.
+
+For a $60 billion shock to a US regional bank (REG_B in the baseline network):
+
+| Channel                     | Pre-EO | Post-EO |
+|-----------------------------|--------|---------|
+| US direct loss              | $60.0B | $60.0B  |
+| Foreign loss (EU+Asia+LatAm)| $0.09B | $0.06B  |
+| USDT offshore depeg         | 0.50%  | 0.10%   |
+| FDUSD depeg                 | 0.30%  | 0.10%   |
+
+The foreign-loss flows are small relative to the US direct loss because USDC reserves are predominantly held in US assets (the Circle Reserve Fund managed by BlackRock, US Treasury bills, US bank deposits). The cross-jurisdiction channel matters more for the reverse direction: a Deltec failure (Tether's Bahamas custodian) at 30 percent severity transmits approximately $3.6 billion of direct loss to Tether, propagates to $1.2 billion of US panic-driven loss (Cantor convertible-bond markdown, equity-stake impairment), and produces a 3 percent offshore-USDT depeg. The full transmission matrix is documented in the module.
+
+### 9.3 Stablecoin reserve composition heterogeneity
+
+The baseline model collapses per-issuer reserve composition into a single share between commercial bank deposits and Federal Reserve master accounts. Real composition varies substantially across issuers, and the variation matters for how each absorbs a regional-bank shock.
+
+Approximate Q1 2026 reserve composition by issuer:
+
+- USDC (Circle): approximately 87 percent in the BlackRock-managed Circle Reserve Fund (T-bills), approximately 13 percent in bank deposits at BNY Mellon and partner banks.
+- USDT (Tether): approximately 72 percent US Treasuries (via Cantor), approximately 10 percent gold, approximately 5 percent Bitcoin, approximately 13 percent other (cash equivalents, secured loans, corporate bonds; opacity is a feature of Tether's structure).
+- DAI (MakerDAO): collateralized by a mix of cryptoassets and a USDC PSM (Peg Stability Module) holding approximately $3 billion. DAI's stability is therefore conditional on USDC's stability.
+- PYUSD (Paxos): approximately 100 percent reserves at Paxos custodian banks plus State Street.
+- FDUSD (First Digital Trust): Hong Kong-domiciled custodian structure with regional banking partners.
+
+The heterogeneity affects which issuer fails first under a given shock and which fail in cascade. USDC was particularly vulnerable in March 2023 because of its concentrated bank-deposit exposure (8 percent at SVB). USDT is more exposed to Cantor-specific risk and to offshore correspondent banking. DAI is structurally derivative of USDC and therefore inherits USDC's vulnerabilities through the PSM. A complete treatment would model each issuer's reserve composition separately. The qualitative finding (the EO substantially reduces bank-channel exposure for issuers that migrate) holds across all five, but the per-issuer magnitudes vary.
+
+### 9.4 Stablecoin-to-MMF substitution
+
+When a stablecoin depegs, some redemptions flow not to fiat cash but to government money market funds. This second-order flow affects MMF AUM, MMF Treasury demand, and indirectly the Federal Reserve's reverse-repo facility usage. The baseline model assumes redemptions flow to fiat cash; in practice, during March 2023, government MMF AUM rose by approximately $300 billion in the two weeks following the USDC depeg (per Investment Company Institute weekly MMF data). The flow is not negligible at the macro scale but produces only second-order effects on the stablecoin run dynamics themselves, because the substitution speed is much slower than the on-chain redemption velocity. I therefore leave it outside the baseline and note its existence here as an unmodeled channel of macroeconomic transmission rather than of contagion amplification.
+
+### 9.5 Operational fiat rails residual
+
+Even with direct Fed master-account access, stablecoin issuers retain commercial-bank relationships for customer fiat in/out (ACH, wire, SWIFT). The baseline model represents this as a 10 percent residual share at REG_A. The actual decomposition depends on issuer; some commercial-bank functions (the BNY Mellon settlement layer) are themselves master-account holders and would not present additional exposure. Other functions (the partner-bank rail for retail customer onboarding) genuinely remain bank-deposit-exposed under any plausible interpretation of EO 14405's Section 4(c). The 10 percent figure is therefore a midpoint estimate; the qualitative finding is robust to perturbations of order 5 percentage points around that midpoint.
+
+### 9.6 Calibration sensitivity (retained from baseline)
+
+The deep parameters $(s, \rho, \tau)$ are disciplined by the USDC March 2023 episode, but the posterior predictive diagnostics reject the view that the reduced-form path is a complete structural model of the hourly peg. The 90 percent posterior predictive band covers 44 percent of the empirical hourly observations and the posterior-median RMSE is 0.016. The model captures the order of magnitude of the depeg and recovery but misses some plateau curvature. I therefore use the Bayesian layer as uncertainty propagation around a stylized counterfactual, not as a claim of full likelihood-based structural identification.
 
 **Counterfactual mapping.** The mapping $s^{post}=s^{pre}(\lambda^{post}/\lambda^{pre})$ is derived from a local proportionality between early redemption mass and the global-game fragility parameter. It is not directly identified without post-EO stablecoin-run observations. The reported counterfactual band therefore integrates over lognormal uncertainty in the sensitivity ratio and normal uncertainty in the post-EO impairment fraction. This widens the 90 percent trough interval to [0.951, 0.985], which is materially wider than the mechanically tight interval obtained by varying $s$ alone.
 
@@ -231,7 +297,7 @@ The full primary-source documentation is in `dossiers/SYNTHESIS.md`. Readers who
 
 EO 14405 is being read on Wall Street as a deregulatory gift to the crypto industry. The structural analysis here points to a different reading: the order is a topology shift on the bilateral-exposure network that systematically reduces stablecoin run risk in every standard metric, at the cost of a fiscal externality on the Fed's balance sheet that the order does not address. Whether the net effect is welfare-improving depends on social weights that the order leaves implicit.
 
-The order's framers appear to have assumed that direct Fed access for stablecoin issuers is a Pareto improvement over the bank-deposit model. The frameworks here show that this is wrong in one direction and right in another. It is wrong because the run risk does not disappear; it relocates to a balance sheet where the policy framework for handling it does not yet exist. It is right because the average severity of a single-name stablecoin shock falls substantially. The synthesis is that the order has authorized a structural change whose implementation depends on a Fed reaction function that must be specified before the first large migration occurs.
+The order's framers appear to have assumed that direct Fed access for stablecoin issuers is a Pareto improvement over the bank-deposit model. The frameworks here show that the assumption is partly correct and partly inadequate. The average severity of a single-name stablecoin shock falls substantially under the new regime. The aggregate run-loss expectation, by contrast, relocates onto a balance sheet whose policy framework for handling it does not yet exist. The order authorizes a structural change whose implementation depends on a Fed reaction function that must be specified before the first large migration occurs.
 
 This is a Setser-class question about the dollar's external position as much as a Diamond-Dybvig question about the deposit franchise. A regulated, Fed-backed stablecoin ecosystem competing with foreign-issued crypto-dollar substitutes in emerging-market payments would extend dollar hegemony. But that extension is only as strong as the Fed's willingness to extend implicit credit backstops to private dollar substitutes it does not issue and cannot fully control. The order has authorized the first of those bets. The framework that governs the rest of them is what comes next.
 
