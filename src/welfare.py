@@ -57,6 +57,7 @@ class WelfareReport:
     post: LossVector
     delta: LossVector
     indifferent_weights: tuple[float, float, float]
+    indifference_vertices: tuple[tuple[float, float, float], ...]
     improvement_under_equal_weights: bool
 
 
@@ -99,25 +100,35 @@ def compute_welfare(pre: LossVector, post: LossVector) -> WelfareReport:
         banks     = post.banks     - pre.banks,
         taxpayers = post.taxpayers - pre.taxpayers,
     )
-    # Indifference-surface direction: the unit-norm weight vector w
-    # orthogonal to (Delta_H, Delta_B, Delta_T) such that w . Delta = 0
-    # AND w sums to 1 in the simplex. We pick the boundary intersection
-    # by symmetric projection.
     d = np.array([delta.holders, delta.banks, delta.taxpayers])
-    # Find weights on the simplex that make w . d = 0 if possible;
-    # otherwise return the closest feasible weights.
-    n = np.linalg.norm(d)
-    if n > 0:
-        # Project the centroid (1/3, 1/3, 1/3) onto the hyperplane w.d = 0
+
+    vertices: list[tuple[float, float, float]] = []
+    simplex_edges = [(0, 1), (0, 2), (1, 2)]
+    for a, b in simplex_edges:
+        denom = d[a] - d[b]
+        if abs(denom) < 1e-12:
+            continue
+        wa = -d[b] / denom
+        wb = 1.0 - wa
+        if -1e-10 <= wa <= 1.0 + 1e-10 and -1e-10 <= wb <= 1.0 + 1e-10:
+            w = np.zeros(3)
+            w[a] = np.clip(wa, 0.0, 1.0)
+            w[b] = np.clip(wb, 0.0, 1.0)
+            vertices.append(tuple(w.tolist()))
+
+    if vertices:
         centroid = np.array([1/3, 1/3, 1/3])
-        proj = centroid - (centroid @ d) / (d @ d) * d
-        # Clip to simplex
-        proj = np.clip(proj, 0.0, 1.0)
-        if proj.sum() > 0:
-            proj /= proj.sum()
-        indiff = tuple(proj.tolist())
+        indiff_arr = min((np.array(v) for v in vertices),
+                         key=lambda w: np.linalg.norm(w - centroid))
+        indiff = tuple(indiff_arr.tolist())
     else:
-        indiff = (1/3, 1/3, 1/3)
+        # If all welfare deltas have the same sign, the neutral hyperplane
+        # does not intersect the feasible simplex.
+        vals = np.array([[1.0, 0.0, 0.0],
+                         [0.0, 1.0, 0.0],
+                         [0.0, 0.0, 1.0]])
+        indiff_arr = min(vals, key=lambda w: abs(w @ d))
+        indiff = tuple(indiff_arr.tolist())
 
     # Equal-weight verdict
     equal_w = np.array([1/3, 1/3, 1/3])
@@ -129,6 +140,7 @@ def compute_welfare(pre: LossVector, post: LossVector) -> WelfareReport:
         post=post,
         delta=delta,
         indifferent_weights=indiff,
+        indifference_vertices=tuple(vertices),
         improvement_under_equal_weights=improvement_equal,
     )
 
@@ -150,8 +162,8 @@ def proposition_2_verdict(report: WelfareReport) -> str:
     else:
         msg += "Equal-weight verdict: EO is welfare-DEGRADING.\n"
     msg += (
-        f"Indifference weights (omega_H, omega_B, omega_T) on the "
-        f"closest simplex point: ({report.indifferent_weights[0]:.3f}, "
+        f"Closest indifference point (omega_H, omega_B, omega_T): "
+        f"({report.indifferent_weights[0]:.3f}, "
         f"{report.indifferent_weights[1]:.3f}, "
         f"{report.indifferent_weights[2]:.3f})"
     )

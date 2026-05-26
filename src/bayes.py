@@ -27,11 +27,10 @@ after backstop) identifies (s, rho, tau) jointly:
     - The time-to-trough identifies rho
     - The recovery shape identifies tau
 
-Under the post-EO regime, we hold rho and tau but reduce s by a known
-multiplicative factor sigma_post derived from the global-game model
-(s_post = s_pre * lambda_post / lambda_pre, with lambda values from
-src/global_game.py). The credible interval on the counterfactual peg
-trough is then the central object of inference.
+Under the post-EO regime, we reduce s by a multiplicative sensitivity ratio
+motivated by the global-game fragility ratio. That mapping is not identified
+by the USDC event alone, so the counterfactual band integrates over uncertainty
+in the sensitivity ratio and the post-EO impairment fraction.
 
 Reference:
     Robert, C. and G. Casella (2004). "Monte Carlo Statistical Methods."
@@ -173,22 +172,36 @@ def counterfactual_band(
     sensitivity_ratio: float,
     *,
     impair_frac: float = 0.08,
+    sensitivity_ratio_sd: float = 0.22,
+    impair_frac_sd: float = 0.020,
     backstop_t: float = 18.0,
     horizon: int = 73,
     quantiles: tuple[float, float, float] = (0.05, 0.50, 0.95),
+    seed: int = 23,
 ) -> dict:
     """
     Propagate the posterior through the counterfactual model to get the
     credible band on the POST-EO peg path. sensitivity_ratio = s_post / s_pre
     derived from global_game.regime_comparison() reflecting the lower
-    fragility under direct Fed access.
+    fragility under direct Fed access. The ratio and impairment fraction are
+    treated as uncertain counterfactual objects rather than fixed constants.
     """
+    rng = np.random.default_rng(seed)
     paths = []
+    ratios = []
+    impair_fracs = []
     for s, rho, tau in post_sample.samples:
-        path = simulate_path(s * sensitivity_ratio, rho, tau,
-                             impair_frac=impair_frac, backstop_t=backstop_t,
+        ratio_draw = sensitivity_ratio * np.exp(
+            rng.normal(-0.5 * sensitivity_ratio_sd**2, sensitivity_ratio_sd)
+        )
+        impair_draw = rng.normal(impair_frac, impair_frac_sd)
+        impair_draw = float(np.clip(impair_draw, 0.02, 0.16))
+        path = simulate_path(s * ratio_draw, rho, tau,
+                             impair_frac=impair_draw, backstop_t=backstop_t,
                              horizon=horizon)
         paths.append(path)
+        ratios.append(ratio_draw)
+        impair_fracs.append(impair_draw)
     paths = np.array(paths)
     q_lo, q_med, q_hi = quantiles
     return {
@@ -196,6 +209,37 @@ def counterfactual_band(
         "lower":     np.quantile(paths, q_lo,  axis=0),
         "upper":     np.quantile(paths, q_hi,  axis=0),
         "trough_post_dist": paths.min(axis=1),
+        "sensitivity_ratio_dist": np.array(ratios),
+        "impair_frac_dist": np.array(impair_fracs),
+    }
+
+
+def posterior_predictive_diagnostics(post_sample: PosteriorSample) -> dict:
+    """
+    Moment-matching diagnostics for the historical USDC peg path.
+    Returns empirical-vs-model quantile coverage and RMSE at observed hours.
+    """
+    obs_hours = USDC_EMPIRICAL["hours"]
+    obs_peg = USDC_EMPIRICAL["peg"]
+    paths = np.array([
+        simulate_path(s, rho, tau)[obs_hours]
+        for s, rho, tau in post_sample.samples
+    ])
+    q05 = np.quantile(paths, 0.05, axis=0)
+    q50 = np.quantile(paths, 0.50, axis=0)
+    q95 = np.quantile(paths, 0.95, axis=0)
+    in_band = (obs_peg >= q05) & (obs_peg <= q95)
+    return {
+        "coverage_90": float(in_band.mean()),
+        "rmse_median": float(np.sqrt(np.mean((q50 - obs_peg) ** 2))),
+        "max_abs_error_median": float(np.max(np.abs(q50 - obs_peg))),
+        "quantiles": {
+            "hours": obs_hours,
+            "empirical": obs_peg,
+            "q05": q05,
+            "q50": q50,
+            "q95": q95,
+        },
     }
 
 

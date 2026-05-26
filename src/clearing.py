@@ -53,6 +53,8 @@ def clear(
     L: np.ndarray,
     e: np.ndarray,
     *,
+    direct_loss: float | None = None,
+    shock_node: int | None = None,
     tol: float = 1e-10,
     max_iter: int = 200,
 ) -> ClearingResult:
@@ -80,7 +82,7 @@ def clear(
     # Iteration: p^{k+1} = min(bar_p, e + Pi^T p^k)
     p = bar_p.copy()
     for k in range(max_iter):
-        p_new = np.minimum(bar_p, e + Pi.T @ p)
+        p_new = np.maximum(0.0, np.minimum(bar_p, e + Pi.T @ p))
         if np.max(np.abs(p_new - p)) < tol:
             p = p_new
             break
@@ -91,20 +93,21 @@ def clear(
     losses = bar_p - p
     defaulted = losses > 1e-8
 
-    # Glasserman-Young amplification: total system loss divided by the
-    # initial unrecoverable shock. The initial unrecoverable shock is the
-    # amount by which exogenous buffers were pushed negative; everything
-    # beyond that is network-propagation amplification of the original
-    # injection. Amplification of 1.0 means no network amplification;
-    # > 1 means the network amplifies; values near 1 are the empirical
-    # finding of Glasserman-Young (2015) for realistic interbank graphs.
-    initial_shock = max(0.0, -e.min())
-    # If the shock is partially absorbed by the receiving node's own buffer,
-    # we attribute only the unabsorbed portion as the "direct loss." All
-    # other loss in the system is then network amplification.
-    if initial_shock > 0:
-        total_actual = losses.sum()
-        amplification = max(1.0, total_actual / initial_shock)
+    # Glasserman-Young amplification is a ratio to the direct asset shock,
+    # not to the amount by which the shocked node's buffer happens to go
+    # negative. Network amplification is creditor loss outside the shocked
+    # node, scaled by the initial direct loss.
+    if direct_loss is None:
+        direct_loss = max(0.0, -e.min())
+        propagated_loss = losses.sum()
+    else:
+        # losses are unpaid obligations to creditors. The shocked node's row
+        # is precisely the first-round creditor loss, so it belongs in the
+        # amplification numerator.
+        propagated_loss = max(0.0, losses.sum())
+
+    if direct_loss and direct_loss > 0:
+        amplification = 1.0 + propagated_loss / direct_loss
     else:
         amplification = 1.0
 
@@ -131,7 +134,13 @@ def stress_clear(
     """
     e_shocked = e.copy().astype(float)
     e_shocked[shock_node] -= shock_amount
-    return clear(L, e_shocked, **kwargs)
+    return clear(
+        L,
+        e_shocked,
+        direct_loss=shock_amount,
+        shock_node=shock_node,
+        **kwargs,
+    )
 
 
 def cascade_depth(L: np.ndarray, e: np.ndarray) -> int:
@@ -149,7 +158,7 @@ def cascade_depth(L: np.ndarray, e: np.ndarray) -> int:
     prev_default = np.zeros(n, dtype=bool)
     depth = 0
     for _ in range(50):
-        p = np.minimum(bar_p, e + Pi.T @ p)
+        p = np.maximum(0.0, np.minimum(bar_p, e + Pi.T @ p))
         cur_default = (bar_p - p) > 1e-8
         if np.array_equal(cur_default, prev_default):
             break

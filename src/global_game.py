@@ -131,7 +131,8 @@ def regime_comparison(
     lam_post: float = 0.15,       # Fed master account, T+0 settlement
     r_pre: float = 0.005,         # 50 bp deposit-equivalent yield
     r_post: float = 0.045,        # 4.5% IORB
-    sigma_theta: float = 0.05,
+    y_prior: float = 1.50,
+    sigma_theta: float = 0.35,
 ) -> tuple[RunEquilibrium, RunEquilibrium]:
     """
     Solve the run equilibrium under both regimes with policy-relevant
@@ -140,9 +141,11 @@ def regime_comparison(
     fragility; post-EO holders earn IORB and face Fed-direct fragility.
     """
     pre = equilibrium(ell, lam_pre, r_pre,
-                      sigma_theta=sigma_theta, regime="pre_eo")
+                      y_prior=y_prior, sigma_theta=sigma_theta,
+                      regime="pre_eo")
     post = equilibrium(ell, lam_post, r_post,
-                       sigma_theta=sigma_theta, regime="post_eo")
+                       y_prior=y_prior, sigma_theta=sigma_theta,
+                       regime="post_eo")
     return pre, post
 
 

@@ -74,34 +74,31 @@ def exposure_matrix(L: np.ndarray, k: np.ndarray) -> np.ndarray:
     return B
 
 
-def spectral_report(
-    L: np.ndarray,
-    k: np.ndarray,
+def spectral_report_from_matrix(
+    B: np.ndarray,
     node_names: list[str],
     *,
     regime: str = "",
 ) -> SpectralReport:
     """
-    Compute the full spectral characterization of the network.
+    Compute spectral diagnostics directly from an already-normalized
+    nonnegative feedback matrix. This is used for stress operators in which
+    nominal claims are first converted into expected loss-transmission weights.
     """
-    B = exposure_matrix(L, k)
+    B = np.asarray(B, dtype=float)
     eigvals = np.linalg.eigvals(B)
     abs_eig = np.abs(eigvals)
     order = np.argsort(-abs_eig)
-    l1 = float(abs_eig[order[0]])
+    l1 = float(abs_eig[order[0]]) if len(order) else 0.0
     l2 = float(abs_eig[order[1]]) if len(order) > 1 else 0.0
 
-    # Fiedler value (algebraic connectivity) on the symmetric undirected
-    # exposure graph
     A = (B + B.T) / 2
     deg = A.sum(axis=1)
     Lap = np.diag(deg) - A
     lap_eigs = np.sort(np.linalg.eigvalsh(Lap))
-    # The 0 eigenvalue corresponds to the all-ones vector; the next is Fiedler
     fiedler = float(lap_eigs[1]) if len(lap_eigs) > 1 else 0.0
 
-    # Katz centrality (uses 1 / (lambda_max + 1) as a safe alpha)
-    alpha = 1.0 / (l1 + 1.0)
+    alpha = 0.95 / l1 if l1 > 1e-12 else 0.0
     try:
         kappa = np.linalg.solve(np.eye(B.shape[0]) - alpha * B, np.ones(B.shape[0]))
     except np.linalg.LinAlgError:
@@ -109,7 +106,6 @@ def spectral_report(
     katz = {n: float(kappa[i]) for i, n in enumerate(node_names)}
     top5 = sorted(katz, key=katz.get, reverse=True)[:5]
 
-    # Assortativity on the directed weighted graph
     g = nx.DiGraph()
     g.add_nodes_from(node_names)
     for i, ni in enumerate(node_names):
@@ -132,6 +128,19 @@ def spectral_report(
         super_spreaders=top5,
         assortativity=assort,
     )
+
+
+def spectral_report(
+    L: np.ndarray,
+    k: np.ndarray,
+    node_names: list[str],
+    *,
+    regime: str = "",
+) -> SpectralReport:
+    """
+    Compute the full spectral characterization of the network.
+    """
+    return spectral_report_from_matrix(exposure_matrix(L, k), node_names, regime=regime)
 
 
 def shock_propagation_path(
