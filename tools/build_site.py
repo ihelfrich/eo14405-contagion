@@ -53,11 +53,42 @@ def pandoc_html(src: Path, out: Path, title: str, description: str,
                 rel_css: str = "style.css") -> None:
     """
     Convert a markdown file to an HTML5 page with the heritage CSS,
-    KaTeX math, and a complete <head> with semantic metadata.
+    KaTeX math (via auto-render so it catches ALL delimiter patterns
+    including \\tag{N} and \\Big inside $$...$$ blocks that pandoc's
+    own --mathjax mode mishandles), and a complete <head> with
+    semantic metadata.
     """
     out.parent.mkdir(parents=True, exist_ok=True)
-    # Build a header template that sits inside <head>
     head_extra = HERE / ".build_head_extra.html"
+
+    # KaTeX auto-render handles $$, $, \(, \[ delimiters uniformly.
+    # The onload handler renders all math in document.body once both
+    # katex.min.js and auto-render.min.js are loaded.
+    katex_block = '''
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous">
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+        integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+        crossorigin="anonymous"></script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+        crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '\\\\[', right: '\\\\]', display: true},
+            {left: '\\\\(', right: '\\\\)', display: false},
+            {left: '$', right: '$', display: false}
+          ],
+          throwOnError: false,
+          strict: 'ignore'
+        });"></script>
+'''.strip()
+
     head_extra.write_text(
         f'<meta name="description" content="{description}">\n'
         f'<meta name="author" content="Ian Helfrich">\n'
@@ -72,15 +103,22 @@ def pandoc_html(src: Path, out: Path, title: str, description: str,
         f'href="https://fonts.googleapis.com/css2?'
         f'family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&'
         f'family=JetBrains+Mono:wght@400;500&display=swap">\n'
-        f'<link rel="stylesheet" href="{rel_css}">\n',
+        f'<link rel="stylesheet" href="{rel_css}">\n'
+        + katex_block + "\n",
         encoding="utf-8",
     )
     subprocess.run([
         "pandoc",
         "--standalone",
-        "--from", "markdown+tex_math_dollars+pipe_tables+fenced_code_blocks+footnotes+yaml_metadata_block",
+        "--from", "markdown+tex_math_dollars+tex_math_double_backslash+pipe_tables+fenced_code_blocks+footnotes+yaml_metadata_block+raw_tex",
         "--to", "html5",
-        "--mathjax",
+        # --mathjax tells pandoc to wrap inline math as `\(...\)` and
+        # display math as `\[...\]`. The KaTeX auto-render script we
+        # load in head_extra picks up BOTH those delimiters and renders
+        # client-side. We pass an explicit (unused) MathJax URL so
+        # pandoc does not also inject its own MathJax script tag (KaTeX
+        # handles the rendering).
+        "--mathjax=about:blank",
         "--metadata", f"title={title}",
         "--include-in-header", str(head_extra),
         "--wrap=preserve",
