@@ -327,6 +327,22 @@ figure img {
   background: var(--parchment);
   border: 1px solid var(--mist);
 }
+
+/* Inline images (markdown ![](...) renders as <img> inside <p>) */
+p > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 26px auto;
+  background: var(--parchment);
+  border: 1px solid var(--mist);
+  border-left: 4px solid var(--old-gold);
+  box-shadow: 0 2px 12px rgba(19,41,75,0.08);
+}
+p > img[alt] {
+  /* alt text shown beneath as a caption via ::after on the parent paragraph
+     would require JS; instead we rely on title attr + alt for accessibility */
+}
 figcaption {
   font-family: var(--sans);
   font-size: 13px;
