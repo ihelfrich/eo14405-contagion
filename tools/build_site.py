@@ -124,7 +124,7 @@ def jsonld(title: str, description: str, page_url: str, is_scholarly: bool) -> s
         "@type": schema_type,
         "headline": title,
         "description": description,
-        "image": f"{SITE_URL}/figures/li_mechanism.png",
+        "image": f"{SITE_URL}/figures/og_card.png",
         "author": {
             "@type": "Person",
             "name": "Dr. Ian Helfrich",
@@ -265,15 +265,15 @@ def pandoc_html(src: Path, out: Path, title: str, description: str,
         f'<meta property="og:type" content="article">\n'
         f'<meta property="og:url" content="{page_url}">\n'
         f'<meta property="og:site_name" content="Helfrich Research">\n'
-        f'<meta property="og:image" content="{SITE_URL}/figures/li_mechanism.png">\n'
+        f'<meta property="og:image" content="{SITE_URL}/figures/og_card.png">\n'
         f'<meta property="og:image:width" content="1200">\n'
         f'<meta property="og:image:height" content="627">\n'
-        f'<meta property="og:image:alt" content="EO 14405 loss-absorption mechanism diagram">\n'
+        f'<meta property="og:image:alt" content="EO 14405 cuts stablecoin contagion by 95 percent, then relocates the loss to the Federal Reserve at a rate the Fed has not yet specified. Dr. Ian Helfrich, independent research.">\n'
         f'<meta property="article:published_time" content="{PUBLISHED}">\n'
         f'<meta property="article:modified_time" content="{TODAY}">\n'
         f'<meta property="article:author" content="Ian Helfrich">\n'
         f'<meta name="twitter:card" content="summary_large_image">\n'
-        f'<meta name="twitter:image" content="{SITE_URL}/figures/li_mechanism.png">\n'
+        f'<meta name="twitter:image" content="{SITE_URL}/figures/og_card.png">\n'
         f'<meta name="twitter:site" content="@ianhelfrich">\n'
         f'<link rel="preconnect" href="https://rsms.me/">\n'
         f'<link rel="stylesheet" href="https://rsms.me/inter/inter.css">\n'
@@ -337,11 +337,11 @@ def render_landing() -> None:
 <meta property="og:description" content="Research notes by Dr. Ian Helfrich on EO 14405 and stablecoin contagion.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ihelfrich.github.io/eo14405-contagion/landing.html">
-<meta property="og:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/li_mechanism.png">
+<meta property="og:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/og_card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/li_mechanism.png">
+<meta name="twitter:image" content="https://ihelfrich.github.io/eo14405-contagion/figures/og_card.png">
 <link rel="preconnect" href="https://rsms.me/">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap">
