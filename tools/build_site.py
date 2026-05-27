@@ -207,27 +207,38 @@ def inject_reading_time(html: str, minutes: int) -> str:
 
 
 def wrap_with_toc_layout(html: str) -> str:
-    """If pandoc emitted <nav id="TOC">, wrap <nav>+<article> in .has-toc."""
+    """Wrap the TOC nav + everything-else-in-body into a CSS-grid layout.
+
+    Pandoc does not emit an <article> element by default, so we cannot
+    rely on it as a closing anchor. Instead we explicitly wrap all body
+    content (post-nav) inside <main class="article-body">, giving the
+    .has-toc grid exactly two direct children: the nav (column 1) and
+    the main (column 2). Without this, every <p>/<h3>/<hr> becomes its
+    own grid item and they all fight for column 1 with the TOC.
+    """
     nav_match = re.search(r'(<nav[^>]*id="TOC"[^>]*>[\s\S]+?</nav>)', html)
     if not nav_match:
         return html
     nav_html = nav_match.group(1)
-    # Remove the nav from its original location and re-insert wrapped with article
-    html_no_nav = html.replace(nav_html, "", 1)
-    # Find the <article> and wrap both
-    html_no_nav = re.sub(
-        r'(<body[^>]*>)',
-        r'\1\n<div class="has-toc">\n' + nav_html + '\n',
-        html_no_nav,
-        count=1,
+    body_open = re.search(r'<body[^>]*>', html)
+    body_close = html.rfind('</body>')
+    if not body_open or body_close < 0:
+        return html
+
+    # Strip the nav from its original location
+    body_inner_start = body_open.end()
+    body_inner = html[body_inner_start:body_close]
+    body_inner = body_inner.replace(nav_html, "", 1)
+
+    # Recompose: body open + grid open + nav + main + content + main close + grid close + body close
+    new_body_inner = (
+        '\n<div class="has-toc">\n'
+        + nav_html
+        + '\n<main class="article-body">\n'
+        + body_inner.lstrip()
+        + '\n</main>\n</div>\n'
     )
-    html_no_nav = re.sub(
-        r'(</article>)',
-        r'\1\n</div>',
-        html_no_nav,
-        count=1,
-    )
-    return html_no_nav
+    return html[:body_inner_start] + new_body_inner + html[body_close:]
 
 
 # ---------------------------------------------------------------------- #
