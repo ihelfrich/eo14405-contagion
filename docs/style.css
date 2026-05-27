@@ -364,20 +364,121 @@ figcaption {
 .footnotes li { margin-bottom: 8px; }
 .footnotes a { color: var(--carolina-blue); }
 
+/* Reading-time badge under the title */
+.reading-time {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--carolina-blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: -8px 0 22px;
+  display: block;
+}
+
+/* Heading anchor links: invisible until hover, then a gold # */
+h2, h3, h4, h5 { position: relative; }
+.heading-anchor {
+  position: absolute;
+  left: -1.1em;
+  top: 0;
+  width: 1em;
+  text-align: center;
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--old-gold);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor,
+h5:hover .heading-anchor { opacity: 1; }
+.heading-anchor:hover { color: var(--carolina-navy); }
+@media (max-width: 900px) {
+  .heading-anchor { display: none; }
+}
+
+/* Sticky TOC sidebar (long pages only). Hidden on mobile; collapses below 1200px. */
+.has-toc { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; max-width: 1080px; margin: 0 auto; }
+.has-toc article { margin: 32px 0; max-width: 720px; }
+nav#TOC {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.45;
+  padding: 18px 14px 18px 16px;
+  margin-top: 32px;
+  background: var(--parchment);
+  border-left: 3px solid var(--old-gold);
+  border-radius: 0 4px 4px 0;
+}
+nav#TOC::before {
+  content: "Contents";
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--carolina-blue);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+nav#TOC ul { list-style: none; padding: 0; margin: 0; }
+nav#TOC ul ul { padding-left: 12px; margin-top: 4px; }
+nav#TOC li { margin: 4px 0; }
+nav#TOC a {
+  color: var(--slate);
+  text-decoration: none;
+  border-bottom: none;
+  display: block;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+nav#TOC a:hover { background: var(--mist); color: var(--carolina-navy); }
+@media (max-width: 1100px) {
+  .has-toc { display: block; }
+  nav#TOC { position: static; max-height: none; margin-bottom: 24px; }
+}
+
 /* Print */
 @media print {
+  @page { margin: 0.7in 0.65in; }
   body {
     background: white;
     color: black;
-    font-size: 11.5pt;
-    line-height: 1.45;
+    font-size: 10.5pt;
+    line-height: 1.42;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   }
   article { max-width: none; margin: 0; padding: 0; }
-  a { color: black; text-decoration: none; }
-  .verify, .exercise, .steelman, .assumption { background: white; }
-  pre { background: white; border: 1px solid #888; }
+  a { color: black; text-decoration: underline; }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #444;
+    word-break: break-all;
+  }
+  /* Don't expand internal anchor links into URLs */
+  a[href^="#"]::after { content: ""; }
+  .verify, .exercise, .steelman, .assumption { background: white; border: 0.5pt solid #999; }
+  pre, code { background: white; border: 0.5pt solid #888; font-size: 9.5pt; }
   h1, h2, h3, h4 { color: black; page-break-after: avoid; }
+  h1 { font-size: 18pt; margin-top: 0; }
+  h2 { font-size: 13pt; border-bottom: 0.5pt solid #999; padding-bottom: 2pt; }
+  h3 { font-size: 11pt; }
   blockquote, figure, table, pre { page-break-inside: avoid; }
+  img { max-width: 95%; height: auto; }
+  /* Hide scaffolding that doesn't print well */
+  nav#TOC, .heading-anchor, .reading-time { display: none; }
+  /* Footer attribution always at bottom */
+  .footnotes { font-size: 9pt; }
+  /* Page numbers via running header (modern browsers honor this) */
+  @page :first { margin-top: 0.5in; }
 }
 
 /* Mobile */

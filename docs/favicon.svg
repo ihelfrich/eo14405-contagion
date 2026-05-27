@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Heritage palette: Carolina Navy ground, Old Gold monogram -->
+  <rect width="64" height="64" rx="10" fill="#13294B"/>
+  <!-- "iH" monogram, set in a serif-like form with a gold accent dot -->
+  <text x="32" y="44"
+        font-family="Georgia, 'Source Serif 4', serif"
+        font-size="36"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#D4A017"
+        letter-spacing="-1">iH</text>
+  <!-- Small Indiana Crimson dot under the i, signature flourish -->
+  <circle cx="22" cy="20" r="2.6" fill="#990000"/>
+</svg>
